@@ -1,0 +1,371 @@
+@font-face {
+    font-family: "Lato";
+    src: url("Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("Lato-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("Lato-Italic.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("Lato-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    position: relative;
+    color: #333333;
+    background: #FAFAFA;
+    z-index: -2;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #EB5B28;
+    font-weight: bold;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+#header {
+    height: 250px;
+    background-image: url("header.svg");
+    background-position: center bottom;
+    background-size: cover;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    padding: 40px 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+#title {
+    font-size: 60px;
+    font-weight: normal;
+    margin: 0 0 30px;
+}
+
+#subtitle {
+    font-size: 20px;
+    display: block;
+}
+
+#languages {
+    text-align: right;
+}
+
+.link-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link-list li {
+    margin: 0 20px 0 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.link-list li:last-child {
+    margin-right: 0;
+}
+
+#languages li a {
+    color: #FFFFFF;
+}
+
+.link-list li a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.link-list li.selected a {
+    font-weight: bold;
+}
+
+#gender-notice {
+    margin-bottom: 15px;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+}
+
+#footer {
+    padding: 30px 80px;
+    position: relative;
+}
+
+#footer-menu {
+    text-align: center;
+}
+
+#footer-menu li a {
+    text-align: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+#content {
+    position: relative;
+}
+
+#main {
+    margin: 30px auto;
+    box-sizing: border-box;
+    padding: 0 80px;
+    max-width: 100%;
+}
+
+#id-input-container {
+    border: 2px solid #333333;
+    border-radius: 20px;
+    height: 60px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    margin: 0 5px 10px;
+    max-width: 300px;
+    align-items: center;
+}
+
+#login {
+    max-width: 500px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+#id-symbol {
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+#id-input {
+    outline: none;
+    border: none;
+    background: none;
+    flex-grow: 1;
+    font-size: 24px;
+    text-transform: uppercase;
+    min-width: 0;
+    color: #333333;
+}
+
+#submit-button {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    height: 60px;
+    width: 60px;
+    background: #333333;
+    cursor: pointer;
+    margin: 0 5px 10px;
+}
+
+#login-text {
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#branching-text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.branching-option {
+    max-width: 800px;
+    display: flex;
+    font-weight: normal;
+    color: inherit;
+    font-size: 20px;
+    min-height: 100px;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.branching-option span {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.branching-option span:first-child {
+    margin-left: 0;
+}
+
+#card {
+    background: #FFFFFF;
+    max-width: 800px;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 5px 20px;
+    border-radius: 10px;
+}
+
+#card-title {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#card-error {
+    font-size: 15px;
+    color: #9D0000;
+    margin: 0;
+}
+
+#go-back {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+    color: inherit;
+    margin-top: 30px;
+}
+
+#login-error {
+    font-size: 15px;
+    color: #9D0000;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.instruction {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#participant-id {
+    font-size: 70px;
+    color: #EB5B28;
+    margin: 40px 0;
+    text-align: center;
+}
+
+a.button {
+    color: #FFFFFF;
+    background: #EB5B28;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#proceed {
+    margin-top: 20px
+}
+
+#id-presentation {
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    #header {
+        text-align: center !important;
+    }
+
+    #languages {
+        text-align: center;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #title {
+        font-size: 40px;
+    }
+
+    #participant-id {
+        font-size: 40px;
+    }
+}
+
+#branding {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 40%;
+    height: auto;
+}
+
+#todos {
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 40px;
+    text-align: justify;
+}
+
+#todos li {
+    margin-bottom: 20px;
+}
+
+#todos li:last-child {
+    margin-bottom: 0;
+}
+
+#todos p {
+    margin: 0;
+}
+
+#todos .button {
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.participation-link {
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    outline: none;
+    background: #FFFFFF;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #333333;
+    border: 1px solid #dbdbdb;
+    margin-top: 10px;
+    font-family: inherit;
+    box-sizing: border-box;
+}

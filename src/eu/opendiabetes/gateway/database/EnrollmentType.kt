@@ -1,0 +1,12 @@
+package eu.opendiabetes.gateway.database
+
+enum class EnrollmentType {
+    ADULT_USING_DIYAPS,
+    ADULT_NOT_USING_DIYAPS,
+    PARENT_USING_DIYAPS,
+    PARENT_NOT_USING_DIYAPS,
+    TEENAGER_USING_DIYAPS,
+    PARTNER_USING_DIYAPS,
+    PARTNER_NOT_USING_DIYAPS,
+    HCP_USING_DIYAPS
+}
