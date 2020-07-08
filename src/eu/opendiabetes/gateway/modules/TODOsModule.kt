@@ -48,5 +48,5 @@ private fun ApplicationCall.constructParticipationURL(participationLink: Partici
         scheme == "http" && request.port() == 80 -> ""
         else -> ":" + request.port().toString()
     }
-    return "$scheme://${request.host()}$port/p/${participationLink.participantId}/${participationLink.secret}"
+    return "$scheme://${request.host()}$port/p/${participationLink.id}/${participationLink.secret}"
 }

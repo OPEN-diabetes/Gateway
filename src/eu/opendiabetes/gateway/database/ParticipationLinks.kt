@@ -26,6 +26,7 @@ object ParticipationLinks : LongIdTable("participation_links") {
         var surveyLink by ParticipationLinks.surveyLink
 
         val immutable get() = ParticipationLink(
+            id.value,
             participantId.value,
             enrollmentType,
             secret,
@@ -35,6 +36,7 @@ object ParticipationLinks : LongIdTable("participation_links") {
 }
 
 data class ParticipationLink(
+    val id: Long,
     val participantId: Long,
     val enrollmentType: EnrollmentType,
     val secret: String,

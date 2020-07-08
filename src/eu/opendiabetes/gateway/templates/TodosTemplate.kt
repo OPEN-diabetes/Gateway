@@ -12,7 +12,7 @@ suspend fun ApplicationCall.respondTODOsTemplate(participantId: String, particip
         ul {
             id = "todos"
             li {
-                b { text(language.fillOutSurvey) }
+                text(language.fillOutSurvey)
                 p { text(language.answerAFewQuestions) }
                 a("/survey", "_blank", "button") { text(language.goToSurvey) }
             }
@@ -42,7 +42,7 @@ suspend fun ApplicationCall.respondTODOsTemplate(participantId: String, particip
     }
 
 private fun LI.participationLink(title: String, desc: String, link: String) {
-    b { text(title) }
+    text(title)
     p { text(desc) }
     input(type = InputType.url, classes = "participation-link") {
         readonly = true
