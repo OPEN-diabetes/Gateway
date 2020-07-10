@@ -21,13 +21,12 @@ fun Application.redCapModule() {
         get("survey") {
             val participant = call.participant
             if (participant != null) {
-                if (participant.surveyLink == null) {
+                if (participant.surveyRecordId == null) {
                     val recordId = redCapAPI.createRecord(participant.id, participant.enrollmentType)
-                    val surveyLink = redCapAPI.exportSurveyQueueLink(recordId)
-                    this@redCapModule.database.setSurveyLinkForParticipant(participant.id, surveyLink)
-                    call.respondRedirect(surveyLink)
+                    this@redCapModule.database.setSurveyRecordIdForParticipant(participant.id, recordId)
+                    call.respondRedirect(redCapAPI.exportSurveyQueueLink(recordId))
                 } else {
-                    call.respondRedirect(participant.surveyLink)
+                    call.respondRedirect(redCapAPI.exportSurveyQueueLink(participant.surveyRecordId))
                 }
             } else {
                 call.respondRedirect("login")
@@ -40,13 +39,12 @@ fun Application.redCapModule() {
                 if (id != null && secret != null) {
                     val participationLink = this@redCapModule.database.getParticipationLink(id)
                     if (participationLink?.secret == secret) {
-                        if (participationLink.surveyLink == null) {
+                        if (participationLink.surveyRecordId == null) {
                             val recordId = redCapAPI.createRecord(id, participationLink.enrollmentType)
-                            val surveyLink = redCapAPI.exportSurveyQueueLink(recordId)
-                            this@redCapModule.database.setSurveyLinkForParticipationLink(id, surveyLink)
-                            call.respondRedirect(surveyLink)
+                            this@redCapModule.database.setSurveyRecordIdForParticipationLink(id, recordId)
+                            call.respondRedirect(redCapAPI.exportSurveyQueueLink(recordId))
                         } else {
-                            call.respondRedirect(participationLink.surveyLink)
+                            call.respondRedirect(redCapAPI.exportSurveyQueueLink(participationLink.surveyRecordId))
                         }
                     } else {
                         call.respond(HttpStatusCode.Unauthorized)

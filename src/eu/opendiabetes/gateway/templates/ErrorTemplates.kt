@@ -2,10 +2,7 @@ package eu.opendiabetes.gateway.templates
 
 import eu.opendiabetes.gateway.utils.language
 import io.ktor.application.ApplicationCall
-import kotlinx.html.a
-import kotlinx.html.div
-import kotlinx.html.id
-import kotlinx.html.p
+import kotlinx.html.*
 
 suspend fun ApplicationCall.respondErrorTemplate(
     title: String,
@@ -22,7 +19,9 @@ suspend fun ApplicationCall.respondErrorTemplate(
         }
         p {
             id = "card-error"
-            text(cardText)
+            unsafe {
+                raw(cardText)
+            }
         }
     }
     if (backUrl != null) {
@@ -32,6 +31,38 @@ suspend fun ApplicationCall.respondErrorTemplate(
         }
     }
 }
+
+suspend fun ApplicationCall.respondNoParticipantFoundTemplate() = respondErrorTemplate(
+    title = language.openHumans,
+    subtitle = null,
+    cardTitle = language.noParticipantIdFound,
+    cardText = language.createNewParticipantID("/new_participant"),
+    backUrl = "/login"
+)
+
+suspend fun ApplicationCall.respondAuthorizeErrorTemplate() = respondErrorTemplate(
+    title = language.openHumans,
+    subtitle = null,
+    cardTitle = language.somethingWentWrong,
+    cardText = language.couldntConnectToOpenHumans,
+    backUrl = "/openhumans"
+)
+
+suspend fun ApplicationCall.respondWrongAccountTemplate() = respondErrorTemplate(
+    title = language.openHumans,
+    subtitle = null,
+    cardTitle = language.wrongAccount,
+    cardText = language.pleaseReuseAccount,
+    backUrl = "/openhumans"
+)
+
+suspend fun ApplicationCall.respondAccountAlreadyLinkedTemplate() = respondErrorTemplate(
+    title = language.openHumans,
+    subtitle = null,
+    cardTitle = language.accountAlreadyLinked,
+    cardText = language.accountAlreadyLinkedDescription,
+    backUrl = "/openhumans"
+)
 
 suspend fun ApplicationCall.respondChildHasAlreadyParticipatedTemplate() = respondErrorTemplate(
     title = language.newParticipant,

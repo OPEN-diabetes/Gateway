@@ -14,7 +14,7 @@ class RedCapAPI(
     private val httpClient = HttpClient(Apache)
     private val json = Json(JsonConfiguration.Stable)
 
-    suspend fun createRecord(participantId: Long, enrollmentType: EnrollmentType): Long {
+    suspend fun createRecord(participantId: Long, enrollmentType: EnrollmentType): String {
         val data = json.stringify(JsonElementSerializer,
             jsonArray {
                 +json {
@@ -36,10 +36,10 @@ class RedCapAPI(
         }
         val response = httpClient.submitForm<String>(apiUrl, params)
         val autoIds = json.parse(JsonElementSerializer, response)
-        return autoIds.jsonArray.first().content.split(",").first().toLong()
+        return autoIds.jsonArray.first().content.split(",").first()
     }
 
-    suspend fun exportSurveyQueueLink(recordId: Long): String {
+    suspend fun exportSurveyQueueLink(recordId: String): String {
         val params = Parameters.build {
             append("token", token)
             append("content", "surveyQueueLink")

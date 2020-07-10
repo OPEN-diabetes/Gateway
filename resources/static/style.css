@@ -249,15 +249,16 @@ a {
     font-size: 15px;
     color: #9D0000;
     margin: 0;
+    line-height: 40px;
 }
 
-#go-back {
+#go-back, #openhumans-login-button {
     display: block;
-    width: 100%;
+    width: fit-content;
     text-align: center;
     font-weight: normal;
     color: inherit;
-    margin-top: 30px;
+    margin: 30px auto 0;
 }
 
 #login-error {
@@ -288,8 +289,8 @@ a.button {
     padding: 10px 30px;
     font-size: 20px;
     font-weight: normal;
-    margin: 0 auto;
     display: inline-block;
+    width: fit-content;
 }
 
 #proceed {
@@ -298,6 +299,71 @@ a.button {
 
 #id-presentation {
     text-align: center;
+}
+
+#branding {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 40%;
+    height: auto;
+}
+
+#todos, #openhumans {
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 40px;
+    text-align: justify;
+}
+
+#todos li::marker, #oh-guide li::marker {
+    font-weight: bold;
+    display: none;
+}
+
+#todos > li, #oh-guide li {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#todos li > *, #oh-guide li > * {
+    font-weight: normal;
+}
+
+#todos li:last-child, #oh-guide li:last-child {
+    margin-bottom: 0;
+}
+
+#todos p, #oh-guide p {
+    margin: 0;
+}
+
+#todos .button, #oh-guide .button {
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.participation-link {
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    outline: none;
+    background: #FFFFFF;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #333333;
+    border: 1px solid #dbdbdb;
+    margin-top: 10px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+#oh-logo {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 800px) {
@@ -320,52 +386,31 @@ a.button {
     #participant-id {
         font-size: 40px;
     }
+
+    #main, #footer, #header {
+        padding-left: 20px !important;
+        padding-right: 20px !important;;
+    }
 }
 
-#branding {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 40%;
-    height: auto;
+.warning {
+    color: #afaf00;
 }
 
-#todos {
-    font-size: 20px;
+.success {
+    color: #00d000;
+}
+
+#openhumans-success {
     max-width: 600px;
-    line-height: 40px;
+}
+
+#openhumans-success p, #openhumans-success li {
     text-align: justify;
-}
-
-#todos li {
-    margin-bottom: 20px;
-}
-
-#todos li:last-child {
-    margin-bottom: 0;
-}
-
-#todos p {
-    margin: 0;
-}
-
-#todos .button {
-    line-height: normal;
-    margin-top: 10px;
-}
-
-.participation-link {
-    height: 50px;
-    width: 100%;
-    border-radius: 25px;
-    outline: none;
-    background: #FFFFFF;
-    padding: 0 20px;
     font-size: 20px;
-    color: #333333;
-    border: 1px solid #dbdbdb;
-    margin-top: 10px;
-    font-family: inherit;
-    box-sizing: border-box;
+    line-height: 40px;
+}
+
+#openhumans-success li {
+    margin-bottom: 20px;
 }

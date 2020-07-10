@@ -1,10 +1,15 @@
 package eu.opendiabetes.gateway.templates
 
+import eu.opendiabetes.gateway.utils.OpenHumansAPI
 import eu.opendiabetes.gateway.utils.language
 import io.ktor.application.ApplicationCall
 import kotlinx.html.*
 
-suspend fun ApplicationCall.respondTODOsTemplate(participantId: String, participationLinks: List<ParticipationLinkTODO>) =
+suspend fun ApplicationCall.respondTODOsTemplate(
+    participantId: String,
+    participationLinks: List<ParticipationLinkTODO>,
+    dataSources: Set<String>?
+) =
     respondBaseTemplate(
         language.yourTODOs,
         language.participantId(participantId)
@@ -15,6 +20,22 @@ suspend fun ApplicationCall.respondTODOsTemplate(participantId: String, particip
                 text(language.fillOutSurvey)
                 p { text(language.answerAFewQuestions) }
                 a("/survey", "_blank", "button") { text(language.goToSurvey) }
+            }
+            li {
+                text(language.linkToOpenHumans)
+                when {
+                    dataSources == null -> p { text(language.linkToOpenHumansTextSetup) }
+                    dataSources.isEmpty() -> p("warning") { text(language.linkToOpenHumansTextNoData) }
+                    else -> {
+                        p { text(language.linkToOpenHumansTextDataSources) }
+                        ul {
+                            if (dataSources.contains(OpenHumansAPI.NIGHTSCOUT_ID)) li { span("success") { text(language.nightscoutDataTransfer) } }
+                            if (dataSources.contains(OpenHumansAPI.ANDROIDAPS_ID)) li { span("success") { text(language.androidAPSUploader) } }
+                            if (dataSources.contains(OpenHumansAPI.SELFIES_ID)) li { span("success") { text(language.dataSelfie) } }
+                        }
+                    }
+                }
+                a("/openhumans", classes =  "button") { text(if (dataSources == null) language.setup else language.setupAgain) }
             }
             participationLinks.forEach {
                 li {

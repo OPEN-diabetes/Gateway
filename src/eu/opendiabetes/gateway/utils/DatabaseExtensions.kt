@@ -40,9 +40,9 @@ suspend fun Database.deleteSession(id: Long) = newSuspendedTransaction(Dispatche
     Sessions.deleteWhere { Sessions.id eq id }
 }
 
-suspend fun Database.setSurveyLinkForParticipant(id: Long, surveyLink: String) = newSuspendedTransaction(Dispatchers.IO, this) {
+suspend fun Database.setSurveyRecordIdForParticipant(id: Long, recordId: String) = newSuspendedTransaction(Dispatchers.IO, this) {
     Participants.update({ Participants.id eq id }) {
-        it[Participants.surveyLink] = surveyLink
+        it[Participants.surveyRecordId] = recordId
     }
 }
 
@@ -50,9 +50,18 @@ suspend fun Database.getParticipationLink(id: Long) = newSuspendedTransaction(Di
     ParticipationLinks.Dao.findById(id)?.immutable
 }
 
-suspend fun Database.setSurveyLinkForParticipationLink(id: Long, surveyLink: String) = newSuspendedTransaction(Dispatchers.IO, this) {
+suspend fun Database.setOpenHumansTokensForParticipant(id: Long, accessToken: String, refreshToken: String, expiresAt: Long, projectMemberId: String? = null) = newSuspendedTransaction(Dispatchers.IO, this) {
+    Participants.update({ Participants.id eq id }) {
+        it[Participants.accessToken] = accessToken
+        it[Participants.refreshToken] = refreshToken
+        it[Participants.expiresAt] = expiresAt
+        if (projectMemberId != null) it[Participants.projectMemberId] = projectMemberId
+    }
+}
+
+suspend fun Database.setSurveyRecordIdForParticipationLink(id: Long, surveyLink: String) = newSuspendedTransaction(Dispatchers.IO, this) {
     ParticipationLinks.update({ ParticipationLinks.id eq id }) {
-        it[ParticipationLinks.surveyLink] = surveyLink
+        it[ParticipationLinks.surveyRecordId] = surveyLink
     }
 }
 
@@ -60,6 +69,10 @@ suspend fun Database.getSurveyLinksForParticipant(id: Long) = newSuspendedTransa
     ParticipationLinks.Dao.find {
         ParticipationLinks.participant eq id
     }.map { it.immutable }
+}
+
+suspend fun Database.getParticipantByProjectMemberId(projectMemberId: String) = newSuspendedTransaction(Dispatchers.IO, this) {
+    Participants.Dao.find { Participants.projectMemberId eq projectMemberId }.firstOrNull()?.immutable
 }
 
 suspend fun Database.createParticipantId(enrollmentType: EnrollmentType) = newSuspendedTransaction(Dispatchers.IO, this) {

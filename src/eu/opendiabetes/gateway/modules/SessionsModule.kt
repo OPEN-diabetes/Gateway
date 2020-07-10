@@ -35,7 +35,7 @@ fun Application.sessionsModule() {
             val session = database.getSession(browserSession.sessionId, browserSession.sessionSecret)
             if (session != null) {
                 call.session = session
-                call.participant = database.getParticipant(session.id)!!
+                call.participant = database.getParticipant(session.participantId)!!
             }
         }
     }

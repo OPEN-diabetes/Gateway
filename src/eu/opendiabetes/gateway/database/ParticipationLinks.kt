@@ -15,7 +15,7 @@ object ParticipationLinks : LongIdTable("participation_links") {
     )
     val enrollmentType = enumeration("enrollment_type", EnrollmentType::class)
     val secret = text("secret")
-    val surveyLink = text("survey_link").nullable()
+    val surveyRecordId = text("survey_record_id").nullable()
 
     class Dao(id: EntityID<Long>) : LongEntity(id) {
         companion object : LongEntityClass<Dao>(ParticipationLinks)
@@ -23,14 +23,14 @@ object ParticipationLinks : LongIdTable("participation_links") {
         var participantId by ParticipationLinks.participant
         var enrollmentType by ParticipationLinks.enrollmentType
         var secret by ParticipationLinks.secret
-        var surveyLink by ParticipationLinks.surveyLink
+        var surveyRecordId by ParticipationLinks.surveyRecordId
 
         val immutable get() = ParticipationLink(
             id.value,
             participantId.value,
             enrollmentType,
             secret,
-            surveyLink
+            surveyRecordId
         )
     }
 }
@@ -40,5 +40,5 @@ data class ParticipationLink(
     val participantId: Long,
     val enrollmentType: EnrollmentType,
     val secret: String,
-    val surveyLink: String?
+    val surveyRecordId: String?
 )

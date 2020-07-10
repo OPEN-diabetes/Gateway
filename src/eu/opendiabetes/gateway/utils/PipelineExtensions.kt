@@ -8,3 +8,9 @@ var Pipeline<*, *>.database
     set(value) {
         attributes.put(GatewayAttributes.database, value)
     }
+
+var Pipeline<*, *>.openHumansApi
+    get() = attributes[GatewayAttributes.openHumansAPI]
+    set(value) {
+        attributes.put(GatewayAttributes.openHumansAPI, value)
+    }

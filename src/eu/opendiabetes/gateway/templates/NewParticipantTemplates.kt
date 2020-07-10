@@ -1,7 +1,5 @@
 package eu.opendiabetes.gateway.templates
 
-import eu.opendiabetes.gateway.templates.branchingOption
-import eu.opendiabetes.gateway.templates.respondBranchingTemplate
 import eu.opendiabetes.gateway.utils.language
 import io.ktor.application.ApplicationCall
 

@@ -44,5 +44,9 @@ suspend fun ApplicationCall.respondLoginTemplate(participantId: String? = null) 
                 text(language.unknownId)
             }
         }
+        a("/openhumans/login") {
+            id = "openhumans-login-button"
+            text(language.orSignInUsingOpenHumans)
+        }
     }
 }
