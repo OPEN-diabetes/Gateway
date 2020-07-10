@@ -112,15 +112,7 @@ suspend fun ApplicationCall.respondAdultNotUsingDIYAPSTemplate() = respondErrorT
     backUrl = "/new_participant/adult/"
 )
 
-suspend fun ApplicationCall.respondAskPatientForLink() = respondErrorTemplate(
-    title = language.newParticipant,
-    subtitle = null,
-    cardTitle = language.youAreAHCP,
-    cardText = language.askPatientForParticipationLink,
-    backUrl = "/new_participant"
-)
-
-suspend fun ApplicationCall.respondAskPartnerForLink() = respondErrorTemplate(
+suspend fun ApplicationCall.respondAskPartnerForLinkTemplate() = respondErrorTemplate(
     title = language.newParticipant,
     subtitle = null,
     cardTitle = language.yourPartnerHasDiabetes,

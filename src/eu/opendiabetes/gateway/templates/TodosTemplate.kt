@@ -49,9 +49,6 @@ suspend fun ApplicationCall.respondTODOsTemplate(
                         is ParticipationLinkTODO.Partner -> {
                             participationLink(language.askPartner, language.sendPartner, it.link)
                         }
-                        is ParticipationLinkTODO.HCP -> {
-                            participationLink(language.askHCP, language.sendHCP, it.link)
-                        }
                     }
                 }
             }
@@ -75,6 +72,5 @@ private fun LI.participationLink(title: String, desc: String, link: String) {
 sealed class ParticipationLinkTODO(val link: String) {
     class Parent(link: String) : ParticipationLinkTODO(link)
     class Child(link: String) : ParticipationLinkTODO(link)
-    class HCP(link: String) : ParticipationLinkTODO(link)
     class Partner(link: String) : ParticipationLinkTODO(link)
 }

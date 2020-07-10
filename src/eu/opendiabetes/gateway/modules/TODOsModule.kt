@@ -68,7 +68,6 @@ fun Application.todosModule() {
                                 it
                             )
                         )
-                        EnrollmentType.HCP_USING_DIYAPS -> ParticipationLinkTODO.HCP(call.constructParticipationURL(it))
                         else -> throw IllegalArgumentException("Invalid enrollmentType")
                     }
                 }

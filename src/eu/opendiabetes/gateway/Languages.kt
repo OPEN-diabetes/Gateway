@@ -19,7 +19,6 @@ sealed class Language {
     abstract val iAmAParent: String
     abstract val iAmATeenager: String
     abstract val iAmAPartner: String
-    abstract val iAmAHCP: String
     abstract val goBack: String
     abstract val areYouUsingDIYAPS: String
     abstract val iAmUsingDIYAPS: String
@@ -33,7 +32,6 @@ sealed class Language {
     abstract val childNotUsingDIYAPS: String
     abstract val notUsingDIYAPS: String
     abstract val yourPartnerHasDiabetes: String
-    abstract val youAreAHCP: String
     abstract val childHasAlreadyParticipated: String
     abstract val parentHasAlreadyParticipated: String
     abstract val didYourParentAlreadyFillOutTheSurvey: String
@@ -53,11 +51,9 @@ sealed class Language {
     abstract val yourTODOs: String
     abstract val askParent: String
     abstract val askChild: String
-    abstract val askHCP: String
     abstract val askPartner: String
     abstract val sendParent: String
     abstract val sendChild: String
-    abstract val sendHCP: String
     abstract val sendPartner: String
     abstract val fillOutSurvey: String
     abstract val answerAFewQuestions: String
@@ -124,7 +120,6 @@ object English : Language() {
     override val iAmAParent = "I am a <b>parent</b> of a child with diabetes."
     override val iAmATeenager = "I am a <b>teenager</b> with diabetes."
     override val iAmAPartner = "My <b>partner</b> has diabetes."
-    override val iAmAHCP = "I am a <b>health care professional</b>."
     override val goBack = "Go back"
     override val areYouUsingDIYAPS = "Are you using a DIYAPS?"
     override val iAmUsingDIYAPS = "I <b>am using</b> a DIYAPS."
@@ -141,7 +136,6 @@ object English : Language() {
     override val childNotUsingDIYAPS = "Your child is not using a DIYAPS."
     override val notUsingDIYAPS = "You are not using a DIYAPS."
     override val yourPartnerHasDiabetes = "Your partner has diabetes."
-    override val youAreAHCP = "You are health care professional."
     override val childHasAlreadyParticipated = "Your child has already participated."
     override val parentHasAlreadyParticipated = "Your parent has already participated."
     override val didYourParentAlreadyFillOutTheSurvey = "Did your parent already fill out the survey?"
@@ -162,11 +156,9 @@ object English : Language() {
     override val yourTODOs = "Your TODOs"
     override val askParent = "Ask your parent to also fill out the survey"
     override val askChild = "Ask your child to also fill out the survey"
-    override val askHCP = "Ask your health care professional to also fill out the survey"
     override val askPartner = "Ask your partner to also fill out the survey"
     override val sendParent = "Please send the following participation link to your parent:"
     override val sendChild = "Please send the following participation link to your child:"
-    override val sendHCP = "Please send the following participation link to your health care professional:"
     override val sendPartner = "Please send the following participation link to your partner:"
     override val fillOutSurvey = "Fill out survey"
     override val answerAFewQuestions = "Answer a few questions. This will take no longer than 20 to 30 minutes."
@@ -242,7 +234,6 @@ object German : Language() {
     override val iAmAParent = "Ich bin <b>Elternteil</b> eines Kindes mit Diabetes."
     override val iAmATeenager = "Ich bin ein <b>Jugendlicher</b> mit Diabetes."
     override val iAmAPartner = "Mein <b>Partner</b> hat Diabetes."
-    override val iAmAHCP = "Ich bin <b>medizinisches Fachpersonal</b>."
     override val goBack = "Zurück"
     override val areYouUsingDIYAPS = "Benutzt du ein DIYAPS?"
     override val iAmUsingDIYAPS = "Ich <b>benutze</b> ein DIYAPS."
@@ -256,7 +247,6 @@ object German : Language() {
     override val childNotUsingDIYAPS = "Dein Kind benutzt kein DIYAPS."
     override val notUsingDIYAPS = "Du benutzt kein DIYAPS."
     override val yourPartnerHasDiabetes = "Dein Partner hat Diabetes."
-    override val youAreAHCP = "Du bist medizinisches Fachpersonal."
     override val childHasAlreadyParticipated = "Dein Kind hat bereits teilgenommen."
     override val parentHasAlreadyParticipated = "Ein Elternteil hat bereits teilgenommen."
     override val didYourParentAlreadyFillOutTheSurvey = "Hat ein Elternteil die Umfrage bereits ausgefüllt?"
@@ -276,11 +266,9 @@ object German : Language() {
     override val yourTODOs = "Deine TODOs"
     override val askParent = "Bitte ein Elternteil die Umfrage ebenfalls auszufüllen"
     override val askChild = "Bitte dein Kind die Umfrage ebenfalls auszufüllen"
-    override val askHCP = "Bitte das dich betreuende medizinische Fachpersonal die Umfrage ebenfalls auszufüllen"
     override val askPartner = "Bitte deinen Partner die Umfrage ebenfalls auszufüllen"
     override val sendParent = "Sende dazu den folgendenen Teilnahme-Link an dein Elternteil:"
     override val sendChild = "Sende dazu den folgendenen Teilnahme-Link an dein Kind:"
-    override val sendHCP = "Sende dazu den folgendenen Teilnahme-Link an das dich betreuende medizinische Fachpersonal:"
     override val sendPartner = "Sende dazu den folgendenen Teilnahme-Link an deinen Partner:"
     override val fillOutSurvey = "Umfrage ausfüllen"
     override val answerAFewQuestions = "Beantworte uns ein Fragen. Dies wird nicht mehr als 20 bis 30 Minuten in Anspruch nehmen."

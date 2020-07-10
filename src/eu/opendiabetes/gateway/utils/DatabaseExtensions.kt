@@ -82,20 +82,10 @@ suspend fun Database.createParticipantId(enrollmentType: EnrollmentType) = newSu
     }
     when (enrollmentType) {
         EnrollmentType.ADULT_USING_DIYAPS -> {
-            val secrets = generateNonMatchingSecureRandomString(
-                PARTICIPATION_LINK_SECRET_CHARS,
-                PARTICIPATION_LINK_SECRET_LENGTH,
-                2
-            )
             ParticipationLinks.Dao.new {
                 this.participantId = participant.id
                 this.enrollmentType = EnrollmentType.PARTNER_USING_DIYAPS
-                this.secret = secrets[0]
-            }
-            ParticipationLinks.Dao.new {
-                this.participantId = participant.id
-                this.enrollmentType = EnrollmentType.PARTNER_USING_DIYAPS
-                this.secret = secrets[1]
+                this.secret = generateSecureRandomString(PARTICIPATION_LINK_SECRET_CHARS, PARTICIPATION_LINK_SECRET_LENGTH)
             }
         }
         EnrollmentType.ADULT_NOT_USING_DIYAPS -> {
@@ -106,37 +96,17 @@ suspend fun Database.createParticipantId(enrollmentType: EnrollmentType) = newSu
             }
         }
         EnrollmentType.PARENT_USING_DIYAPS -> {
-            val secrets = generateNonMatchingSecureRandomString(
-                PARTICIPATION_LINK_SECRET_CHARS,
-                PARTICIPATION_LINK_SECRET_LENGTH,
-                2
-            )
             ParticipationLinks.Dao.new {
                 this.participantId = participant.id
                 this.enrollmentType = EnrollmentType.TEENAGER_USING_DIYAPS
-                this.secret = secrets[0]
-            }
-            ParticipationLinks.Dao.new {
-                this.participantId = participant.id
-                this.enrollmentType = EnrollmentType.HCP_USING_DIYAPS
-                this.secret = secrets[1]
+                this.secret = generateSecureRandomString(PARTICIPATION_LINK_SECRET_CHARS, PARTICIPATION_LINK_SECRET_LENGTH)
             }
         }
         EnrollmentType.TEENAGER_USING_DIYAPS -> {
-            val secrets = generateNonMatchingSecureRandomString(
-                PARTICIPATION_LINK_SECRET_CHARS,
-                PARTICIPATION_LINK_SECRET_LENGTH,
-                2
-            )
             ParticipationLinks.Dao.new {
                 this.participantId = participant.id
                 this.enrollmentType = EnrollmentType.PARENT_USING_DIYAPS
-                this.secret = secrets[0]
-            }
-            ParticipationLinks.Dao.new {
-                this.participantId = participant.id
-                this.enrollmentType = EnrollmentType.HCP_USING_DIYAPS
-                this.secret = secrets[1]
+                this.secret = generateSecureRandomString(PARTICIPATION_LINK_SECRET_CHARS, PARTICIPATION_LINK_SECRET_LENGTH)
             }
         }
         else -> Unit

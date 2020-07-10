@@ -40,7 +40,7 @@ fun Application.newParticipantModule() {
                 get("/using_diyaps") {
                     call.respondConsentTemplate()
                 }
-                post("/not_yet_using_diyaps") {
+                post("/using_diyaps") {
                     if (call.receiveParameters().contains("consent")) {
                         createParticipantIdAndRedirect(EnrollmentType.ADULT_USING_DIYAPS)
                     } else {
@@ -58,7 +58,6 @@ fun Application.newParticipantModule() {
                     }
                 }
                 get("/not_using_diyaps") {
-                    call.respondConsentTemplate()
                     call.respondAdultNotUsingDIYAPSTemplate()
                 }
             }
@@ -125,11 +124,7 @@ fun Application.newParticipantModule() {
                 }
             }
             get("/partner") {
-                call.respondAskPartnerForLink()
-            }
-
-            get("/hcp") {
-                call.respondAskPatientForLink()
+                call.respondAskPartnerForLinkTemplate()
             }
         }
     }
