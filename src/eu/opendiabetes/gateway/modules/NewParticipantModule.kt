@@ -8,8 +8,10 @@ import eu.opendiabetes.gateway.utils.createSession
 import eu.opendiabetes.gateway.utils.database
 import eu.opendiabetes.gateway.utils.session
 import io.ktor.application.*
+import io.ktor.request.receiveParameters
 import io.ktor.response.respondRedirect
 import io.ktor.routing.get
+import io.ktor.routing.post
 import io.ktor.routing.route
 import io.ktor.routing.routing
 import io.ktor.sessions.get
@@ -31,43 +33,72 @@ fun Application.newParticipantModule() {
             get("/") {
                 call.respondNewParticipantTemplate()
             }
-            route("adult") {
+            route("/adult") {
                 get("/") {
                     call.respondAdultIsUsingAPSTemplate()
                 }
-                get("using_diyaps") {
-                    createParticipantIdAndRedirect(EnrollmentType.ADULT_USING_DIYAPS)
+                get("/using_diyaps") {
+                    call.respondConsentTemplate()
                 }
-                get("not_yet_using_diyaps") {
-                    createParticipantIdAndRedirect(EnrollmentType.ADULT_NOT_USING_DIYAPS)
+                post("/not_yet_using_diyaps") {
+                    if (call.receiveParameters().contains("consent")) {
+                        createParticipantIdAndRedirect(EnrollmentType.ADULT_USING_DIYAPS)
+                    } else {
+                        call.respondConsentNotGivenTemplate("/new_participant/adult/using_diyaps")
+                    }
                 }
-                get("not_using_diyaps") {
+                get("/not_yet_using_diyaps") {
+                    call.respondConsentTemplate()
+                }
+                post("/not_yet_using_diyaps") {
+                    if (call.receiveParameters().contains("consent")) {
+                        createParticipantIdAndRedirect(EnrollmentType.ADULT_NOT_USING_DIYAPS)
+                    } else {
+                        call.respondConsentNotGivenTemplate("/new_participant/adult/using_diyaps_new")
+                    }
+                }
+                get("/not_using_diyaps") {
+                    call.respondConsentTemplate()
                     call.respondAdultNotUsingDIYAPSTemplate()
                 }
             }
-            route("parent") {
+            route("/parent") {
                 get("/") {
                     call.respondParentIsUsingAPSTemplate()
                 }
-                route("using_diyaps") {
+                route("/using_diyaps") {
                     get("/") {
                         call.respondDidChildAlreadyFillOutTemplate()
                     }
-                    get("new") {
-                        createParticipantIdAndRedirect(EnrollmentType.PARENT_USING_DIYAPS)
+                    get("/new") {
+                        call.respondConsentTemplate()
                     }
-                    get("not_new") {
+                    post("/new") {
+                        if (call.receiveParameters().contains("consent")) {
+                            createParticipantIdAndRedirect(EnrollmentType.PARENT_USING_DIYAPS)
+                        } else {
+                            call.respondConsentNotGivenTemplate("/new_participant/parent/using_diyaps_new")
+                        }
+                    }
+                    get("/not_new") {
                         call.respondChildHasAlreadyParticipatedTemplate()
                     }
                 }
-                get("not_yet_using_diyaps") {
-                    createParticipantIdAndRedirect(EnrollmentType.PARENT_NOT_USING_DIYAPS)
+                get("/not_yet_using_diyaps") {
+                    call.respondConsentTemplate()
                 }
-                get("not_using_diyaps") {
+                post("/not_yet_using_diyaps") {
+                    if (call.receiveParameters().contains("consent")) {
+                        createParticipantIdAndRedirect(EnrollmentType.PARENT_NOT_USING_DIYAPS)
+                    } else {
+                        call.respondConsentNotGivenTemplate("/new_participant/parent/not_yet_using_diyaps")
+                    }
+                }
+                get("/not_using_diyaps") {
                     call.respondChildNotUsingDIYAPSTemplate()
                 }
             }
-            route("teenager") {
+            route("/teenager") {
                 get("/") {
                     call.respondTeenagerIsUsingAPSTemplate()
                 }
@@ -75,22 +106,29 @@ fun Application.newParticipantModule() {
                     get("/") {
                         call.respondDidParentAlreadyFillOutTemplate()
                     }
-                    get("new") {
-                        createParticipantIdAndRedirect(EnrollmentType.TEENAGER_USING_DIYAPS)
+                    get("/new") {
+                        call.respondConsentTemplate()
                     }
-                    get("not_new") {
+                    post("/new") {
+                        if (call.receiveParameters().contains("consent")) {
+                            createParticipantIdAndRedirect(EnrollmentType.TEENAGER_USING_DIYAPS)
+                        } else {
+                            call.respondConsentNotGivenTemplate("/new_participant/teenager/using_diyaps/new")
+                        }
+                    }
+                    get("/not_new") {
                         call.respondParentHasAlreadyParticipatedTemplate()
                     }
                 }
-                get("not_using_diyaps") {
+                get("/not_using_diyaps") {
                     call.respondTeenagerNotUsingDIYAPSTemplate()
                 }
             }
-            get("partner") {
+            get("/partner") {
                 call.respondAskPartnerForLink()
             }
 
-            get("hcp") {
+            get("/hcp") {
                 call.respondAskPatientForLink()
             }
         }

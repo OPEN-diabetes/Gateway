@@ -414,3 +414,41 @@ a.button {
 #openhumans-success li {
     margin-bottom: 20px;
 }
+
+#consent-form form {
+    font-size: 20px;
+    text-align: center;
+}
+
+#consent-form form label {
+    font-size: 20px;
+}
+
+#consent-form form input[type="submit"] {
+    display: block;
+    margin: 20px auto 0;
+    color: #FFFFFF;
+    background: #EB5B28;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: normal;
+    width: fit-content;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#consent-content {
+    width: 100%;
+    max-width: 600px;
+    text-align: justify;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+#consent-content h1 {
+    color: #EB5B28;
+    margin: 20px 0;
+    font-size: 30px;
+}

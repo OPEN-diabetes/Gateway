@@ -32,6 +32,14 @@ suspend fun ApplicationCall.respondErrorTemplate(
     }
 }
 
+suspend fun ApplicationCall.respondConsentNotGivenTemplate(backUrl: String) = respondErrorTemplate(
+    title = language.openHumans,
+    subtitle = null,
+    cardTitle = language.consentNotGiven,
+    cardText = language.consentNotGivenDescription,
+    backUrl = backUrl
+)
+
 suspend fun ApplicationCall.respondNoParticipantFoundTemplate() = respondErrorTemplate(
     title = language.openHumans,
     subtitle = null,

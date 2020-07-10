@@ -1,6 +1,5 @@
 package eu.opendiabetes.gateway.templates
 
-import eu.opendiabetes.gateway.templates.respondBaseTemplate
 import eu.opendiabetes.gateway.utils.language
 import io.ktor.application.ApplicationCall
 import kotlinx.html.a

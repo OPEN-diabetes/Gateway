@@ -96,6 +96,10 @@ sealed class Language {
     abstract val noParticipantIdFound: String
     abstract val orSignInUsingOpenHumans: String
     abstract val setupAgain: String
+    abstract val declarationOfConsent: String
+    abstract val iUnderstandAndAgree: String
+    abstract val consentNotGiven: String
+    abstract val consentNotGivenDescription: String
 
     abstract fun loginText(href: String): String
     abstract fun participantId(participantId: String): String
@@ -201,6 +205,10 @@ object English : Language() {
     override val noParticipantIdFound = "No Participant ID found"
     override val orSignInUsingOpenHumans = "Or sign in using Open Humans"
     override val setupAgain = "Setup again"
+    override val declarationOfConsent = "Declaration of Consent"
+    override val iUnderstandAndAgree = "I understand and agree."
+    override val consentNotGiven = "Consent not given"
+    override val consentNotGivenDescription = "Thank you for your interest in this study, however, you cannot proceed without giving your consent."
 
     override fun loginText(href: String) =
         """To proceed please enter your <b>Participant ID</b> or <a href="$href">click here</a> if you do not have one yet:"""
@@ -216,6 +224,7 @@ object English : Language() {
     override fun createNewParticipantID(href: String) =
         """No Participant ID affiliated to this Open Humans account has been found. Either <a href="$href">create a new one</a> or try to sign in directly using your existing Participant ID."""
 }
+
 
 object German : Language() {
     override val code = "de"
@@ -310,6 +319,10 @@ object German : Language() {
     override val noParticipantIdFound = "Keine Teilnehmer-ID gefunden"
     override val orSignInUsingOpenHumans = "Oder mit Open Humans anmelden"
     override val setupAgain = "Erneut einrichten"
+    override val declarationOfConsent = "Einverständniserklärung"
+    override val iUnderstandAndAgree = "Ich verstehe und akzeptiere."
+    override val consentNotGiven = "Einverständnis nicht erklärt"
+    override val consentNotGivenDescription = "Vielen Dank für dein Interesse an dieser Studie, ohne Einverständniserklärung kannst du jedoch nicht teilnehmen."
 
     override fun loginText(href: String): String =
         """Um fortzufahren, gib bitte deine <b>Teilnehmer-ID</b> ein oder <a href="$href">klicke hier</a>, falls du noch keine hast:"""
