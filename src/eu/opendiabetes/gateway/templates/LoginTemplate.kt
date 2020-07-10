@@ -30,7 +30,7 @@ suspend fun ApplicationCall.respondLoginTemplate(participantId: String? = null) 
                     if (participantId != null) {
                         value = participantId
                     }
-                    placeholder = "123-A1B2C3D4F6"
+                    placeholder = "123-A1B-2C3-D4F"
                 }
             }
             button(type = ButtonType.submit) {
