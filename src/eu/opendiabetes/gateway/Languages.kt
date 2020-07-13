@@ -110,7 +110,7 @@ object English : Language() {
     override val gdpr = "GDPR"
     override val legalNotice = "Legal Notice"
     override val genderNotice: String? = null
-    override val hiThere = "Hi there!"
+    override val hiThere = "Welcome to our OPEN survey!"
     override val thanksForHelpingUs = "Thanks for helping us by participating in this survey!"
     override val submit = "Submit"
     override val unknownId = "This Participant ID does not exist."
