@@ -111,7 +111,7 @@ object English : Language() {
     override val legalNotice = "Legal Notice"
     override val genderNotice: String? = null
     override val hiThere = "Welcome to the OPEN project!"
-    override val thanksForHelpingUs = "Thank you for helping us on our project by participating in this survey!"
+    override val thanksForHelpingUs = "Thank you for helping us on our research on DIYAPS by participating in this survey!"
     override val submit = "Submit"
     override val unknownId = "This Participant ID does not exist."
     override val newParticipant = "New Participant"
