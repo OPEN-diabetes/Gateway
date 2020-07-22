@@ -122,16 +122,16 @@ object English : Language() {
     override val iAmAPartner = "My <b>partner</b> has diabetes."
     override val goBack = "Go back"
     override val areYouUsingDIYAPS = "Are you using a DIYAPS?"
-    override val iAmUsingDIYAPS = "I am <b>using</b> a DIYAPS."
+    override val iAmUsingDIYAPS = "I am currently <b>using</b> a DIYAPS as a <b>closed-loop</b> system."
     override val iAmNotYetUsingDIYAPSButIntend =
-        "I am not yet using a DIYAPS, but I <b>intend</b> to do so in the future."
-    override val iAmNotUsingDIYAPSAndDontIntend = "I am not using a DIYAPS and I <b>do not intend</b> to do so."
+        "I am currently <b>using</b> a DIYAPS as an <b>open-loop</b> system."
+    override val iAmNotUsingDIYAPSAndDontIntend = "I am currently <b>not using</b> a DIYAPS."
     override val isYourChildUsingDIYAPS = "Is your child using a DIYAPS?"
-    override val myChildIsUsingDIYAPS = "My child is <b>using</b> a DIYAPS."
+    override val myChildIsUsingDIYAPS = "My child is currently <b>using</b> a DIYAPS as a <b>closed-loop</b> system."
     override val myChildIsNotYetUsingDIYAPSButIntend =
-        "My child is not yet using a DIYAPS, but we <b>intend</b> to do so in the future."
+        "My child is currently <b>using</b> a DIYAPS as an <b>open-loop</b> system."
     override val myChildIsNotUsingDIYAPSAndDontIntend =
-        "My child is not using a DIYAPS and we <b>do not intend</b> to do so."
+        "My child is currently <b>not using</b> a DIYAPS."
     override val iAmNotUsingADIYAPS = "I am <b>not</b> (yet) <b>using</b> a DIYAPS."
     override val childNotUsingDIYAPS = "Your child is not using a DIYAPS."
     override val notUsingDIYAPS = "You are not using a DIYAPS."
@@ -145,7 +145,7 @@ object English : Language() {
     override val myParentHasAlreadyFilledOutTheSurvey = "My parent has already filled out the survey."
     override val myChildHasAlreadyFilledOutTheSurvey = "My child has already filled out the survey."
     override val notWithinAudience =
-        "Thank you for your interest in this study. Unfortunately you are not within our target audience."
+        "Thank you very much for your interest in this study! We are very sorry that we don´t need your help at the moment, but we may come back to you later."
     override val askChildForParticipationLink = "Please ask your child to send you a participation link."
     override val askParentForParticipationLink = "Please ask your parent/caregiver to send you a participation link."
     override val askPartnerForParticipationLink = "Please ask your partner to send you a participation link."
