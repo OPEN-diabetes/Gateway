@@ -217,8 +217,7 @@ object English : Language() {
         """No Participant ID affiliated to this Open Humans account has been found. Either <a href="$href">create a new one</a> or try to sign in directly using your existing Participant ID."""
 }
 
-
-object German : Language() {
+/*object German : Language() {
     override val code = "de"
     override val name = "Deutsch"
     override val gdpr = "DSGVO"
@@ -325,4 +324,4 @@ object German : Language() {
 
     override fun createNewParticipantID(href: String) =
         """Es wurde keine Teilnehmer-ID gefunden, die mit diesem Open Humans Account verknüpft ist. <a href="$href">Erstelle eine neue</a> oder melde dich direkt mit deiner bestehenden Teilnehmer-ID an."""
-}
+}*/

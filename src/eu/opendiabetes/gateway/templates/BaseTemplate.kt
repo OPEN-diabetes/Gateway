@@ -23,7 +23,7 @@ suspend fun ApplicationCall.respondBaseTemplate(
     body {
         header {
             id = "header"
-            ul("link-list") {
+            /*ul("link-list") {
                 id = "languages"
                 LANGUAGES.forEach {
                     li(if (it == language) "selected" else null) {
@@ -37,7 +37,7 @@ suspend fun ApplicationCall.respondBaseTemplate(
                         }
                     }
                 }
-            }
+            }*/
             span {
                 id = "title"
                 text(title)
