@@ -4,7 +4,10 @@ import eu.opendiabetes.gateway.utils.language
 import io.ktor.application.ApplicationCall
 import kotlinx.html.*
 
-suspend fun ApplicationCall.respondConsentTemplate() = respondBaseTemplate(
+suspend fun ApplicationCall.respondConsentTemplate(
+    backUrl: String? = null,
+    informationSheet: String = testInformationSheet
+) = respondBaseTemplate(
     language.declarationOfConsent,
     null
 ) {
@@ -13,7 +16,7 @@ suspend fun ApplicationCall.respondConsentTemplate() = respondBaseTemplate(
         div {
             id = "consent-content"
             unsafe {
-                raw(testInformationSheet)
+                raw(informationSheet)
             }
         }
         form(method = FormMethod.post) {
@@ -25,6 +28,12 @@ suspend fun ApplicationCall.respondConsentTemplate() = respondBaseTemplate(
                 text(language.iUnderstandAndAgree)
             }
             input(InputType.submit)
+        }
+    }
+    if (backUrl != null) {
+        a(backUrl) {
+            id = "go-back"
+            text(language.goBack)
         }
     }
 }

@@ -39,7 +39,7 @@ fun Application.newParticipantModule() {
                 }
                 route("/using_diyaps") {
                     get("/") {
-                        call.respondConsentTemplate()
+                        call.respondConsentTemplate("/adult")
                     }
                     post("/") {
                         if (call.receiveParameters().contains("consent")) {
@@ -51,7 +51,7 @@ fun Application.newParticipantModule() {
                 }
                 route("/not_using_diyaps") {
                     get("/") {
-                        call.respondConsentTemplate()
+                        call.respondConsentTemplate("/adult")
                     }
                     post("/") {
                         if (call.receiveParameters().contains("consent")) {
@@ -68,7 +68,7 @@ fun Application.newParticipantModule() {
                 }
                 route("/using_diyaps") {
                     get("/") {
-                        call.respondConsentTemplate()
+                        call.respondConsentTemplate("/parent")
                     }
                     post("/") {
                         if (call.receiveParameters().contains("consent")) {
@@ -80,7 +80,7 @@ fun Application.newParticipantModule() {
                 }
                 route("/not_using_diyaps") {
                     get("/") {
-                        call.respondConsentTemplate()
+                        call.respondConsentTemplate("/parent")
                     }
                     post("/") {
                         if (call.receiveParameters().contains("consent")) {
