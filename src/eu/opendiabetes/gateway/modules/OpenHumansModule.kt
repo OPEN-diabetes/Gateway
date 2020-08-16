@@ -46,7 +46,7 @@ fun Application.openHumansModule() {
         route("/openhumans") {
             get("/") {
                 if (call.participant == null) {
-                    call.respondRedirect("/login")
+                    call.respondRedirect("/")
                 } else {
                     call.respondOpenHumansTemplate()
                 }

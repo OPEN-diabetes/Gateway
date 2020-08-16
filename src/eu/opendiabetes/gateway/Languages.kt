@@ -33,7 +33,7 @@ sealed class Language {
     abstract val notUsingDIYAPS: String
     abstract val yourPartnerHasDiabetes: String
     abstract val childHasAlreadyParticipated: String
-    abstract val parentHasAlreadyParticipated: String
+    abstract val youAreATeenagerWithDiabetesAndWantToParticipate: String
     abstract val didYourParentAlreadyFillOutTheSurvey: String
     abstract val didYourChildAlreadyFillOutTheSurvey: String
     abstract val iAmNewToThisSurvey: String
@@ -96,8 +96,14 @@ sealed class Language {
     abstract val iUnderstandAndAgree: String
     abstract val consentNotGiven: String
     abstract val consentNotGivenDescription: String
+    abstract val doYouAlreadyHaveAParticipantId: String
+    abstract val iAlreadyHaveAParticipantId: String
+    abstract val iDoNotHaveAParticipantId: String
+    abstract val introduction: String
+    abstract val ohLoginNotice: String
+    abstract val loginText: String
+    abstract val login: String
 
-    abstract fun loginText(href: String): String
     abstract fun participantId(participantId: String): String
     abstract fun missingDataSources(removeLink: String, tryAgain: String): String
     abstract fun ifYouDidAddAnyDataSources(removeLink: String, tryAgain: String): String
@@ -111,7 +117,8 @@ object English : Language() {
     override val legalNotice = "Legal Notice"
     override val genderNotice: String? = null
     override val hiThere = "Welcome to the OPEN project!"
-    override val thanksForHelpingUs = "Thank you for helping us on our research on DIYAPS by participating in this survey!"
+    override val thanksForHelpingUs =
+        "Thank you for helping us on our research on DIYAPS by participating in this survey!"
     override val submit = "Submit"
     override val unknownId = "This Participant ID does not exist."
     override val newParticipant = "New Participant"
@@ -135,9 +142,10 @@ object English : Language() {
     override val iAmNotUsingADIYAPS = "I am currently <b>not using</b> a DIYAPS."
     override val childNotUsingDIYAPS = "Your child is not using a DIYAPS."
     override val notUsingDIYAPS = "You are not using a DIYAPS."
-    override val yourPartnerHasDiabetes = "Your partner has diabetes, and you want to participate in our study?"
+    override val yourPartnerHasDiabetes = "Your partner has diabetes and you want to participate in our study?"
     override val childHasAlreadyParticipated = ""
-    override val parentHasAlreadyParticipated = "Your parent has already participated, and you want to take part, too?"
+    override val youAreATeenagerWithDiabetesAndWantToParticipate =
+        "You are a teenager with diabetes and want to participate?"
     override val didYourParentAlreadyFillOutTheSurvey = "Did your parent already fill out the survey?"
     override val didYourChildAlreadyFillOutTheSurvey = ""
     override val iAmNewToThisSurvey = ""
@@ -151,7 +159,8 @@ object English : Language() {
     override val askPartnerForParticipationLink = "Please ask your partner to send you a participation link."
     override val askPatientForParticipationLink = "Please ask your patient to send you a participation link."
     override val yourParticipantIdIs = "Your Participant ID is:"
-    override val pleaseNoteItDownToAvoidLosingIt = "In case of an interruption, the ID allows you to continue the survey later. To keep it safe and secret, please note it down in a place only accessible to you."
+    override val pleaseNoteItDownToAvoidLosingIt =
+        "In case of an interruption, the ID allows you to continue the survey later. To keep it safe and secret, please note it down in a place only accessible to you."
     override val proceed = "Proceed"
     override val yourTODOs = "How you can help"
     override val askParent = ""
@@ -161,36 +170,48 @@ object English : Language() {
     override val sendChild = "Please send the following participation link to your child, e.g. via e-mail:"
     override val sendPartner = "Please send the following participation link to your partner, e.g. via e-mail:"
     override val fillOutSurvey = "Participate in the OPEN survey"
-    override val answerAFewQuestions = "We kindly invite you to answer a few questions if you like. This will take no longer than 20 to 30 minutes."
+    override val answerAFewQuestions =
+        "We kindly invite you to answer a few questions if you like. This will take no longer than 20 to 30 minutes."
     override val goToSurvey = "Go to survey"
     override val signOut = "Sign out"
     override val linkToOpenHumans = "Additional: Link to Open Humans (optional)"
-    override val linkToOpenHumansTextSetup = "Please also consider joining Open Humans! Open Humans is a nonprofit citizen science platform (data repository site) where people can anonymously donate and consent to share their data. OPEN has built their own project on this platform. If you provide your link to Open Humans, this will help us to contact you anonymously if needed, e.g. for follow-up studies. And in case you also upload your health data such as CGM data from Nightscout, we can analyze them and enhance our knowledge about DIYAPS by linking your survey results with other diabetes data. The following step-by-step guide will help you create an Open Humans account, and - if you wish - upload your data and make it available to the OPEN researchers. This should take no longer than 20-30 minutes."
-    override val linkToOpenHumansTextNoData = "Your Open Humans account has been connected, however, no data sources have been detected."
-    override val linkToOpenHumansTextDataSources = "Your Open Humans account has been connected. The following data sources were detected:"
+    override val linkToOpenHumansTextSetup =
+        "Please also consider joining Open Humans! Open Humans is a nonprofit citizen science platform (data repository site) where people can anonymously donate and consent to share their data. OPEN has built their own project on this platform. If you provide your link to Open Humans, this will help us to contact you anonymously if needed, e.g. for follow-up studies. And in case you also upload your health data such as CGM data from Nightscout, we can analyze them and enhance our knowledge about DIYAPS by linking your survey results with other diabetes data. The following step-by-step guide will help you create an Open Humans account, and - if you wish - upload your data and make it available to the OPEN researchers. This should take no longer than 20-30 minutes."
+    override val linkToOpenHumansTextNoData =
+        "Your Open Humans account has been connected, however, no data sources have been detected."
+    override val linkToOpenHumansTextDataSources =
+        "Your Open Humans account has been connected. The following data sources were detected:"
     override val androidAPSUploader = "AndroidAPS Uploader"
     override val nightscoutDataTransfer = "Nightscout Data Transfer"
     override val dataSelfie = "Data Selfie"
     override val setup = "Setup"
     override val openHumans = "Open Humans"
     override val createOpenHumansAccount = "Create an Open Humans account"
-    override val signUpOnOpenHumans = "Sign up for an account on openhumans.org if you do not have one yet. You can re-use your existing Facebook or Google login."
+    override val signUpOnOpenHumans =
+        "Sign up for an account on openhumans.org if you do not have one yet. You can re-use your existing Facebook or Google login."
     override val uploadYourData = "Upload your data"
     override val chooseDataSource = "The following data sources are available:"
-    override val nightscoutDataTransferDescription = "If you are already uploading your data to Nightscout, use this simple tool to copy your data over to Open Humans."
-    override val androidAPSUploaderDescription = "Nightscout is not an option? You can directly upload your data from within AndroidAPS."
-    override val dataSelfieDescription = "None of the above work out for you? The Data Selfie tool allows you to upload any data you want, e.g. an export from Dexcom Clarity or another software of your choice."
+    override val nightscoutDataTransferDescription =
+        "If you are already uploading your data to Nightscout, use this simple tool to copy your data over to Open Humans."
+    override val androidAPSUploaderDescription =
+        "Nightscout is not an option? You can directly upload your data from within AndroidAPS."
+    override val dataSelfieDescription =
+        "None of the above work out for you? The Data Selfie tool allows you to upload any data you want, e.g. an export from Dexcom Clarity or another software of your choice."
     override val noData = "I do not want to upload my data"
-    override val noDataDescription = "This is also fine. Open Humans still allows us to contact you anonymously. You can come back to this site at any time if you have changed your mind."
-    override val linkToOpenHumansDescription = "One last step to finally establish the link to your Open Humans account. You have to redo this step if you decide to add a data source in the future."
+    override val noDataDescription =
+        "This is also fine. Open Humans still allows us to contact you anonymously. You can come back to this site at any time if you have changed your mind."
+    override val linkToOpenHumansDescription =
+        "One last step to finally establish the link to your Open Humans account. You have to redo this step if you decide to add a data source in the future."
     override val authorize = "Authorize"
     override val instructions = "Instructions"
     override val takeASelfie = "Take a Selfie"
     override val signUp = "Sign up"
     override val accountAlreadyLinked = "Account already linked"
-    override val accountAlreadyLinkedDescription = "This Open Humans account is already linked to another Participant ID."
+    override val accountAlreadyLinkedDescription =
+        "This Open Humans account is already linked to another Participant ID."
     override val wrongAccount = "Wrong account"
-    override val pleaseReuseAccount = "Please reuse the account that you have already used in the past to link to your Participant ID."
+    override val pleaseReuseAccount =
+        "Please reuse the account that you have already used in the past to link to your Participant ID."
     override val success = "Success!"
     override val somethingWentWrong = "Something went wrong"
     override val couldntConnectToOpenHumans = "We could not connect to your Open Humans account."
@@ -200,10 +221,27 @@ object English : Language() {
     override val declarationOfConsent = "Declaration of Consent"
     override val iUnderstandAndAgree = "I understand and agree."
     override val consentNotGiven = "Consent not given"
-    override val consentNotGivenDescription = "Thank you for your interest in this study, however, you cannot proceed without giving your consent."
-
-    override fun loginText(href: String) =
-        """To proceed please type in your <b>Participant ID</b> or <a href="$href">click here</a> if you do not have one yet:"""
+    override val consentNotGivenDescription =
+        "Thank you for your interest in this study, however, you cannot proceed without giving your consent."
+    override val doYouAlreadyHaveAParticipantId = "Do you already have a Participant ID?"
+    override val iAlreadyHaveAParticipantId = "I already have a Participant ID."
+    override val iDoNotHaveAParticipantId = "I do not have a Participant ID"
+    override val introduction = """
+        <h1>Welcome, you are about to join our OPEN survey!</h3>
+        <h1>What is OPEN´s plan?</h1>
+        <p>Since 2014, people with type 1 diabetes and their families have developed technologies for a better control of their blood glucose. These do-it-yourself artificial pancreas systems (DIYAPS) are a unique and revolutionary innovation in the history of medicine. Currently, several thousand people use DIYAPS and they report tremendous improvements in their therapy. So far, however, there are only a few studies on this topic and with only a few participants. It is time to start our own study about DIYAPS, to build evidence on the benefits and challenges of using these systems. This should improve awareness among other health care professionals, health policy makers, the medical device industry, and the interested general public of how well the systems work. We need DIYAPS users and non-users, for comparison, from all over the world, and their family and friends and their doctors. We need YOUR HELP for this, your information and your experience, your data!</p>
+        <h1>Whose help exactly do we need?</h1>
+        <p>This first part of our study is targeted at users and non-users of DIYAPS and their partners, caregivers or parents.</p>
+        <h1>How can you help?</h1>
+        <p>We mainly need you to answer questions about your health, your diabetes and, if applicable, your experience with DIYAPS. That's it. All data will be kept anonymous. First of all, this is ensured by using an automatically generated participant ID for you instead of your real name. </p>
+        <p>As a bonus, you have the opportunity to donate your diabetes data anonymously to the OPEN project on the Open Humans platform. The data collected from e.g. Nightscout will lead to an even better understanding of DIYAPS and may be helpful for future improvements of APS algorithms in general.</p>
+        <p>More information, especially about the protection of your data, will be provided on the next pages before you enter the survey.</p>
+        <p>You can also get even more information about OPEN on our <a href="https://open-diabetes.eu">website</a> or you can just go on and click your way through the next pages to take a peak or start right away!</p>
+        <p><b>And last but not least: We are very happy to have all of you here!</b></p>
+    """.trimIndent()
+    override val ohLoginNotice = "(This only works if you have linked your Participant ID with Open Humans before.)"
+    override val loginText = "To proceed please type in your Participant ID:"
+    override val login = "Login"
 
     override fun participantId(participantId: String) = "Participant ID: <b>$participantId</b>"
 

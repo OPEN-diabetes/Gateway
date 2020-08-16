@@ -35,7 +35,7 @@ fun Application.redCapModule() {
                     call.respondRedirect(redCapAPI.exportSurveyQueueLink(participant.surveyRecordId))
                 }
             } else {
-                call.respondRedirect("login")
+                call.respondRedirect("/")
             }
         }
         route("/p/{id}/{secret}") {

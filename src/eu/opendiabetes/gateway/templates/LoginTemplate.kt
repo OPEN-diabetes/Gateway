@@ -6,16 +6,14 @@ import io.ktor.application.ApplicationCall
 import kotlinx.html.*
 
 suspend fun ApplicationCall.respondLoginTemplate(participantId: String? = null) = respondBaseTemplate(
-    title = language.hiThere,
-    subtitle = language.thanksForHelpingUs
+    title = language.login,
+    subtitle = null
 ) {
     div {
         id = "login"
         div {
             id = "login-text"
-            unsafe {
-                raw(language.loginText("new_participant"))
-            }
+            text(language.loginText)
         }
         form("/login", method = FormMethod.post) {
             id = "login-form"
@@ -30,7 +28,6 @@ suspend fun ApplicationCall.respondLoginTemplate(participantId: String? = null) 
                     if (participantId != null) {
                         value = participantId
                     }
-                    placeholder = "123-A1B-2C3-D4F"
                 }
             }
             button(type = ButtonType.submit) {
@@ -47,6 +44,14 @@ suspend fun ApplicationCall.respondLoginTemplate(participantId: String? = null) 
         a("/openhumans/login") {
             id = "openhumans-login-button"
             text(language.orSignInUsingOpenHumans)
+        }
+        span {
+            id = "openhumans-login-hint"
+            text(language.ohLoginNotice)
+        }
+        a("/") {
+            id = "go-back"
+            text(language.goBack)
         }
     }
 }

@@ -86,7 +86,7 @@ fun Application.todosModule() {
                     sharedSources
                 )
             } else {
-                call.respondRedirect("login")
+                call.respondRedirect("/")
             }
         }
     }

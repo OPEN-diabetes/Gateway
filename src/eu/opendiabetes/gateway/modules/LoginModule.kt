@@ -64,7 +64,7 @@ fun Application.loginModule() {
                     sessionSecret = null
                 )
             )
-            call.respondRedirect("/login")
+            call.respondRedirect("/")
         }
     }
 }

@@ -50,7 +50,6 @@ a {
 }
 
 #header {
-    height: 250px;
     background-image: url("header.svg");
     background-position: center bottom;
     background-size: cover;
@@ -252,7 +251,22 @@ a {
     line-height: 40px;
 }
 
-#go-back, #openhumans-login-button {
+#openhumans-login-button {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin: 30px auto 0;
+}
+
+#openhumans-login-hint {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin: 10px auto 0;
+    color: #999999;
+}
+
+#go-back {
     display: block;
     width: fit-content;
     text-align: center;
@@ -439,7 +453,7 @@ a.button {
     cursor: pointer;
 }
 
-#consent-content {
+#consent-content, #introduction {
     width: 100%;
     max-width: 600px;
     text-align: justify;
@@ -447,8 +461,12 @@ a.button {
     font-size: 20px;
 }
 
-#consent-content h1 {
+#consent-content h1, #introduction h1 {
     color: #EB5B28;
     margin: 20px 0;
     font-size: 30px;
+}
+
+#introduction {
+    margin-bottom: 40px;
 }

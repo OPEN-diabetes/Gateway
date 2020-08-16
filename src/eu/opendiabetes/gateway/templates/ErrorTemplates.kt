@@ -72,20 +72,12 @@ suspend fun ApplicationCall.respondAccountAlreadyLinkedTemplate() = respondError
     backUrl = "/openhumans"
 )
 
-suspend fun ApplicationCall.respondChildHasAlreadyParticipatedTemplate() = respondErrorTemplate(
+suspend fun ApplicationCall.respondAskParentForLinkTemplate() = respondErrorTemplate(
     title = language.newParticipant,
     subtitle = null,
-    cardTitle = language.childHasAlreadyParticipated,
-    cardText = language.askChildForParticipationLink,
-    backUrl = "/new_participant/parent/using_diyaps"
-)
-
-suspend fun ApplicationCall.respondParentHasAlreadyParticipatedTemplate() = respondErrorTemplate(
-    title = language.newParticipant,
-    subtitle = null,
-    cardTitle = language.parentHasAlreadyParticipated,
+    cardTitle = language.youAreATeenagerWithDiabetesAndWantToParticipate,
     cardText = language.askParentForParticipationLink,
-    backUrl = "/new_participant/teenager/using_diyaps"
+    backUrl = "/new_participant"
 )
 
 suspend fun ApplicationCall.respondChildNotUsingDIYAPSTemplate() = respondErrorTemplate(
@@ -94,14 +86,6 @@ suspend fun ApplicationCall.respondChildNotUsingDIYAPSTemplate() = respondErrorT
     cardTitle = language.childNotUsingDIYAPS,
     cardText = language.notWithinAudience,
     backUrl = "/new_participant/parent/"
-)
-
-suspend fun ApplicationCall.respondTeenagerNotUsingDIYAPSTemplate() = respondErrorTemplate(
-    title = language.newParticipant,
-    subtitle = null,
-    cardTitle = language.notUsingDIYAPS,
-    cardText = language.notWithinAudience,
-    backUrl = "/new_participant/teenager/"
 )
 
 suspend fun ApplicationCall.respondAdultNotUsingDIYAPSTemplate() = respondErrorTemplate(

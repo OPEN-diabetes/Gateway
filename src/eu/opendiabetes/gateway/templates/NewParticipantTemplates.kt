@@ -18,21 +18,6 @@ suspend fun ApplicationCall.respondParentIsUsingAPSTemplate() = respondBranching
     branchingOption("/static/parent.svg", language.myChildIsNotUsingDIYAPSAndDontIntend, "/new_participant/parent/not_using_diyaps")
 }
 
-suspend fun ApplicationCall.respondDidChildAlreadyFillOutTemplate() = respondBranchingTemplate(language.newParticipant, null, language.didYourChildAlreadyFillOutTheSurvey, "/new_participant/parent") {
-    branchingOption("/static/parent.svg", language.myChildHasAlreadyFilledOutTheSurvey, "/new_participant/parent/using_diyaps/not_new")
-    branchingOption("/static/parent.svg", language.weAreNewToThisSurvey, "/new_participant/parent/using_diyaps/new")
-}
-
-suspend fun ApplicationCall.respondDidParentAlreadyFillOutTemplate() = respondBranchingTemplate(language.newParticipant, null, language.didYourParentAlreadyFillOutTheSurvey, "/new_participant/teenager") {
-    branchingOption("/static/teenager.svg", language.myParentHasAlreadyFilledOutTheSurvey, "/new_participant/teenager/using_diyaps/not_new")
-    branchingOption("/static/teenager.svg", language.iAmNewToThisSurvey, "/new_participant/teenager/using_diyaps/new")
-}
-
-suspend fun ApplicationCall.respondTeenagerIsUsingAPSTemplate() = respondBranchingTemplate(language.newParticipant, null, language.areYouUsingDIYAPS, "/new_participant") {
-    branchingOption("/static/teenager.svg", language.iAmUsingDIYAPS, "/new_participant/teenager/using_diyaps")
-    branchingOption("/static/teenager.svg", language.iAmNotUsingADIYAPS, "/new_participant/teenager/not_using_diyaps")
-}
-
 suspend fun ApplicationCall.respondAdultIsUsingAPSTemplate() = respondBranchingTemplate(language.newParticipant, null, language.areYouUsingDIYAPS, "/new_participant") {
     branchingOption("/static/adult.svg", language.iAmUsingDIYAPS, "/new_participant/adult/using_diyaps")
     branchingOption("/static/adult.svg", language.iAmNotYetUsingDIYAPSButIntend, "/new_participant/adult/not_yet_using_diyaps")

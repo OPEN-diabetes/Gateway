@@ -14,7 +14,7 @@ fun Application.idPresentationModule() {
         get("present_id") {
             val participant = call.participant
             if (participant == null) {
-                call.respondRedirect("/login")
+                call.respondRedirect("/")
             } else {
                 call.respondIdPresentationTemplate(formatParticipantId(participant.id, participant.secret))
             }
