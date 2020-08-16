@@ -22,11 +22,9 @@ sealed class Language {
     abstract val goBack: String
     abstract val areYouUsingDIYAPS: String
     abstract val iAmUsingDIYAPS: String
-    abstract val iAmNotYetUsingDIYAPSButIntend: String
     abstract val iAmNotUsingDIYAPSAndDontIntend: String
     abstract val isYourChildUsingDIYAPS: String
     abstract val myChildIsUsingDIYAPS: String
-    abstract val myChildIsNotYetUsingDIYAPSButIntend: String
     abstract val myChildIsNotUsingDIYAPSAndDontIntend: String
     abstract val iAmNotUsingADIYAPS: String
     abstract val childNotUsingDIYAPS: String
@@ -130,13 +128,9 @@ object English : Language() {
     override val goBack = "Go back"
     override val areYouUsingDIYAPS = "Are you using a DIYAPS?"
     override val iAmUsingDIYAPS = "I am currently <b>using</b> a DIYAPS (open- or closed-loop)."
-    override val iAmNotYetUsingDIYAPSButIntend =
-        ""
     override val iAmNotUsingDIYAPSAndDontIntend = "I am currently <b>not using</b> a DIYAPS."
     override val isYourChildUsingDIYAPS = "Is your child using a DIYAPS?"
     override val myChildIsUsingDIYAPS = "My child is currently <b>using</b> a DIYAPS (open- or closed-loop)."
-    override val myChildIsNotYetUsingDIYAPSButIntend =
-        ""
     override val myChildIsNotUsingDIYAPSAndDontIntend =
         "My child is currently <b>not using</b> a DIYAPS."
     override val iAmNotUsingADIYAPS = "I am currently <b>not using</b> a DIYAPS."

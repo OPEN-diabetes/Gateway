@@ -80,22 +80,6 @@ suspend fun ApplicationCall.respondAskParentForLinkTemplate() = respondErrorTemp
     backUrl = "/new_participant"
 )
 
-suspend fun ApplicationCall.respondChildNotUsingDIYAPSTemplate() = respondErrorTemplate(
-    title = language.newParticipant,
-    subtitle = null,
-    cardTitle = language.childNotUsingDIYAPS,
-    cardText = language.notWithinAudience,
-    backUrl = "/new_participant/parent/"
-)
-
-suspend fun ApplicationCall.respondAdultNotUsingDIYAPSTemplate() = respondErrorTemplate(
-    title = language.newParticipant,
-    subtitle = null,
-    cardTitle = language.notUsingDIYAPS,
-    cardText = language.notWithinAudience,
-    backUrl = "/new_participant/adult/"
-)
-
 suspend fun ApplicationCall.respondAskPartnerForLinkTemplate() = respondErrorTemplate(
     title = language.newParticipant,
     subtitle = null,
