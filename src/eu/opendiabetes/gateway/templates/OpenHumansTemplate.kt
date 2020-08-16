@@ -63,7 +63,7 @@ suspend fun ApplicationCall.respondOpenHumansTemplate() = respondBaseTemplate(la
                 }
             }
             li {
-                text(language.linkToOpenHumans)
+                text(language.linkToOpenHumans2)
                 p {
                     text(language.linkToOpenHumansDescription)
                 }

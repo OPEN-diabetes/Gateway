@@ -58,6 +58,7 @@ sealed class Language {
     abstract val goToSurvey: String
     abstract val signOut: String
     abstract val linkToOpenHumans: String
+    abstract val linkToOpenHumans2: String
     abstract val linkToOpenHumansTextSetup: String
     abstract val linkToOpenHumansTextNoData: String
     abstract val linkToOpenHumansTextDataSources: String
@@ -149,7 +150,7 @@ object English : Language() {
     override val notWithinAudience =
         "Thank you very much for your interest in this study! We are very sorry that we don´t need your help at the moment, but we may come back to you later."
     override val askChildForParticipationLink = ""
-    override val askParentForParticipationLink = "Please ask your parent/caregiver to send you a participation link."
+    override val askParentForParticipationLink = "Hey, we are sure that you, too, want to make diabetes suck less! We know that you are grown up enough to answer our questions, and we really want you to take part in this study! There's a tiny problem, and this is only a legal one: You will need your parent's permission for this. But we are sure that your parents will have no problem with this, just ask them. Therefore, you parents need to send you a participation link. You can find more information about this on our website. Sorry for the inconvenience, but your participation will help us a lot, and we really want YOU in this!"
     override val askPartnerForParticipationLink = "Please ask your partner to send you a participation link."
     override val askPatientForParticipationLink = "Please ask your patient to send you a participation link."
     override val yourParticipantIdIs = "Your Participant ID is:"
@@ -169,6 +170,7 @@ object English : Language() {
     override val goToSurvey = "Go to survey"
     override val signOut = "Sign out"
     override val linkToOpenHumans = "Additional: Link to Open Humans (optional)"
+    override val linkToOpenHumans2 = "Link to Open Humans"
     override val linkToOpenHumansTextSetup =
         "Please also consider joining Open Humans! Open Humans is a nonprofit citizen science platform (data repository site) where people can anonymously donate and consent to share their data. OPEN has built their own project on this platform. If you provide your link to Open Humans, this will help us to contact you anonymously if needed, e.g. for follow-up studies. And in case you also upload your health data such as CGM data from Nightscout, we can analyze them and enhance our knowledge about DIYAPS by linking your survey results with other diabetes data. The following step-by-step guide will help you create an Open Humans account, and - if you wish - upload your data and make it available to the OPEN researchers. This should take no longer than 20-30 minutes."
     override val linkToOpenHumansTextNoData =
