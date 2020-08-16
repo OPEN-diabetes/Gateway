@@ -221,7 +221,7 @@ object English : Language() {
         "Thank you for your interest in this study, however, you cannot proceed without giving your consent."
     override val doYouAlreadyHaveAParticipantId = "Do you already have a Participant ID?"
     override val iAlreadyHaveAParticipantId = "I already have a Participant ID."
-    override val iDoNotHaveAParticipantId = "I do not have a Participant ID"
+    override val iDoNotHaveAParticipantId = "I do not have a Participant ID."
     override val introduction = """
         <h1>Welcome, you are about to join our OPEN survey!</h3>
         <h1>What is OPEN´s plan?</h1>
