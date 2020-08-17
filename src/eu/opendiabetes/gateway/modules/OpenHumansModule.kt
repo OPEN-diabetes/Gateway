@@ -3,13 +3,14 @@ package eu.opendiabetes.gateway.modules
 import eu.opendiabetes.gateway.GatewaySession
 import eu.opendiabetes.gateway.templates.*
 import eu.opendiabetes.gateway.utils.*
-import io.ktor.application.Application
-import io.ktor.application.call
-import io.ktor.application.install
+import io.ktor.application.*
 import io.ktor.auth.*
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.apache.Apache
+import io.ktor.client.features.ClientRequestException
 import io.ktor.http.HttpMethod
+import io.ktor.http.HttpStatusCode
+import io.ktor.request.uri
 import io.ktor.response.respondRedirect
 import io.ktor.routing.get
 import io.ktor.routing.route
@@ -17,6 +18,7 @@ import io.ktor.routing.routing
 import io.ktor.sessions.get
 import io.ktor.sessions.sessions
 import io.ktor.sessions.set
+import kotlinx.coroutines.supervisorScope
 import java.util.concurrent.TimeUnit
 
 private const val OPEN_HUMANS_AUTH_PROVIDER = "openHumans"
@@ -52,6 +54,32 @@ fun Application.openHumansModule() {
                 }
             }
             route("/login") {
+                intercept(ApplicationCallPipeline.Features) {
+                    supervisorScope {
+                        try {
+                            val participant = call.participant
+                            if (participant?.accessToken != null) {
+                                val accessToken = if (participant.expiresAt!! <= System.currentTimeMillis()) {
+                                    this@openHumansModule.openHumansApi.refreshAccessToken(participant.refreshToken!!).accessToken
+                                } else {
+                                    participant.accessToken
+                                }
+                                this@openHumansModule.openHumansApi.removeMember(accessToken)
+                            }
+                        } catch (e: ClientRequestException) {
+                            if (e.response.status != HttpStatusCode.Unauthorized) {
+                                throw e
+                            }
+                        }
+                    }
+                }
+                intercept(ApplicationCallPipeline.Call) {
+                    if (call.parameters.contains("error")) {
+                        call.respondAuthorizeErrorTemplate()
+                    } else {
+                        proceed()
+                    }
+                }
                 authenticate(OPEN_HUMANS_AUTH_PROVIDER) {
                     handle {
                         val principal = call.authentication.principal<OAuthAccessTokenResponse.OAuth2>()
@@ -74,6 +102,7 @@ fun Application.openHumansModule() {
                                     call.sessions.set(currentSession.copy(sessionId = sessionId, sessionSecret = sessionSecret))
                                     call.respondRedirect("/todos")
                                 } else {
+                                    this@openHumansModule.openHumansApi.removeMember(principal.accessToken)
                                     call.respondNoParticipantFoundTemplate()
                                 }
                             } else {

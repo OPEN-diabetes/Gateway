@@ -185,7 +185,7 @@ object English : Language() {
     override val createOpenHumansAccount = "Create an Open Humans account"
     override val signUpOnOpenHumans =
         "Sign up for an account on openhumans.org if you do not have one yet. You can re-use your existing Facebook or Google login."
-    override val uploadYourData = "Upload your data"
+    override val uploadYourData = "Add a data source"
     override val chooseDataSource = "The following data sources are available:"
     override val nightscoutDataTransferDescription =
         "If you are already uploading your data to Nightscout, use this simple tool to copy your data over to Open Humans."
@@ -242,7 +242,7 @@ object English : Language() {
     override fun participantId(participantId: String) = "Participant ID: <b>$participantId</b>"
 
     override fun missingDataSources(removeLink: String, tryAgain: String) =
-        """If the list of data sources appears to be incomplete, please <a target="_blank" href="$removeLink">click here</a> to remove the link and <a href="$tryAgain">try again</a>. If you have recently setup a new data source, it might take a while to be detected."""
+        """In case the list of data sources appears to be incomplete, please <a href="$tryAgain">try again</a>. If you have recently setup a new data source, it might take a while to be detected."""
 
     override fun ifYouDidAddAnyDataSources(removeLink: String, tryAgain: String) =
         """If you did add any data sources, please <a target="_blank" href="$removeLink">click here</a> to remove the link and <a href="$tryAgain">try again</a>. If you have recently setup a new data source, it might take a while to be detected."""

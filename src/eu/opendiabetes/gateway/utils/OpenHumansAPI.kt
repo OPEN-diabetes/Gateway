@@ -7,6 +7,7 @@ import io.ktor.client.features.auth.providers.basic
 import io.ktor.client.request.forms.submitForm
 import io.ktor.client.request.get
 import io.ktor.client.request.parameter
+import io.ktor.client.request.post
 import io.ktor.http.Parameters
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonConfiguration
@@ -52,6 +53,12 @@ class OpenHumansAPI(
         )
     }
 
+    suspend fun removeMember(accessToken: String) {
+        httpClient.post<String>(REMOVE_MEMBER_URL) {
+            parameter("access_token", accessToken)
+        }
+    }
+
     override fun close() {
         httpClient.close()
     }
@@ -60,6 +67,7 @@ class OpenHumansAPI(
         const val API_BASE = "https://www.openhumans.org"
         const val PROJECT_MEMBER_ENDPOINT = "$API_BASE/api/direct-sharing/project/exchange-member/"
         const val AUTHORIZE_URL = "$API_BASE/direct-sharing/projects/oauth2/authorize/"
+        const val REMOVE_MEMBER_URL = "$API_BASE/api/direct-sharing/project/remove-members/"
         const val ACCESS_TOKEN_URL = "$API_BASE/oauth2/token/"
         const val NIGHTSCOUT_ID = "direct-sharing-31"
         const val SELFIES_ID = "direct-sharing-133"
