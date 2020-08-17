@@ -28,7 +28,7 @@ fun Application.redCapModule() {
             val participant = call.participant
             if (participant != null) {
                 if (participant.surveyRecordId == null) {
-                    val recordId = redCapAPI.createRecord(participant.id, participant.enrollmentType)
+                    val recordId = redCapAPI.createRecord(participant.id, null, participant.enrollmentType)
                     this@redCapModule.database.setSurveyRecordIdForParticipant(participant.id, recordId)
                     call.respondRedirect(redCapAPI.exportSurveyQueueLink(recordId))
                 } else {
@@ -48,7 +48,7 @@ fun Application.redCapModule() {
                 call.checkParticipationLink() { participationLink ->
                     if (receiveParameters().contains("consent")) {
                         if (participationLink.surveyRecordId == null) {
-                            val recordId = redCapAPI.createRecord(participationLink.id, participationLink.enrollmentType)
+                            val recordId = redCapAPI.createRecord(participationLink.participantId, participationLink.id, participationLink.enrollmentType)
                             this@redCapModule.database.setSurveyRecordIdForParticipationLink(participationLink.id, recordId)
                             call.respondRedirect(redCapAPI.exportSurveyQueueLink(recordId))
                         } else {
