@@ -15,7 +15,7 @@ import org.jetbrains.exposed.sql.update
 private const val PARTICIPANT_ID_SECRET_CHARS = "123456789ABCDEFGHJKMNPRSTUXYZ"
 private const val PARTICIPANT_ID_SECRET_LENGTH = 9
 private const val PARTICIPATION_LINK_SECRET_CHARS = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-private const val PARTICIPATION_LINK_SECRET_LENGTH = 32
+private const val PARTICIPATION_LINK_SECRET_LENGTH = 10
 private const val SESSION_SECRET_CHARS = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 private const val SESSION_SECRET_LENGTH = 32
 
