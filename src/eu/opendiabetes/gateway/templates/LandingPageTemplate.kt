@@ -4,10 +4,14 @@ import eu.opendiabetes.gateway.utils.language
 import io.ktor.application.ApplicationCall
 import kotlinx.html.div
 import kotlinx.html.id
+import kotlinx.html.img
 import kotlinx.html.unsafe
 
 suspend fun ApplicationCall.respondLandingPageTemplate() =
     respondBaseTemplate(language.hiThere, language.thanksForHelpingUs) {
+        img(src = "/static/open.svg") {
+            id = "open-logo"
+        }
         div {
             id = "introduction"
             unsafe {

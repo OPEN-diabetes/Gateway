@@ -453,6 +453,21 @@ a.button {
     cursor: pointer;
 }
 
+#consortium-logos {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#consortium-logos img {
+    height: 50px;
+    width: auto;
+    margin: 10px;
+}
+
 #consent-content, #introduction {
     width: 100%;
     max-width: 600px;
@@ -469,4 +484,11 @@ a.button {
 
 #introduction {
     margin-bottom: 40px;
+}
+
+#open-logo {
+    display: block;
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto;
 }

@@ -14,6 +14,12 @@ suspend fun ApplicationCall.respondConsentTemplate(
     div {
         id = "consent-form"
         div {
+            id = "consortium-logos"
+            arrayOf("open.svg", "ucd.png", "charite.svg", "uoc.svg", "dedoc.png", "sdcc.png", "acbrd.png").forEach {
+                img(src = "/static/$it")
+            }
+        }
+        div {
             id = "consent-content"
             unsafe {
                 raw(informationSheet)
