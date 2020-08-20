@@ -1,8 +1,10 @@
 package eu.opendiabetes.gateway.templates
 
+import eu.opendiabetes.gateway.Language
 import eu.opendiabetes.gateway.utils.OpenHumansAPI
 import eu.opendiabetes.gateway.utils.language
 import io.ktor.application.ApplicationCall
+import io.ktor.http.formUrlEncode
 import kotlinx.html.*
 
 suspend fun ApplicationCall.respondTODOsTemplate(
@@ -41,13 +43,13 @@ suspend fun ApplicationCall.respondTODOsTemplate(
                 li {
                     when (it) {
                         is ParticipationLinkTODO.Parent -> {
-                            participationLink(language.askParent, language.sendParent, it.link)
+                            participationLink(language, language.askParent, language.sendParent, it.link)
                         }
                         is ParticipationLinkTODO.Child -> {
-                            participationLink(language.askChild, language.sendChild, it.link)
+                            participationLink(language, language.askChild, language.sendChild, it.link)
                         }
                         is ParticipationLinkTODO.Partner -> {
-                            participationLink(language.askPartner, language.sendPartner, it.link)
+                            participationLink(language, language.askPartner, language.sendPartner, it.link)
                         }
                     }
                 }
@@ -59,13 +61,19 @@ suspend fun ApplicationCall.respondTODOsTemplate(
         }
     }
 
-private fun LI.participationLink(title: String, desc: String, link: String) {
+private fun LI.participationLink(language: Language, title: String, desc: String, link: String) {
     text(title)
     p { text(desc) }
     input(type = InputType.url, classes = "participation-link") {
         readonly = true
-        onClick = "this.select();"
         value = link
+    }
+    val link = "mailto:?" + listOf(
+        "subject" to language.invitationToSurvey,
+        "body" to language.invitationText(link)
+    ).formUrlEncode()
+    a(link, "_blank", "email-link") {
+        text("Share via e-mail")
     }
 }
 

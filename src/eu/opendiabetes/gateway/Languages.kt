@@ -102,11 +102,13 @@ sealed class Language {
     abstract val ohLoginNotice: String
     abstract val loginText: String
     abstract val login: String
+    abstract val invitationToSurvey: String
 
     abstract fun participantId(participantId: String): String
     abstract fun missingDataSources(removeLink: String, tryAgain: String): String
     abstract fun ifYouDidAddAnyDataSources(removeLink: String, tryAgain: String): String
     abstract fun createNewParticipantID(href: String): String
+    abstract fun invitationText(link: String): String
 }
 
 object English : Language() {
@@ -150,7 +152,8 @@ object English : Language() {
     override val notWithinAudience =
         "Thank you very much for your interest in this study! We are very sorry that we don´t need your help at the moment, but we may come back to you later."
     override val askChildForParticipationLink = ""
-    override val askParentForParticipationLink = "Hey, we are sure that you, too, want to make diabetes suck less! We know that you are grown up enough to answer our questions, and we really want you to take part in this study! There's a tiny problem, and this is only a legal one: You will need your parent's permission for this. But we are sure that your parents will have no problem with this, just ask them. Therefore, you parents need to send you a participation link. You can find more information about this on our website. Sorry for the inconvenience, but your participation will help us a lot, and we really want YOU in this!"
+    override val askParentForParticipationLink =
+        "Hey, we are sure that you, too, want to make diabetes suck less! We know that you are grown up enough to answer our questions, and we really want you to take part in this study! There's a tiny problem, and this is only a legal one: You will need your parent's permission for this. But we are sure that your parents will have no problem with this, just ask them. Therefore, you parents need to send you a participation link. You can find more information about this on our website. Sorry for the inconvenience, but your participation will help us a lot, and we really want YOU in this!"
     override val askPartnerForParticipationLink = "Please ask your partner to send you a participation link."
     override val askPatientForParticipationLink = "Please ask your patient to send you a participation link."
     override val yourParticipantIdIs = "Your Participant ID is:"
@@ -238,6 +241,7 @@ object English : Language() {
     override val ohLoginNotice = "(This only works if you have linked your Participant ID with Open Humans before.)"
     override val loginText = "To proceed please type in your Participant ID:"
     override val login = "Login"
+    override val invitationToSurvey = "Invitation to OPEN Survey"
 
     override fun participantId(participantId: String) = "Participant ID: <b>$participantId</b>"
 
@@ -249,6 +253,19 @@ object English : Language() {
 
     override fun createNewParticipantID(href: String) =
         """No Participant ID affiliated to this Open Humans account has been found. Either <a href="$href">create a new one</a> or try to sign in directly using your existing Participant ID."""
+
+
+    override fun invitationText(link: String) = """
+        Hi,
+
+        I have participated in the OPEN survey and I would like you to take part in this, too. It will only take a few minutes but help the OPEN team in doing their research on the effectiveness of Do-It-Yourself Artificial Pancreas Systems (DIYAPS). Please follow this link to get to survey:
+
+        $link
+
+        The OPEN research team wants to find out how well people with diabetes are doing when they use or don´t use an open source loop (DIYAPS), if and how they are struggling to build these systems, how the technology can be improved, and they want to investigate if there are ways to give more people access to this technology in general. You can get further information about OPEN and this study on their website: www.open-diabetes.eu
+
+        Best regards
+    """.trimIndent()
 }
 
 /*object German : Language() {

@@ -492,3 +492,10 @@ a.button {
     height: auto;
     margin: 0 auto;
 }
+
+.email-link {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin: 10px auto 0;
+}
