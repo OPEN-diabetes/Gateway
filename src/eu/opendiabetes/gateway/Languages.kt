@@ -103,6 +103,7 @@ sealed class Language {
     abstract val loginText: String
     abstract val login: String
     abstract val invitationToSurvey: String
+    abstract val fundingNotice: String
 
     abstract fun participantId(participantId: String): String
     abstract fun missingDataSources(removeLink: String, tryAgain: String): String
@@ -242,6 +243,7 @@ object English : Language() {
     override val loginText = "To proceed please type in your Participant ID:"
     override val login = "Login"
     override val invitationToSurvey = "Invitation to OPEN Survey"
+    override val fundingNotice = "This project has received funding from the European Commission's Horizon 2020 Research and Innovation Programme under the Marie Sklodowska-Curie Action Research and Innovation Staff Exchange (RISE) grant agreement number 823902."
 
     override fun participantId(participantId: String) = "Participant ID: <b>$participantId</b>"
 

@@ -2,10 +2,7 @@ package eu.opendiabetes.gateway.templates
 
 import eu.opendiabetes.gateway.utils.language
 import io.ktor.application.ApplicationCall
-import kotlinx.html.div
-import kotlinx.html.id
-import kotlinx.html.img
-import kotlinx.html.unsafe
+import kotlinx.html.*
 
 suspend fun ApplicationCall.respondLandingPageTemplate() =
     respondBaseTemplate(language.hiThere, language.thanksForHelpingUs) {
@@ -24,4 +21,13 @@ suspend fun ApplicationCall.respondLandingPageTemplate() =
         }
         branchingOption("/static/register.svg", language.iDoNotHaveAParticipantId, "/new_participant")
         branchingOption("/static/login.svg", language.iAlreadyHaveAParticipantId, "/login")
+        div {
+            id = "funding-notice"
+            img(src = "/static/europe.svg") {
+                id = "eu-logo"
+            }
+            span {
+                text(language.fundingNotice)
+            }
+        }
     }
