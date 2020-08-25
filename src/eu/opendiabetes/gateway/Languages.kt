@@ -154,7 +154,7 @@ object English : Language() {
         "Thank you very much for your interest in this study! We are very sorry that we don´t need your help at the moment, but we may come back to you later."
     override val askChildForParticipationLink = ""
     override val askParentForParticipationLink =
-        "Hey, we are sure that you, too, want to make diabetes suck less! We know that you are grown up enough to answer our questions, and we really want you to take part in this study! There's a tiny problem, and this is only a legal one: You will need your parent's permission for this. But we are sure that your parents will have no problem with this, just ask them. Therefore, you parents need to send you a participation link. You can find more information about this on our website. Sorry for the inconvenience, but your participation will help us a lot, and we really want YOU in this!"
+        "We’re sorry, but due to legal reasons, you need permission from your parent(s)/caregiver(s) to participate in this survey. Therefore, please ask them for a participation link that they can get after signing up on their own."
     override val askPartnerForParticipationLink = "Please ask your partner to send you a participation link."
     override val askPatientForParticipationLink = "Please ask your patient to send you a participation link."
     override val yourParticipantIdIs = "Your Participant ID is:"
