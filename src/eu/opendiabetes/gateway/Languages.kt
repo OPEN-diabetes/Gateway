@@ -159,7 +159,7 @@ object English : Language() {
     override val askPatientForParticipationLink = "Please ask your patient to send you a participation link."
     override val yourParticipantIdIs = "Your Participant ID is:"
     override val pleaseNoteItDownToAvoidLosingIt =
-        "In case of an interruption, the ID allows you to continue the survey later. To keep it safe and secret, please note it down in a place only accessible to you."
+        "The purpose of this ID is to guarantee anonymity in the survey. Should you need to take a break, you can continue where you have left off by noting the ID down, taking a picture of it or emailing it to yourself to keep it safe."
     override val proceed = "Proceed"
     override val yourTODOs = "How you can help"
     override val askParent = ""
@@ -176,7 +176,7 @@ object English : Language() {
     override val linkToOpenHumans = "Additional: Link to Open Humans (optional)"
     override val linkToOpenHumans2 = "Link to Open Humans"
     override val linkToOpenHumansTextSetup =
-        "Please also consider joining Open Humans! Open Humans is a nonprofit citizen science platform (data repository site) where people can anonymously donate and consent to share their data. OPEN has built their own project on this platform. If you provide your link to Open Humans, this will help us to contact you anonymously if needed, e.g. for follow-up studies. And in case you also upload your health data such as CGM data from Nightscout, we can analyze them and enhance our knowledge about DIYAPS by linking your survey results with other diabetes data. The following step-by-step guide will help you create an Open Humans account, and - if you wish - upload your data and make it available to the OPEN researchers. This should take no longer than 20-30 minutes."
+        "OPEN has built their own project on the non-profit data repository site Open Humans. If you provide your link to Open Humans, we will use it to contact you about follow-on studies. You can also donate your device data to help further our research efforts in improving APS algorithms. Click below for a step-by-step guide on how to do this."
     override val linkToOpenHumansTextNoData =
         "Your Open Humans account has been connected, however, no data sources have been detected."
     override val linkToOpenHumansTextDataSources =
