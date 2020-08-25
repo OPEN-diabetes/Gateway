@@ -174,7 +174,7 @@ object English : Language() {
     override val goToSurvey = "Go to survey"
     override val signOut = "Sign out"
     override val linkToOpenHumans = "Additional: Link to Open Humans (optional)"
-    override val linkToOpenHumans2 = "Link to Open Humans"
+    override val linkToOpenHumans2 = "Setup"
     override val linkToOpenHumansTextSetup =
         "Please also consider joining Open Humans! Open Humans is a nonprofit citizen science platform (data repository site) where people can anonymously donate and consent to share their data. OPEN has built their own project on this platform. If you provide your link to Open Humans, this will help us to contact you anonymously if needed, e.g. for follow-up studies. And in case you also upload your health data such as CGM data from Nightscout, we can analyze them and enhance our knowledge about DIYAPS by linking your survey results with other diabetes data. The following step-by-step guide will help you create an Open Humans account, and - if you wish - upload your data and make it available to the OPEN researchers. This should take no longer than 20-30 minutes."
     override val linkToOpenHumansTextNoData =
