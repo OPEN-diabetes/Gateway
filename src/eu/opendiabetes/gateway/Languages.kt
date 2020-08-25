@@ -227,17 +227,17 @@ object English : Language() {
     override val iAlreadyHaveAParticipantId = "I already have a Participant ID."
     override val iDoNotHaveAParticipantId = "I do not have a Participant ID."
     override val introduction = """
-        <h1>Welcome, you are about to join our OPEN survey!</h3>
-        <h1>What is OPEN´s plan?</h1>
-        <p>Since 2014, people with type 1 diabetes and their families have developed technologies for a better control of their blood glucose. These do-it-yourself artificial pancreas systems (DIYAPS) are a unique and revolutionary innovation in the history of medicine. Currently, several thousand people use DIYAPS and they report tremendous improvements in their therapy. So far, however, there are only a few studies on this topic and with only a few participants. It is time to start our own study about DIYAPS, to build evidence on the benefits and challenges of using these systems. This should improve awareness among other health care professionals, health policy makers, the medical device industry, and the interested general public of how well the systems work. We need DIYAPS users and non-users, for comparison, from all over the world, and their family and friends and their doctors. We need YOUR HELP for this, your information and your experience, your data!</p>
-        <h1>Whose help exactly do we need?</h1>
-        <p>This first part of our study is targeted at users and non-users of DIYAPS and their partners, caregivers or parents.</p>
-        <h1>How can you help?</h1>
-        <p>We mainly need you to answer questions about your health, your diabetes and, if applicable, your experience with DIYAPS. That's it. All data will be kept anonymous. First of all, this is ensured by using an automatically generated participant ID for you instead of your real name. </p>
-        <p>As a bonus, you have the opportunity to donate your diabetes data anonymously to the OPEN project on the Open Humans platform. The data collected from e.g. Nightscout will lead to an even better understanding of DIYAPS and may be helpful for future improvements of APS algorithms in general.</p>
-        <p>More information, especially about the protection of your data, will be provided on the next pages before you enter the survey.</p>
-        <p>You can also get even more information about OPEN on our <a href="https://open-diabetes.eu">website</a> or you can just go on and click your way through the next pages to take a peak or start right away!</p>
-        <p><b>And last but not least: We are very happy to have all of you here!</b></p>
+        <p>We are the OPEN project, a European Union-funded international research consortium aiming to study and explore the unique initiative of “Do-It-Yourself Artificial Pancreas Systems”, or DIYAPS. This technology has been developed for better diabetes management by people with type 1 diabetes and their families. Some people consider it a revolutionary innovation in the history of medicine, others are sceptical as this is still “DIY”...</p>
+        <p>We believe that the online community of people interested in DIYAPS provides an excellent opportunity for researchers to examine the effects of using DIYAPS on health and well-being, to identify potential technological improvements that can be made to artificial pancreas technology, to explore the difficulties and challenges that people face in building DIYAPS and reasons why some choose not to use DIYAPS.</p>
+        <p>There is no development without research, so why not help us build evidence? We need the involvement of <b>everyone</b> from the diabetes online community. This includes DIYAPS users and non-users from all over the world, as well as their families and partners.</p>
+        <h1>How can YOU help?</h1>
+        <p>To remain anonymous, you will not give your real name. Instead, a participant ID will be automatically generated for each of you before you start the survey.</p>
+        <p>After that, we mainly need you to answer questions about your health and well-being, your diabetes and, if applicable, your experience with DIYAPS and/or opinion on challenges related to DIYAPS use. <b>All data will be kept anonymous.</b></p>
+        <p>If you are a DIYAPS user, you will also have the option to anonymously donate your loop device data (e.g. from Nightscout). This will require some additional effort on your part but the donated data would help greatly towards our aim to explore future improvements of APS algorithms.</p>
+        <p>All of this is fully optional and voluntary! You decide how much information you want to provide. It should not take you more than <b>30 minutes</b> to complete.</p>
+        <p>More detailed information and instructions will be provided on the next pages before you enter the survey. Further information about OPEN is also available <a href="https://open-diabetes.eu">here</a> on our website.</p>
+        <p><b>Last but not least: We are very happy to have all of you here! THANK YOU!</b></p>
+        <p><b>The OPEN team</b></p>
     """.trimIndent()
     override val ohLoginNotice = "(This only works if you have linked your Participant ID with Open Humans before.)"
     override val loginText = "To proceed please type in your Participant ID:"
