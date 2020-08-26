@@ -457,7 +457,7 @@ a.button {
 
 #consortium-logos {
     width: 100%;
-    max-width: 600px;
+    max-width: 1000px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -476,6 +476,10 @@ a.button {
     text-align: justify;
     line-height: 40px;
     font-size: 20px;
+}
+
+#consent-content {
+    max-width: 1000px !important;
 }
 
 #consent-content h1, #introduction h1 {
@@ -517,4 +521,24 @@ a.button {
     width: 100px;
     height: auto;
     margin-right: 20px;
+}
+
+#contact-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-detail {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contact-detail span {
+    display: block;
+    line-height: initial;
+    text-align: left;
+    margin: 5px 0;
+    font-size: 15px;
+    text-overflow: ellipsis;
 }

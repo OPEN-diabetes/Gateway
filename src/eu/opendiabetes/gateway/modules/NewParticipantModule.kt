@@ -2,6 +2,10 @@ package eu.opendiabetes.gateway.modules
 
 import eu.opendiabetes.gateway.GatewaySession
 import eu.opendiabetes.gateway.database.EnrollmentType
+import eu.opendiabetes.gateway.info_sheets.english.INFO_SHEET_ADULT_NON_USERS
+import eu.opendiabetes.gateway.info_sheets.english.INFO_SHEET_ADULT_USERS
+import eu.opendiabetes.gateway.info_sheets.english.INFO_SHEET_PARENT_NON_USERS
+import eu.opendiabetes.gateway.info_sheets.english.INFO_SHEET_PARENT_USERS
 import eu.opendiabetes.gateway.templates.*
 import eu.opendiabetes.gateway.utils.createParticipantId
 import eu.opendiabetes.gateway.utils.createSession
@@ -39,7 +43,7 @@ fun Application.newParticipantModule() {
                 }
                 route("/using_diyaps") {
                     get("/") {
-                        call.respondConsentTemplate("/new_participant/adult")
+                        call.respondConsentTemplate("/new_participant/adult", INFO_SHEET_ADULT_USERS)
                     }
                     post("/") {
                         if (call.receiveParameters().contains("consent")) {
@@ -51,7 +55,7 @@ fun Application.newParticipantModule() {
                 }
                 route("/not_using_diyaps") {
                     get("/") {
-                        call.respondConsentTemplate("/new_participant/adult")
+                        call.respondConsentTemplate("/new_participant/adult", INFO_SHEET_ADULT_NON_USERS)
                     }
                     post("/") {
                         if (call.receiveParameters().contains("consent")) {
@@ -68,7 +72,7 @@ fun Application.newParticipantModule() {
                 }
                 route("/using_diyaps") {
                     get("/") {
-                        call.respondConsentTemplate("/new_participant/parent")
+                        call.respondConsentTemplate("/new_participant/parent", INFO_SHEET_PARENT_USERS)
                     }
                     post("/") {
                         if (call.receiveParameters().contains("consent")) {
@@ -80,7 +84,7 @@ fun Application.newParticipantModule() {
                 }
                 route("/not_using_diyaps") {
                     get("/") {
-                        call.respondConsentTemplate("/new_participant/parent")
+                        call.respondConsentTemplate("/new_participant/parent", INFO_SHEET_PARENT_NON_USERS)
                     }
                     post("/") {
                         if (call.receiveParameters().contains("consent")) {

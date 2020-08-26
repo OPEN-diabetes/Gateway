@@ -1,6 +1,10 @@
 package eu.opendiabetes.gateway.modules
 
+import eu.opendiabetes.gateway.database.EnrollmentType
 import eu.opendiabetes.gateway.database.ParticipationLink
+import eu.opendiabetes.gateway.info_sheets.english.INFO_SHEET_ADULT_NON_USERS_PARTNERS
+import eu.opendiabetes.gateway.info_sheets.english.INFO_SHEET_ADULT_USERS_PARTNERS
+import eu.opendiabetes.gateway.info_sheets.english.INFO_SHEET_TEENAGERS
 import eu.opendiabetes.gateway.templates.respondConsentNotGivenTemplate
 import eu.opendiabetes.gateway.templates.respondConsentTemplate
 import eu.opendiabetes.gateway.utils.RedCapAPI
@@ -40,8 +44,12 @@ fun Application.redCapModule() {
         }
         route("/p/{id}/{secret}") {
             get("/") {
-                call.checkParticipationLink() {
-                    respondConsentTemplate()
+                call.checkParticipationLink { participationLink ->
+                    when (participationLink.enrollmentType) {
+                        EnrollmentType.PARTNER_USING_DIYAPS -> respondConsentTemplate(informationSheet = INFO_SHEET_ADULT_USERS_PARTNERS)
+                        EnrollmentType.PARTNER_NOT_USING_DIYAPS -> respondConsentTemplate(informationSheet = INFO_SHEET_ADULT_NON_USERS_PARTNERS)
+                        EnrollmentType.TEENAGER_USING_DIYAPS -> respondConsentTemplate(informationSheet = INFO_SHEET_TEENAGERS)
+                    }
                 }
             }
             post("/") {
