@@ -167,7 +167,7 @@ object English : Language() {
     override val askPartner = "Ask your partner, if you have one, to complete a shorter version of the survey"
     override val sendParent = ""
     override val sendChild = "Please send the following participation link to your child, e.g. via e-mail:"
-    override val sendPartner = "Please send the following participation link to your partner, e.g. via e-mail: It should not take them any longer than 10-15 minutes and responses will be confidential. That means you will not be able to see your partner´s responses and vice-versa. Please also give them your unique participation ID so we can link their responses to yours in our analysis."
+    override val sendPartner = "Please send the following participation link to your partner, e.g. via e-mail: It should not take them any longer than 10-15 minutes and responses will be confidential. That means you will not be able to see your partner´s responses and vice-versa."
     override val fillOutSurvey = "Participate in the OPEN survey"
     override val answerAFewQuestions =
         "We kindly invite you to answer a few questions if you like. This will take no longer than 20 to 30 minutes."
