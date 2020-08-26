@@ -17,7 +17,7 @@ const val INFO_SHEET_PARENT_NON_USERS = """
 <h1>Why is OPEN doing this research?</h1>
 <p>By carrying out this research study, OPEN will be able to build evidence about the effectiveness of DIYAPS and potential further improvements in the technology that could be introduced in the future.</p>
 <h1>Why am I being invited to take part?</h1>
-<p>You have been invited to take part because you are the parent/carer of a DIYAPS user.</p>
+<p>You have been invited to take part because you are the parent/carer of a child with diabetes and a member of DIYAPS online community.</p>
 <h1>What will happen if I decide to take part in this research study?</h1>
 <p>If you kindly agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe</b> by noting it down, emailing it to yourself or taking a picture of it as you may need it later.</p></p> 
 <p>You will then be asked to complete some questionnaires about your health and quality of life. Altogether, it should not take you more than 20-30 minutes. These questionnaires will focus on:</p>
