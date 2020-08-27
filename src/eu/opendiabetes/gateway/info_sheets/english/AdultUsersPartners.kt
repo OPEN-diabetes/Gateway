@@ -20,7 +20,6 @@ const val INFO_SHEET_ADULT_USERS_PARTNERS = """
 <p>You are being invited to take part because you are the partner of a DIYAPS user.</p>
 <h1>What will happen if I decide to take part in this research study?</h1>
 <p>If you kindly agree to take part, you will be asked to complete some questionnaires about your quality of life and well-being. Altogether, it should not take you more than 10-15 minutes. These questionnaires will focus on:</p> 
-<p>You will then be asked to complete some questionnaires about your health and quality of life. Altogether, it should not take you more than 20-30 minutes. These questionnaires will focus on:</p>
 <ul>
     <li>Your general well-being </li>
     <li>Your general experience of living with a person with diabetes</li>
@@ -28,8 +27,7 @@ const val INFO_SHEET_ADULT_USERS_PARTNERS = """
     <li>Your general experiences of building and maintaining a DIYAPS</li>
 </ul>
 <h1>How will the data be used?</h1> 
-<p>The pseudonymised responses to the survey will be analysed by our team of researchers. Once the OPEN project is completed your anonymised data will be available to researchers upon request. To protect your and your partner’s privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers. Remember that your responses will be confidential i.e. you will not be able to see your partner’s responses and vice-versa. Responding to the participation link sent by your partner is optional. </p>
-<p>Once the OPEN project is completed your anonymised data will be available to researchers upon request. To protect your privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers.</p>
+<p>The pseudonymised responses to the survey will be analysed by our team of researchers. Once the OPEN project is completed your anonymised data will be available to researchers upon request. To protect your and your partner’s privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers. Remember that your responses will be confidential, i.e. you will not be able to see your partner’s responses and vice-versa. Responding to the participation link sent by your partner is optional. </p>
 <p>The organisations in the OPEN consortium involved in accessing your data will include:</p>
 <ul>
     <li>University College Dublin, Ireland</li>
@@ -46,7 +44,7 @@ const val INFO_SHEET_ADULT_USERS_PARTNERS = """
 <h1>What are the benefits of taking part in this research study?</h1>
 <p>There are no direct, material benefits expected from taking part in this study. However, you will be helping to improve the overall scientific knowledge about DIYAPS systems and its use. As a consequence, your participation and experience may help the diabetes community.</p> 
 <h1>What are the risks of taking part in this research study?</h1>
-<p>There are no anticipated risks expected from taking part in this study. The only discomfort you may have is related to the time you have to dedicate to complete the survey. The questionnaires that have been selected for use have been tried and tested among a large population of partners of people living with diabetes and have been designed to minimize the risk of causing upset and distress. However, if you do experience this or any other aspect of the study as distressing, you are free to stop participating at any time, without personal consequence. In such circumstances, we recommend contacting your diabetes team, GP/primary care physician or local diabetes organizations who may be able to provide you with psychological and practical support. However, if they are not in a position to provide support, you may find information on the following webpages helpful:</p>
+<p>There are no anticipated risks expected from taking part in this study. The only discomfort you may have is related to the time you have to dedicate to complete the survey. The questionnaires that have been selected for use have been tried and tested among a large population of partners of people living with diabetes and have been designed to minimize the risk of causing upset and distress. However, if you do experience this or any other aspect of the study as distressing, you are free to stop participating at any time, without personal consequence. In such circumstances, we recommend contacting your GP/primary care physician or diabetes team, or local diabetes organizations who may be able to provide you with psychological and practical support. However, if they are not in a position to provide support, you may find information on the following webpages helpful:</p>
 <ul>
     <li><a href="https://acbrd.org.au/diabetes-and-emotional-health-factsheets/" target="_blank">Diabetes and emotional health factsheets</a></li>
     <li><a href="https://www.jdrf.org/t1d-resources/living-with-t1d/mental-health/" target="_blank">Mental Health</a></li>
@@ -81,10 +79,6 @@ const val INFO_SHEET_ADULT_USERS_PARTNERS = """
         <span>Germany</span>
         <span>Telephone: <a href="tel:+4930450616454">+49 30 450 616454</a></span>
         <span>Email: <a href="mailto:katarina.braune@charite.de">katarina.braune@charite.de</a></span>
-    </div>
-    <div class="contact-detail">
-        <span><b>Data Protection Officer</b></span>
-        <span>Email: <a href="mailto:gdpr@ucd.ie">gdpr@ucd.ie</a></span>
     </div>
     <div class="contact-detail">
         <span><b>UCD Data Protection General Enquiries</b></span>
