@@ -2,25 +2,26 @@ package eu.opendiabetes.gateway.info_sheets.english
 
 const val INFO_SHEET_PARENT_NON_USERS = """
 <h1>Introduction</h1>
-<p>The OPEN team invites you to take part in a global study that examines the impact of Do-It-Yourself Artificial Pancreas Systems (DIYAPS) on the health and well-being of users. The following information explains what to expect if you choose to take part in the research. <b>Please read it carefully. If you do not understand some of the information and/or would like to discuss anything related to the project, feel free to contact a member of our research team.</b></p>
+<p>The OPEN team invites you and your child to take part in a global study that examines the impact of Do-It-Yourself Artificial Pancreas Systems (DIYAPS) on the health and well-being of users. The following information explains what to expect if you choose on your child's behalf to take part in the research. <b>Please read it carefully. If you do not understand some of the information and/or would like to discuss anything related to the project, feel free to contact a member of our research team.</b></p>
 <h1>Name of Study</h1> 
 <p>OPEN (Outcomes of Patients’ Evidence with Novel, Do-it-Yourself Artificial Pancreas Technology)</p>
 <h1>Name of Principal Investigator</h1>
 <p>Dr Shane O’Donnell</p>
 <h1>What is this research about?</h1>
-<p>A growing number of people living with diabetes are choosing to build DIYAPS to help with the management of their condition. However, more research is needed to understand if and how people living with diabetes benefit from using these systems. This study has three main aims:</p> 
+<p>A growing number of people living with diabetes are choosing to build DIYAPS to help with the management of their condition. However, more research is needed to understand if and how people living with diabetes benefit from using these systems. This study has four main aims:</p> 
 <ol>
-    <li>to examine the clinical and quality of life outcomes of DIYAPS users</li>
+    <li>to examine the clinical and</li>
+    <li>quality of life outcomes of DIYAPS users and non-users</li>
     <li>to identify potential technical improvements that could be made to artificial pancreas technology of all kinds, and</li>
-    <li>to investigate how more people can benefit from the innovations being developed by the DIY community.</li>
+    <li>to explore the difficulties and challenges that people face in building DIYAPS, as well as why some choose not to use DIYAPS</li>
 </ol>
 <h1>Why is OPEN doing this research?</h1>
 <p>By carrying out this research study, OPEN will be able to build evidence about the effectiveness of DIYAPS and potential further improvements in the technology that could be introduced in the future.</p>
 <h1>Why am I being invited to take part?</h1>
-<p>You have been invited to take part because you are the parent/carer of a child with diabetes and a member of DIYAPS online community.</p>
-<h1>What will happen if I decide to take part in this research study?</h1>
+<p>You have been invited to take part because you are the parent/carer of a child with diabetes and a member of the DIYAPS online community.</p>
+<h1>What will happen if we decide to take part in this research study?</h1>
 <p>If you kindly agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe</b> by noting it down, emailing it to yourself or taking a picture of it as you may need it later.</p></p> 
-<p>You will then be asked to complete some questionnaires about your health and quality of life. Altogether, it should not take you more than 20-30 minutes. These questionnaires will focus on:</p>
+<p>You will then be asked to complete a series of questionnaires designed to access the quality of life and well-being of you and your child. Altogether, it should not take you more than 20-30 minutes. These questionnaires will focus on:</p>
 <ul>
     <li>Demographic information (about yourself and your child)</li>
     <li>Information about your child’s health and diabetes</li>
@@ -28,15 +29,13 @@ const val INFO_SHEET_PARENT_NON_USERS = """
     <li>Your general sense of well-being caring for someone with diabetes</li>
     <li>Your sleep quality and mood</li>
     <li>Your experiences of being a member of an online DIYAPS community</li>
-    <li>The challenges you may have experienced or anticipate in building a DIYAPS system</li>
+    <li>The challenges you may have experienced or anticipate in building a DIYAPS</li>
 </ul>
-<p>To further assist our research, we would kindly invite you to become a member of a data repository site called ‘Open Humans’. Open Humans allows people to anonymously donate their health related data (including device data i.e. from their glucose monitoring, or Nightscout, etc.) for research purposes. Once you sign up to Open Humans, we invite you to join our project on the Open Humans platform called the ‘Open Project’. This should take you no longer than 2-3 minutes.</p>
-<p>Choosing to sign up to Open Humans and joining the OPEN project on Open Humans is <b>optional</b> and <b>you decide</b> what data you would like to share with us (if at all), and whether you would like to participate in any further follow on studies. Bear in mind that your participation in the OPEN project and future studies will greatly assist us to enhance the existing scientific evidence on DIYAPS.</p>
-<p>If you are happy to sign up to the Open Humans platform, instructions on how to connect your existing Open Humans account — or create a new one and connect this — are provided on the <a href="https://open-diabetes.eu/en/open-survey/" target="_blank">OPEN website</a>.</p>  
-<p>Lastly, if you have a partner and would like them to complete a shorter version of the survey, you will also be able to provide them with a participation link. Do not share this with anyone but your partner, who should use this link to complete the questionnaire, so that your answers can be combined. It should not take them any longer than 10-15 minutes to complete and responses will be confidential i.e. you will not be able to see your partner’s responses and vice-versa. Sharing the participation link with your partner is optional.</p>
+<p>To further assist our research, we would kindly invite you to become a member of a data repository site called ‘Open Humans’. Open Humans allows people to anonymously donate their health related data (including device data i.e. from their glucose monitoring, or Nightscout, etc.) for research purposes. Once you sign up to Open Humans, we invite you to join <b>our</b> project on the Open Humans platform called the ‘Open Project’. This will allow us to anonymously contact you to request your participation in future OPEN studies. The process should take you no longer than 2-3 minutes.</p>
+<p>Choosing to sign up to Open Humans and joining the OPEN project on Open Humans is <b>optional</b> and <b>you decide</b> if you would like to participate in any further follow on studies. Bear in mind that your participation in the OPEN project and future studies will greatly assist us to enhance the existing scientific evidence on DIYAPS.</p>
+<p>If you are happy to sign up to the Open Humans platform, instructions on how to connect your existing Open Humans account — <b>or</b> create a new one and connect this — are provided on the <a href="https://open-diabetes.eu/en/open-survey/" target="_blank">OPEN website</a>.</p>  
 <h1>How will the data be used?</h1> 
-<p>The pseudonymised responses to the survey will be analysed by our team of researchers. If you choose to upload your device data to the Open Humans project, we will combine them with your responses to the survey described above to create a more complete picture of the impact of DIYAPS on the lives of people with diabetes. It will also help us to (anonymously) stay “in touch” and inform you about any follow-up studies in the future.</p>
-<p>Once the OPEN project is completed your anonymised data will be available to researchers upon request. To protect your privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers.</p>
+<p>The pseudonymised responses to the survey will be analysed by our team of researchers. Once the OPEN project is completed your and your child’s anonymised data will be available to researchers upon request. To protect your and your child’s privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers.</p>
 <p>The organisations in the OPEN consortium involved in accessing your data will include:</p>
 <ul>
     <li>University College Dublin, Ireland</li>
@@ -59,12 +58,12 @@ const val INFO_SHEET_PARENT_NON_USERS = """
     <li><a href="https://www.jdrf.org/t1d-resources/living-with-t1d/mental-health/" target="_blank">Mental Health</a></li>
 </ul>
 <p>If you choose to provide detailed personal information in a free text field, there is a small chance that you may identify yourself within the questionnaire to OPEN researchers. However, this information will be removed before the data set is shared with the rest of the OPEN research team.</p>
-<h1>Can I or my child change their mind at any stage and withdraw from the study?</h1>
+<h1>Can I or my child change our minds at any stage and withdraw from the study?</h1>
 <p>Yes! If you and your child decide to participate and subsequently change your mind, you may withdraw from the study at any time. You may also choose to remove your data from future analyses of the OPEN project. To do so, please contact our research team through the details provided below. You can also have the option to leave the OPEN project on Open Humans at any time and remove any data that you have uploaded to the platform. Please note that in both instances we can only delete your data if you provide your Participant ID from the survey.</p>
 <h1>How will I find out what happens with this project?</h1>
 <p>The OPEN team would like you to engage with this project as much as possible. That is why we have developed a website for the OPEN project. On <a href="https://open-diabetes.eu">this website</a>, we provide regular updates on the findings of our project and you may also sign up to our newsletter to receive regular email updates. All the results of our research will be published in a way which will be accessible and free of charge to the public.</p>
 <h1>Contact Details</h1>
-<p>If any participant would like to contact a member of the research team for any research-related reason, they can do so via the contact information below. If any questions are not answered in a satisfactory manner, then contact can be made with a Data Protection Officer at UCD, the details of which are also provided below. For general data protection enquiries, please contact the UCD Data Protection office. Finally, if none of the UCD contacts have given a satisfactory response, details on the Data Protection Commission are provided below.</p>
+<p>If any participant or participant’s caregiver would like to contact a member of the research team for any research-related reason, they can do so via the contact information below. If any questions are not answered in a satisfactory manner, then contact can be made with a Data Protection Officer at UCD, the details of which are also provided below. For general data protection enquiries, please contact the UCD Data Protection office. Finally, if none of the UCD contacts have given a satisfactory response, details on the Data Protection Commission are provided below.</p>
 <div id="contact-details">
     <div class="contact-detail">
         <span><b>Dr Shane O’Donnell</b></span>
@@ -89,11 +88,7 @@ const val INFO_SHEET_PARENT_NON_USERS = """
         <span>Telephone: <a href="tel:+4930450616454">+49 30 450 616454</a></span>
         <span>Email: <a href="mailto:katarina.braune@charite.de">katarina.braune@charite.de</a></span>
     </div>
-    <div class="contact-detail">
-        <span><b>Data Protection Officer</b></span>
-        <span>Email: <a href="mailto:gdpr@ucd.ie">gdpr@ucd.ie</a></span>
-    </div>
-    <div class="contact-detail">
+        <div class="contact-detail">
         <span><b>UCD Data Protection General Enquiries</b></span>
         <span>Roebuck Castle</span>
         <span>University College Dublin</span>
