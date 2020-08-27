@@ -167,7 +167,7 @@ object English : Language() {
     override val askPartner = "Ask your partner, if you have one, to complete a shorter version of the survey"
     override val sendParent = ""
     override val sendChild = "Please send the following participation link to your child, e.g. via e-mail:"
-    override val sendPartner = "Please send the following participation link to your partner, e.g. via e-mail: It should not take them any longer than 10-15 minutes and responses will be confidential. That means you will not be able to see your partner´s responses and vice-versa. Please also give them your unique participation ID so we can link their responses to yours in our analysis."
+    override val sendPartner = "Please send the following participation link to your partner, e.g. via e-mail: It should not take them any longer than 10-15 minutes and responses will be confidential. That means you will not be able to see your partner´s responses and vice-versa."
     override val fillOutSurvey = "Participate in the OPEN survey"
     override val answerAFewQuestions =
         "We kindly invite you to answer a few questions if you like. This will take no longer than 20 to 30 minutes."
@@ -189,7 +189,7 @@ object English : Language() {
     override val createOpenHumansAccount = "Create an Open Humans account"
     override val signUpOnOpenHumans =
         "Sign up for an account on openhumans.org if you do not have one yet. You can re-use your existing Facebook or Google login."
-    override val uploadYourData = "Upload your data <i>(note: if you are signing up to Open Humans so we can contact you about future studies, you may skip step 2 and go straight to step3)</i>"
+    override val uploadYourData = "Upload your data (note: if you are signing up to Open Humans so we can contact you about future studies, you may skip step 2 and go straight to step3)"
     override val chooseDataSource = "The following data sources are available:"
     override val nightscoutDataTransferDescription =
         "If you are already uploading your data to Nightscout, use this simple tool to copy your data over to Open Humans."
