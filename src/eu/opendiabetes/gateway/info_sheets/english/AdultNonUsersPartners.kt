@@ -8,26 +8,26 @@ const val INFO_SHEET_ADULT_NON_USERS_PARTNERS = """
 <h1>Name of Principal Investigator</h1>
 <p>Dr Shane O’Donnell</p>
 <h1>What is this research about?</h1>
-<p>A growing number of people living with diabetes are choosing to build DIYAPS to help with the management of their condition. However, more research is needed to understand if and how people living with diabetes benefit from using these systems. This study has three main aims:</p> 
+<p>A growing number of people living with diabetes are choosing to build DIYAPS to help with the management of their condition. However, more research is needed to understand if and how people living with diabetes benefit from using these systems. This study has four main aims:</p> 
 <ol>
-    <li>to examine the clinical and quality of life outcomes of DIYAPS users</li>
+    <li>to examine the clinical and</li>
+    <li>quality of life outcomes of DIYAPS users and non-users</li>
     <li>to identify potential technical improvements that could be made to artificial pancreas technology of all kinds, and</li>
-    <li>to investigate how more people can benefit from the innovations being developed by the DIY community.</li>
+    <li>to explore the difficulties and challenges that people face in building DIYAPS, as well as why some choose not to use DIYAPS</li>
 </ol>
 <h1>Why is OPEN doing this research?</h1>
 <p>By carrying out this research study, OPEN will be able to build evidence about the effectiveness of DIYAPS and potential further improvements in the technology that could be introduced in the future.</p>
 <h1>Why am I being invited to take part?</h1>
-<p>You are being invited to take part because you are the partner of a member of the DIYAPS online community.</p>
+<p>You are being invited to take part because your partner has diabetes and is a member of the DIYAPS online community.</p>
 <h1>What will happen if I decide to take part in this research study?</h1>
-<p>If you kindly agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe</b> by noting it down, emailing it to yourself or taking a picture of it as you may need it later.</p></p> 
-<p>You will then be asked to complete some questionnaires about your health and quality of life. Altogether, it should not take you more than 20-30 minutes. These questionnaires will focus on:</p>
+<p>If you kindly agree to take part, you will be asked to complete some questionnaires about your quality of life and well-being. Altogether, it should not take you more than 10-15 minutes. These questionnaires will focus on:</p>
 <ul>
     <li>Your general well-being</li>
     <li>Your general experience of living with a person with diabetes</li>
     <li>Your sleep quality</li>
 </ul>
 <h1>How will the data be used?</h1> 
-<p>The pseudonymised responses to the survey will be analysed by our team of researchers. Once the OPEN project is completed your anonymised data will be available to researchers upon request. To protect your privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers.</p>
+<p>The pseudonymised responses to the survey will be analysed by our team of researchers. Once the OPEN project is completed your anonymised data will be available to researchers upon request. To protect your and your partner’s privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers.Remember that your responses will be confidential, i.e. you will not be able to see your partner’s responses and vice-versa. Responding to the participation link sent by your partner is optional.</p>
 <p>The organisations in the OPEN consortium involved in accessing your data will include:</p>
 <ul>
     <li>University College Dublin, Ireland</li>
@@ -44,14 +44,14 @@ const val INFO_SHEET_ADULT_NON_USERS_PARTNERS = """
 <h1>What are the benefits of taking part in this research study?</h1>
 <p>There are no direct, material benefits expected from taking part in this study. However, you will be helping to improve the overall scientific knowledge about DIYAPS systems and its use. As a consequence, your participation and experience may help the diabetes community.</p> 
 <h1>What are the risks of taking part in this research study?</h1>
-<p>There are no anticipated risks expected from taking part in this study. The only discomfort you may have is related to the time you have to dedicate to complete the survey. The questionnaires that have been selected for use have been tried and tested among a large population of partners of people living with diabetes and have been designed to minimize the risk of causing upset and distress. However, if you do experience this or any other aspect of the study as distressing, you are free to stop participating at any time, without personal consequence. In such circumstances, we recommend contacting your diabetes team, GP/primary care physician or local diabetes organizations who may be able to provide you with psychological and practical support. However, if they are not in a position to provide support, you may find information on the following webpages helpful:</p>
+<p>There are no anticipated risks expected from taking part in this study. The only discomfort you may have is related to the time you have to dedicate to complete the survey. The questionnaires that have been selected for use have been tried and tested among a large population of partners of people living with diabetes and have been designed to minimize the risk of causing upset and distress. However, if you do experience this or any other aspect of the study as distressing, you are free to stop participating at any time, without personal consequence. In such circumstances, we recommend contacting your GP/primary care physician or diabetes team, or local diabetes organizations who may be able to provide you with psychological and practical support. However, if they are not in a position to provide support, you may find information on the following webpages helpful:</p>
 <ul>
     <li><a href="https://acbrd.org.au/diabetes-and-emotional-health-factsheets/" target="_blank">Diabetes and emotional health factsheets</a></li>
     <li><a href="https://www.jdrf.org/t1d-resources/living-with-t1d/mental-health/" target="_blank">Mental Health</a></li>
 </ul>
 <p>If you choose to provide detailed personal information in a free text field, there is a small chance that you may identify yourself within the questionnaire to OPEN researchers. However, this information will be removed before the data set is shared with the rest of the OPEN research team.</p>
 <h1>Can I change my mind at any stage and withdraw from the study?</h1>
-<p>Yes! If you decide to participate and subsequently change your mind, you may withdraw from the study at any time. You may also choose to remove your data from future analyses of the OPEN project. To do so, please contact our research team through the details provided below. You can also have the option to leave the OPEN project on Open Humans at any time and remove any data that you have uploaded to the platform. Please note that in both instances we can only delete your data if you provide your Participant ID from the survey.</p>
+<p>Yes! If you decide to participate and subsequently change your mind, you may withdraw from the study at any time. Your partner may also choose to remove your data from future analyses of the OPEN project. To do so, they will need to contact our research team through the details provided below.</p>
 <h1>How will I find out what happens with this project?</h1>
 <p>The OPEN team would like you to engage with this project as much as possible. That is why we have developed a website for the OPEN project. On <a href="https://open-diabetes.eu">this website</a>, we provide regular updates on the findings of our project and you may also sign up to our newsletter to receive regular email updates. All the results of our research will be published in a way which will be accessible and free of charge to the public.</p>
 <h1>Contact Details</h1>
@@ -79,10 +79,6 @@ const val INFO_SHEET_ADULT_NON_USERS_PARTNERS = """
         <span>Germany</span>
         <span>Telephone: <a href="tel:+4930450616454">+49 30 450 616454</a></span>
         <span>Email: <a href="mailto:katarina.braune@charite.de">katarina.braune@charite.de</a></span>
-    </div>
-    <div class="contact-detail">
-        <span><b>Data Protection Officer</b></span>
-        <span>Email: <a href="mailto:gdpr@ucd.ie">gdpr@ucd.ie</a></span>
     </div>
     <div class="contact-detail">
         <span><b>UCD Data Protection General Enquiries</b></span>
