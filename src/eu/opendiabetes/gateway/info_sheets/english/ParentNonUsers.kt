@@ -88,7 +88,7 @@ const val INFO_SHEET_PARENT_NON_USERS = """
         <span>Telephone: <a href="tel:+4930450616454">+49 30 450 616454</a></span>
         <span>Email: <a href="mailto:katarina.braune@charite.de">katarina.braune@charite.de</a></span>
     </div>
-        <div class="contact-detail">
+    <div class="contact-detail">
         <span><b>UCD Data Protection General Enquiries</b></span>
         <span>Roebuck Castle</span>
         <span>University College Dublin</span>
