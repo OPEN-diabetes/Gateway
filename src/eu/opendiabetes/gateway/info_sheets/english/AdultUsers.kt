@@ -29,10 +29,10 @@ const val INFO_SHEET_ADULT_USERS = """
     <li>If and how COVID-19 has impacted your quality of life</li>
     <li>Your general experiences of building and maintaining a DIYAPS</li>
 </ul>
-<p>To further assist our research, we would kindly invite you to become a member of a data repository site called ‘Open Humans’. Open Humans allows people to anonymously donate their health related data (including device data i.e. from their glucose monitoring, or Nightscout, etc.) for research purposes. Once you sign up to Open Humans, we invite you to join our project on the Open Humans platform called the ‘Open Project’. This should take you no longer than 2-3 minutes.</p>
+<p>To further assist our research, we would kindly invite you to become a member of a data repository site called ‘Open Humans’. Open Humans allows people to anonymously donate their health related data (including device data, e.g. from their glucose monitoring, or Nightscout, etc.) for research purposes. Once you sign up to Open Humans, we invite you to join our project on the Open Humans platform called the ‘Open Project’. This should take you no longer than 2-3 minutes.</p>
 <p>Choosing to sign up to Open Humans and joining the OPEN project on Open Humans is <b>optional</b> and <b>you decide</b> what data you would like to share with us (if at all), and whether you would like to participate in any further follow on studies. Bear in mind that your participation in the OPEN project and future studies will greatly assist us to enhance the existing scientific evidence on DIYAPS.</p>
 <p>If you are happy to sign up to the Open Humans platform, instructions on how to connect your existing Open Humans account — or create a new one and connect this — are provided on the <a href="https://open-diabetes.eu/en/open-survey/" target="_blank">OPEN website</a>.</p>  
-<p>Lastly, if you have a partner and would like them to complete a shorter version of the survey, you will also be able to provide them with a participation link. Do not share this with anyone but your partner, who should use this link to complete the questionnaire, so that your answers can be combined. It should not take them any longer than 10-15 minutes to complete and responses will be confidential i.e. you will not be able to see your partner’s responses and vice-versa. Sharing the participation link with your partner is optional.</p>
+<p>Lastly, if you have a partner and would like them to complete a shorter version of the survey, you will also be able to provide them with a participation link. Do not share this with anyone but your partner, who should use this link to complete the questionnaire, so that your answers can be combined. It should not take them any longer than 10-15 minutes to complete and responses will be confidential, i.e. you will not be able to see your partner’s responses and vice-versa. Sharing the participation link with your partner is optional.</p>
 <h1>How will the data be used?</h1> 
 <p>The pseudonymised responses to the survey will be analysed by our team of researchers. If you choose to upload your device data to the Open Humans project, we will combine them with your responses to the survey described above to create a more complete picture of the impact of DIYAPS on the lives of people with diabetes. It will also help us to (anonymously) stay “in touch” and inform you about any follow-up studies in the future.</p>
 <p>Once the OPEN project is completed your anonymised data will be available to researchers upon request. To protect your privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers.</p>
@@ -50,7 +50,7 @@ const val INFO_SHEET_ADULT_USERS = """
 <p>As stated above, any information that you share that may potentially inadvertently make you identifiable will be removed - this process is called pseudonymisation.</p>  
 <p>Please note that only adults (aged 18+) who are able to provide consent are allowed to participate.</p> 
 <h1>What are the benefits of taking part in this research study?</h1>
-<p>There are no direct, material benefits expected from taking part in this study. However, you will be helping to improve the overall scientific knowledge about DIYAPS systems and its use. As a consequence, your participation and experience may help the diabetes community.</p> 
+<p>There are no direct, material benefits expected from taking part in this study. However, you will be helping to improve the overall scientific knowledge about DIYAPS and its use. As a consequence, your participation and experience may help the diabetes community.</p> 
 <h1>What are the risks of taking part in this research study?</h1>
 <p>There are no anticipated risks expected from taking part in this study. The only discomfort you may have is related to the time you have to dedicate to complete the survey. The questionnaires that have been selected for use have been tried and tested among a large population of people living with diabetes and have been designed to minimize the risk of causing upset and distress. However, if you do experience this or any other aspect of the study as distressing, you are free to stop participating at any time, without personal consequence. In such circumstances, we recommend contacting your diabetes team, GP/primary care physician or local diabetes organizations who may be able to provide you with psychological and practical support. However, if they are not in a position to provide support, you may find information on the following webpages helpful:</p>
 <ul>
@@ -87,10 +87,6 @@ const val INFO_SHEET_ADULT_USERS = """
         <span>Germany</span>
         <span>Telephone: <a href="tel:+4930450616454">+49 30 450 616454</a></span>
         <span>Email: <a href="mailto:katarina.braune@charite.de">katarina.braune@charite.de</a></span>
-    </div>
-    <div class="contact-detail">
-        <span><b>Data Protection Officer</b></span>
-        <span>Email: <a href="mailto:gdpr@ucd.ie">gdpr@ucd.ie</a></span>
     </div>
     <div class="contact-detail">
         <span><b>UCD Data Protection General Enquiries</b></span>
