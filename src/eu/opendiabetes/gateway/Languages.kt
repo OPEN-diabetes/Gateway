@@ -167,7 +167,7 @@ object English : Language() {
     override val askPartner = "Ask your partner, if you have one, to complete a shorter version of the survey"
     override val sendParent = ""
     override val sendChild = "Please send the following participation link to your child, e.g. via e-mail:"
-    override val sendPartner = "Please send the following participation link to your partner, e.g. via e-mail: It should not take them any longer than 10-15 minutes and responses will be confidential. That means you will not be able to see your partner´s responses and vice-versa."
+    override val sendPartner = "Please send the following participation link to your partner, e.g. via e-mail: It should them approximately 10-15 minutes and responses will be confidential. That means you will not be able to see your partner´s responses and vice-versa."
     override val fillOutSurvey = "Participate in the OPEN survey"
     override val answerAFewQuestions =
         "We kindly invite you to answer a few questions if you like. This will take no longer than 20 to 30 minutes."
@@ -227,15 +227,14 @@ object English : Language() {
     override val iAlreadyHaveAParticipantId = "I already have a Participant ID."
     override val iDoNotHaveAParticipantId = "I do not have a Participant ID."
     override val introduction = """
-        <p>We are the OPEN project, a European Union-funded international research consortium aiming to study and explore the unique initiative of “Do-It-Yourself Artificial Pancreas Systems”, or DIYAPS. This technology has been developed for better diabetes management by people with type 1 diabetes and their families. Some people consider it a revolutionary innovation in the history of medicine, others are sceptical as this is still “DIY”...</p>
-        <p>We believe that the online community of people interested in DIYAPS provides an excellent opportunity for researchers to examine the effects of using DIYAPS on health and well-being, to identify potential technological improvements that can be made to artificial pancreas technology, to explore the difficulties and challenges that people face in building DIYAPS and reasons why some choose not to use DIYAPS.</p>
-        <p>There is no development without research, so why not help us build evidence? We need the involvement of <b>everyone</b> from the diabetes online community. This includes DIYAPS users and non-users from all over the world, as well as their families and partners.</p>
+        <p>We are the OPEN project, a European Union-funded international research consortium aiming to study and explore the unique patient-innovation of “Do-It-Yourself Artificial Pancreas Systems”, or DIYAPS.</p>
+        <p>There is no development without research, so we are asking <b>everyone</b> from the diabetes online community to help us build evidence. This includes DIYAPS users and non-users from all over the world, as well as their families and partners.</p>
         <h1>How can YOU help?</h1>
-        <p>To remain anonymous, you will not give your real name. Instead, a participant ID will be automatically generated for each of you before you start the survey.</p>
-        <p>After that, we mainly need you to answer questions about your health and well-being, your diabetes and, if applicable, your experience with DIYAPS and/or opinion on challenges related to DIYAPS use. <b>All data will be kept anonymous.</b></p>
+        <p>To remain anonymous a participant ID will be automatically generated for each of you before you start the survey.</p>
+        <p>We mainly need you to answer questions about your health and well-being, your diabetes and, if applicable, your experience with DIYAPS and/or opinion on challenges related to DIYAPS use. <b>All data will be kept anonymous.</b></p>
         <p>If you are a DIYAPS user, you will also have the option to anonymously donate your loop device data (e.g. from Nightscout). This will require some additional effort on your part but the donated data would help greatly towards our aim to explore future improvements of APS algorithms.</p>
         <p>All of this is fully optional and voluntary! You decide how much information you want to provide. It should not take you more than <b>30 minutes</b> to complete.</p>
-        <p>More detailed information and instructions will be provided on the next pages before you enter the survey. Further information about OPEN is also available <a href="https://open-diabetes.eu">here</a> on our website.</p>
+        <p>Further information will be provided on the next pages and <a href="https://open-diabetes.eu">here</a> on our website.</p>
         <p><b>Last but not least: We are very happy to have all of you here! THANK YOU!</b></p>
         <p><b>The OPEN team</b></p>
     """.trimIndent()
