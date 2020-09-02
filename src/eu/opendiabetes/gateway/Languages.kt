@@ -227,15 +227,14 @@ object English : Language() {
     override val iAlreadyHaveAParticipantId = "I already have a Participant ID."
     override val iDoNotHaveAParticipantId = "I do not have a Participant ID."
     override val introduction = """
-        <p>We are the OPEN project, a European Union-funded international research consortium aiming to study and explore the unique patient-innovation of “Do-It-Yourself Artificial Pancreas Systems”, or DIYAPS.</p>
-        <p>There is no development without research, so we are asking <b>everyone</b> from the diabetes online community to help us build evidence. This includes DIYAPS users and non-users from all over the world, as well as their families and partners.</p>
+        <p>We are the OPEN project, a European Union-funded international research consortium aiming to study and explore the unique patient-innovation of “Do-It-Yourself Artificial Pancreas Systems”, or DIYAPS. We are asking <b>everyone</b> from the global diabetes online community to help us build evidence on how this technology affects the lives of people with diabetes.</p>
         <h1>How can YOU help?</h1>
-        <p>To remain anonymous a participant ID will be automatically generated for each of you before you start the survey.</p>
-        <p>We mainly need you to answer questions about your health and well-being, your diabetes and, if applicable, your experience with DIYAPS and/or opinion on challenges related to DIYAPS use. <b>All data will be kept anonymous.</b></p>
-        <p>If you are a DIYAPS user, you will also have the option to anonymously donate your loop device data (e.g. from Nightscout). This will require some additional effort on your part but the donated data would help greatly towards our aim to explore future improvements of APS algorithms.</p>
-        <p>All of this is fully optional and voluntary! You decide how much information you want to provide. It should not take you more than <b>30 minutes</b> to complete.</p>
-        <p>Further information will be provided on the next pages and <a href="https://open-diabetes.eu">here</a> on our website.</p>
-        <p><b>Last but not least: We are very happy to have all of you here! THANK YOU!</b></p>
+        <p>First and foremost, we would like you to <b>fill out all the questions</b> in our survey. When you start the survey, a random number, the <b>participant ID</b>, will be generated for you - we will never ask for your name or other identifying information.<br><b>All data will be kept anonymous.</b></p>
+        <p>The <b>ONLY</b> way to get in touch with the participants (you) will be if you also <b>join Open Humans</b>, so we can message you anonymously for our <b>follow-up studies</b>.</p>
+        <h1>You can donate your device data, too!</h1>
+        <p>You will also have the option to anonymously <b>donate your device data</b> (e.g. from Nightscout). This would <b>GREATLY HELP</b>our aim of exploring improvements to the (DIY)APS experience for all, now and in the future.</p>
+        <p><b>Further information will be provided on the next pages and <a href="https://open-diabetes.eu">here</a> on our website.</b></p>
+        <p>Last but not least: We are very happy to have all of you here! <b>THANK YOU!</b></p>
         <p><b>The OPEN team</b></p>
     """.trimIndent()
     override val ohLoginNotice = "(This only works if you have linked your Participant ID with Open Humans before.)"
