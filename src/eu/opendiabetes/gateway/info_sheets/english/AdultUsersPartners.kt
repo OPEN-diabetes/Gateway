@@ -19,7 +19,7 @@ const val INFO_SHEET_ADULT_USERS_PARTNERS = """
 <h1>Why am I being invited to take part?</h1>
 <p>You are being invited to take part because you are the partner of a DIYAPS user.</p>
 <h1>What will happen if I decide to take part in this research study?</h1>
-<p>If you kindly agree to take part, you will be asked to complete some questionnaires about your quality of life and well-being. Altogether, it should not take you more than 10-15 minutes. These questionnaires will focus on:</p> 
+<p>If you kindly agree to take part, you will be asked to <b>complete some questionnaires</b< about your quality of life and well-being. Altogether, it should not take you more than 10-15 minutes. These questionnaires will focus on:</p> 
 <ul>
     <li>Your general well-being </li>
     <li>Your general experience of living with a person with diabetes</li>
@@ -27,7 +27,7 @@ const val INFO_SHEET_ADULT_USERS_PARTNERS = """
     <li>Your general experiences of building and maintaining a DIYAPS</li>
 </ul>
 <h1>How will the data be used?</h1> 
-<p>The pseudonymised responses to the survey will be analysed by our team of researchers. Once the OPEN project is completed your anonymised data will be available to researchers upon request. To protect your and your partner’s privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers. Remember that your responses will be confidential, i.e. you will not be able to see your partner’s responses and vice-versa. Responding to the participation link sent by your partner is optional. </p>
+<p>The pseudonymised responses to the survey will be analysed by our team of researchers. Once the OPEN project is completed your anonymised data will be available to researchers upon request. To protect your and your partner’s privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers. Remember that your responses will be confidential. That means you will not be able to see your partner’s responses and vice-versa. Responding to the participation link sent by your partner is optional. </p>
 <p>The organisations in the OPEN consortium involved in accessing your data will include:</p>
 <ul>
     <li>University College Dublin, Ireland</li>
@@ -55,7 +55,7 @@ const val INFO_SHEET_ADULT_USERS_PARTNERS = """
 <h1>How will I find out what happens with this project?</h1>
 <p>The OPEN team would like you to engage with this project as much as possible. That is why we have developed a website for the OPEN project. On <a href="https://open-diabetes.eu">this website</a>, we provide regular updates on the findings of our project and you may also sign up to our newsletter to receive regular email updates. All the results of our research will be published in a way which will be accessible and free of charge to the public.</p>
 <h1>Contact Details</h1>
-<p>If any participant would like to contact a member of the research team for any research-related reason, they can do so via the contact information below. If any questions are not answered in a satisfactory manner, then contact can be made with a Data Protection Officer at UCD, the details of which are also provided below. For general data protection enquiries, please contact the UCD Data Protection office. Finally, if none of the UCD contacts have given a satisfactory response, details on the Data Protection Commission are provided below.</p>
+<p>If any participant would like to contact a member of the research team <i>(you can see us <a href="https://open-diabetes.eu/about_us/consortium">here</a> on our website)</i> for any research-related reason, they can do so via the contact information below. If any questions are not answered in a satisfactory manner, then contact can be made with a Data Protection Officer at UCD, the details of which are also provided below. For general data protection enquiries, please contact the UCD Data Protection office. Finally, if none of the UCD contacts have given a satisfactory response, details on the Data Protection Commission are provided below.</p>
 <div id="contact-details">
     <div class="contact-detail">
         <span><b>Dr Shane O’Donnell</b></span>
