@@ -170,7 +170,7 @@ object English : Language() {
     override val sendPartner = "Please send the following participation link to your partner, e.g. via e-mail: It should take them approximately 10-15 minutes and responses will be confidential. That means you will not be able to see your partner´s responses and vice-versa."
     override val fillOutSurvey = "Participate in the OPEN survey"
     override val answerAFewQuestions =
-        "We kindly invite you to answer a few questions if you like. This will take no longer than 20 to 30 minutes."
+        "We kindly invite you to answer a few questions if you like. This will take no longer than 20 to 30 minutes. You can take a break if needed and join again later with you participation ID."
     override val goToSurvey = "Go to survey"
     override val signOut = "Sign out"
     override val linkToOpenHumans = "Participate in future follow-up studies and/or donate your device data via Open Humans"
