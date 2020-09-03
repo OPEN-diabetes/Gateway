@@ -166,17 +166,17 @@ object English : Language() {
     override val askChild = "Ask your child to also fill out the survey"
     override val askPartner = "Ask your partner, if you have one, to also complete a shorter version of the survey"
     override val sendParent = ""
-    override val sendChild = "Please send the following participation link to your child, e.g. via e-mail:"
-    override val sendPartner = "Please send the following participation link to your partner, e.g. via e-mail: It should take them approximately 10-15 minutes and responses will be confidential. That means you will not be able to see your partner´s responses and vice-versa."
+    override val sendChild = "Please send the <b>following participation link</b> to your child, e.g. via e-mail:"
+    override val sendPartner = "Please send the <b>following participation link</b> to your partner, e.g. via e-mail: It should take them approximately 10-15 minutes and responses will be confidential. That means you will not be able to see your partner´s responses and vice-versa."
     override val fillOutSurvey = "Participate in the OPEN survey"
     override val answerAFewQuestions =
-        "We kindly invite you to answer a few questions if you like. This will take no longer than 20 to 30 minutes. You can take a break if needed and join again later with you participation ID."
+        "We kindly invite you to <b>answer a few questions</b> if you like. This will take no longer than 20 to 30 minutes. You can take a break if needed and join again later with you participant ID."
     override val goToSurvey = "Go to survey"
     override val signOut = "Sign out"
     override val linkToOpenHumans = "Participate in future follow-up studies and/or donate your device data via Open Humans"
     override val linkToOpenHumans2 = "Link to Open Humans"
     override val linkToOpenHumansTextSetup =
-        "Please <b>join Open Humans</b>, a non-profit data repository site, and <b>provide the link</b> to your account. This is our only chance to contact you about follow-up studies conducted by OPEN. You can also <b>donate your diabetes device data</b> to help our research efforts in improving APS algorithms. This is voluntary. Click below for a step-by-step guide on how to do this."
+        "Please <b>join Open Humans</b>, a non-profit data repository site, and <b>provide the link</b> to your account. This is our only chance to contact you about follow-up studies conducted by OPEN. You also have the option to <b>donate your diabetes device data</b> to help our research efforts.<br><i>Click below for a step-by-step guide on how to do this.</i>"
     override val linkToOpenHumansTextNoData =
         "Your Open Humans account has been connected, however, no data sources have been detected."
     override val linkToOpenHumansTextDataSources =
