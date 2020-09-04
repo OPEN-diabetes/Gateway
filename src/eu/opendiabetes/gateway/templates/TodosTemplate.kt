@@ -20,16 +20,32 @@ suspend fun ApplicationCall.respondTODOsTemplate(
             id = "todos"
             li {
                 text(language.fillOutSurvey)
-                p { text(language.answerAFewQuestions) }
+                p {
+                    unsafe {
+                        raw(language.answerAFewQuestions)
+                    }
+                }
                 a("/survey", "_blank", "button") { text(language.goToSurvey) }
             }
             li {
                 text(language.linkToOpenHumans)
                 when {
-                    dataSources == null -> p { text(language.linkToOpenHumansTextSetup) }
-                    dataSources.isEmpty() -> p("warning") { text(language.linkToOpenHumansTextNoData) }
+                    dataSources == null -> p {
+                        unsafe {
+                            raw(language.linkToOpenHumansTextSetup)
+                        }
+                    }
+                    dataSources.isEmpty() -> p("warning") {
+                        unsafe {
+                            raw(language.linkToOpenHumansTextDataSources)
+                        }
+                    }
                     else -> {
-                        p { text(language.linkToOpenHumansTextDataSources) }
+                        p {
+                            unsafe {
+                                raw(language.linkToOpenHumansTextDataSources)
+                            }
+                        }
                         ul {
                             if (dataSources.contains(OpenHumansAPI.NIGHTSCOUT_ID)) li { span("success") { text(language.nightscoutDataTransfer) } }
                             if (dataSources.contains(OpenHumansAPI.ANDROIDAPS_ID)) li { span("success") { text(language.androidAPSUploader) } }
@@ -63,7 +79,11 @@ suspend fun ApplicationCall.respondTODOsTemplate(
 
 private fun LI.participationLink(language: Language, title: String, desc: String, link: String) {
     text(title)
-    p { text(desc) }
+    p {
+        unsafe {
+            raw(desc)
+        }
+    }
     input(type = InputType.url, classes = "participation-link") {
         readonly = true
         value = link
