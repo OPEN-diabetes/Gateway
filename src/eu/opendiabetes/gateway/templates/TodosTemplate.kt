@@ -57,7 +57,7 @@ suspend fun ApplicationCall.respondTODOsTemplate(
                         }
                     }
                 }
-                a("/openhumans", classes =  "button") { text(if (dataSources == null) language.setup else language.setupAgain) }
+                a("/openhumans", target = "_blank", classes =  "button") { text(if (dataSources == null) language.setup else language.setupAgain) }
             }
             participationLinks.forEach {
                 li {
