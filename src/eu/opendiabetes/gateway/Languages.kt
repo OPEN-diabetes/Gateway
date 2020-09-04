@@ -229,8 +229,8 @@ object English : Language() {
     override val introduction = """
         <p>We are the OPEN project, a European Union-funded international research consortium aiming to study and explore the unique patient-innovation of “Do-It-Yourself Artificial Pancreas Systems”, or DIYAPS. We are asking <b>everyone</b> from the global diabetes online community to help us build evidence on how this technology affects the lives of people with diabetes.</p>
         <h1>How can YOU help?</h1>
-        <p>First and foremost, we would like you to <b>fill out all the questions</b> in our survey. When you start the survey, a random number, the <b>participant ID</b>, will be generated for you - we will never ask for your name or other identifying information.<br><b>All data will be kept anonymous.</b></p>
-        <p>The <b>ONLY</b> way to get in touch with the participants (you) will be if you also <b>join Open Humans</b>, so we can message you anonymously for our <b>follow-up studies</b>.</p>
+        <p><b>First</b> and foremost, we would like you to <b>fill out all the questions in our survey</b>. When you start the survey, a random number, the <b>participant ID</b>, will be generated for you - we will never ask for your name or other identifying information.<br><b>Your data will be kept anonymous!</b></p>
+        <p>We are <b>also</b> planning to run <b>important follow-up studies</b>. </b>The <b>ONLY</b> way to get in touch with you about this will be if you also <b>join Open Humans</b>, so we can message you anonymously.</p>
         <h1>You can donate your device data, too!</h1>
         <p>You will also have the option to anonymously <b>donate your device data</b> (e.g. from Nightscout). This would <b>GREATLY HELP</b>our aim of exploring improvements to the (DIY)APS experience for all, now and in the future.</p>
         <p><b>Further information will be provided on the next pages and <a href="https://open-diabetes.eu">here</a> on our website.</b></p>
