@@ -202,11 +202,15 @@ a {
     text-align: center;
 }
 
-#branching-text {
+#branching-text, #todos-header {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
+}
+
+#todos-header {
+    font-style: italic;
 }
 
 .branching-option {

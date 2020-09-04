@@ -16,6 +16,10 @@ suspend fun ApplicationCall.respondTODOsTemplate(
         language.yourTODOs,
         language.participantId(participantId)
     ) {
+        div {
+            id = "todos-header"
+            text(language.weKindlyAskYou)
+        }
         ul {
             id = "todos"
             li {
