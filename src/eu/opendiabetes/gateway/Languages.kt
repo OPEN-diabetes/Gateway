@@ -233,7 +233,7 @@ object English : Language() {
         <p><b>First</b> and foremost, we would like you to <b>fill out all the questions in our survey</b>. When you start the survey, a random number, the <b>participant ID</b>, will be generated for you - we will never ask for your name or other identifying information.<br><b>Your data will be kept anonymous!</b></p>
         <p>We are <b>also</b> planning to run <b>important follow-up studies</b>. </b>The <b>ONLY</b> way to get in touch with you about this will be if you also <b>join Open Humans</b>, so we can message you anonymously.</p>
         <h1>You can donate your device data, too!</h1>
-        <p>You will also have the option to anonymously <b>donate your device data</b> (e.g. from Nightscout). This would <b>GREATLY HELP</b>our aim of exploring improvements to the (DIY)APS experience for all, now and in the future.</p>
+        <p>You will also have the option to anonymously <b>donate your device data</b> (e.g. from Nightscout). This would <b>GREATLY HELP</b> our aim of exploring improvements to the (DIY)APS experience for all, now and in the future.</p>
         <p><b>Further information will be provided on the next pages and <a href="https://open-diabetes.eu">here</a> on our website.</b></p>
         <p>Last but not least: We are very happy to have all of you here! <b>THANK YOU!</b></p>
         <p><b>The OPEN team</b></p>
