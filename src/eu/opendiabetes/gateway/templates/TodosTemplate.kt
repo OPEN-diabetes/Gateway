@@ -68,11 +68,11 @@ private fun LI.participationLink(language: Language, title: String, desc: String
         readonly = true
         value = link
     }
-    val link = "mailto:?" + listOf(
+    val mailtoLink = "mailto:?" + listOf(
         "subject" to language.invitationToSurvey,
         "body" to language.invitationText(link)
     ).formUrlEncode()
-    a(link, "_blank", "email-link") {
+    a(mailtoLink, "_blank", "email-link") {
         text("Share via e-mail")
     }
 }

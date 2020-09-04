@@ -67,7 +67,7 @@ fun Application.openHumansModule() {
                                 this@openHumansModule.openHumansApi.removeMember(accessToken)
                             }
                         } catch (e: ClientRequestException) {
-                            if (e.response.status != HttpStatusCode.Unauthorized) {
+                            if (e.response?.status != HttpStatusCode.Unauthorized) {
                                 throw e
                             }
                         }

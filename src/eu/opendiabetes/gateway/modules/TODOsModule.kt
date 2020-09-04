@@ -74,7 +74,7 @@ fun Application.todosModule() {
                 val sharedSources = try {
                     memberInfo?.await()?.sourcesOfData
                 } catch (e: ClientRequestException) {
-                    if (e.response.status == HttpStatusCode.Unauthorized) {
+                    if (e.response?.status == HttpStatusCode.Unauthorized) {
                         null
                     } else {
                         throw e

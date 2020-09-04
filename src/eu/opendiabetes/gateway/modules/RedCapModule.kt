@@ -49,6 +49,7 @@ fun Application.redCapModule() {
                         EnrollmentType.PARTNER_USING_DIYAPS -> respondConsentTemplate(informationSheet = INFO_SHEET_ADULT_USERS_PARTNERS)
                         EnrollmentType.PARTNER_NOT_USING_DIYAPS -> respondConsentTemplate(informationSheet = INFO_SHEET_ADULT_NON_USERS_PARTNERS)
                         EnrollmentType.TEENAGER_USING_DIYAPS -> respondConsentTemplate(informationSheet = INFO_SHEET_TEENAGERS)
+                        else -> throw IllegalStateException("EnrollmentType not supported")
                     }
                 }
             }
