@@ -19,7 +19,7 @@ const val INFO_SHEET_ADULT_USERS_PARTNERS = """
 <h1>Why am I being invited to take part?</h1>
 <p>You are being invited to take part because you are the partner of a DIYAPS user.</p>
 <h1>What will happen if I decide to take part in this research study?</h1>
-<p>If you kindly agree to take part, you will be asked to <b>complete some questionnaires</b< about your quality of life and well-being. Altogether, it should not take you more than 10-15 minutes. These questionnaires will focus on:</p> 
+<p>If you kindly agree to take part, you will be asked to <b>complete some questionnaires</b> about your quality of life and well-being. Altogether, it should not take you more than 10-15 minutes. These questionnaires will focus on:</p> 
 <ul>
     <li>Your general well-being </li>
     <li>Your general experience of living with a person with diabetes</li>
