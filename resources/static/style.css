@@ -474,7 +474,7 @@ a.button {
     margin: 10px;
 }
 
-#consent-content, #introduction {
+#consent-content, .introduction {
     width: 100%;
     max-width: 600px;
     text-align: justify;
@@ -482,18 +482,18 @@ a.button {
     font-size: 20px;
 }
 
+#team {
+    max-width: 600px;
+}
+
 #consent-content {
     max-width: 1000px !important;
 }
 
-#consent-content h1, #introduction h1 {
+#consent-content h1, .introduction h1 {
     color: #EB5B28;
     margin: 20px 0;
     font-size: 30px;
-}
-
-#introduction {
-    margin-bottom: 80px;
 }
 
 #open-logo {

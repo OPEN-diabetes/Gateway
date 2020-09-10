@@ -9,10 +9,9 @@ suspend fun ApplicationCall.respondLandingPageTemplate() =
         img(src = "/static/open.svg") {
             id = "open-logo"
         }
-        div {
-            id = "introduction"
+        div("introduction") {
             unsafe {
-                raw(language.introduction)
+                raw(language.introduction1)
             }
         }
         div {
@@ -21,6 +20,14 @@ suspend fun ApplicationCall.respondLandingPageTemplate() =
         }
         branchingOption("/static/register.svg", language.iDoNotHaveAParticipantId, "/new_participant")
         branchingOption("/static/login.svg", language.iAlreadyHaveAParticipantId, "/login")
+        div("introduction") {
+            unsafe {
+                raw(language.introduction2)
+            }
+        }
+        img(src = "/static/team.jpg") {
+            id = "team"
+        }
         div {
             id = "funding-notice"
             img(src = "/static/europe.svg") {

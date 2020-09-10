@@ -98,7 +98,8 @@ sealed class Language {
     abstract val doYouAlreadyHaveAParticipantId: String
     abstract val iAlreadyHaveAParticipantId: String
     abstract val iDoNotHaveAParticipantId: String
-    abstract val introduction: String
+    abstract val introduction1: String
+    abstract val introduction2: String
     abstract val ohLoginNotice: String
     abstract val loginText: String
     abstract val login: String
@@ -227,7 +228,7 @@ object English : Language() {
     override val doYouAlreadyHaveAParticipantId = "Do you already have a Participant ID?"
     override val iAlreadyHaveAParticipantId = "I already have a Participant ID."
     override val iDoNotHaveAParticipantId = "I do not have a Participant ID."
-    override val introduction = """
+    override val introduction1 = """
         <p>We are the OPEN project, a European Union-funded international research consortium aiming to study and explore the unique patient-innovation of “Do-It-Yourself Artificial Pancreas Systems”, or DIYAPS. We are asking <b>everyone</b> from the global diabetes online community to help us build evidence on how this technology affects the lives of people with diabetes.</p>
         <h1>How can YOU help?</h1>
         <p><b>First</b> and foremost, we would like you to <b>fill out all the questions in our survey</b>. When you start the survey, a random number, the <b>participant ID</b>, will be generated for you - we will never ask for your name or other identifying information.<br><b>Your data will be kept anonymous!</b></p>
@@ -235,6 +236,8 @@ object English : Language() {
         <h1>You can donate your device data, too!</h1>
         <p>You will also have the option to anonymously <b>donate your device data</b> (e.g. from Nightscout). This would <b>GREATLY HELP</b> our aim of exploring improvements to the (DIY)APS experience for all, now and in the future.</p>
         <p><b>Further information will be provided on the next pages and <a href="https://open-diabetes.eu">here</a> on our website.</b></p>
+    """.trimIndent()
+    override val introduction2 = """
         <p>Last but not least: We are very happy to have all of you here! <b>THANK YOU!</b></p>
         <p><b>The OPEN team</b></p>
     """.trimIndent()
