@@ -165,7 +165,7 @@ object English : Language() {
     override val proceed = "Proceed"
     override val yourTODOs = "How you can help"
     override val askParent = ""
-    override val askChild = "Ask your child to also fill out the survey"
+    override val askChild = "Ask your teenage child (13-17 years) to also fill out the survey"
     override val askPartner = "Ask your partner, if you have one, to also complete a shorter version of the survey"
     override val sendParent = ""
     override val sendChild = "Please send the <b>following participation link</b> to your child, e.g. via e-mail:"
