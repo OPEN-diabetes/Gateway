@@ -1,4 +1,4 @@
-package eu.opendiabetes.gateway.info_sheets.english
+package eu.opendiabetes.gateway.language.info_sheets.english
 
 const val INFO_SHEET_TEENAGERS = """
 <h1>Name of Study</h1> 

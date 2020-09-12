@@ -1,4 +1,4 @@
-package eu.opendiabetes.gateway
+package eu.opendiabetes.gateway.language
 
 val LANGUAGES = Language::class.sealedSubclasses.mapNotNull { it.objectInstance }
 val DEFAULT_LANGUAGE = English

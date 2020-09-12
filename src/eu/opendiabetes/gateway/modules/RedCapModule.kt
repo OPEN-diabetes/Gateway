@@ -2,9 +2,9 @@ package eu.opendiabetes.gateway.modules
 
 import eu.opendiabetes.gateway.database.EnrollmentType
 import eu.opendiabetes.gateway.database.ParticipationLink
-import eu.opendiabetes.gateway.info_sheets.english.INFO_SHEET_ADULT_NON_USERS_PARTNERS
-import eu.opendiabetes.gateway.info_sheets.english.INFO_SHEET_ADULT_USERS_PARTNERS
-import eu.opendiabetes.gateway.info_sheets.english.INFO_SHEET_TEENAGERS
+import eu.opendiabetes.gateway.language.info_sheets.english.INFO_SHEET_ADULT_NON_USERS_PARTNERS
+import eu.opendiabetes.gateway.language.info_sheets.english.INFO_SHEET_ADULT_USERS_PARTNERS
+import eu.opendiabetes.gateway.language.info_sheets.english.INFO_SHEET_TEENAGERS
 import eu.opendiabetes.gateway.templates.respondConsentNotGivenTemplate
 import eu.opendiabetes.gateway.templates.respondConsentTemplate
 import eu.opendiabetes.gateway.utils.RedCapAPI

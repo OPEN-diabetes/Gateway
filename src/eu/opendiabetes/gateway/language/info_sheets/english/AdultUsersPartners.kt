@@ -1,6 +1,6 @@
-package eu.opendiabetes.gateway.info_sheets.english
+package eu.opendiabetes.gateway.language.info_sheets.english
 
-const val INFO_SHEET_ADULT_NON_USERS_PARTNERS = """
+const val INFO_SHEET_ADULT_USERS_PARTNERS = """
 <h1>Introduction</h1>
 <p>The OPEN team invites you to take part in a global study that examines the impact of Do-It-Yourself Artificial Pancreas Systems (DIYAPS) on the health and well-being of users. The following information explains what to expect if you choose to take part in the research. <b>Please read it carefully. If you do not understand some of the information and/or would like to discuss anything related to the project, feel free to contact a member of our research team.</b></p>
 <h1>Name of Study</h1> 
@@ -8,26 +8,26 @@ const val INFO_SHEET_ADULT_NON_USERS_PARTNERS = """
 <h1>Name of Principal Investigator</h1>
 <p>Dr Shane O’Donnell</p>
 <h1>What is this research about?</h1>
-<p>A growing number of people living with diabetes are choosing to build DIYAPS to help with the management of their condition. However, more research is needed to understand if and how people living with diabetes benefit from using these systems. This study has four main aims:</p> 
+<p>A growing number of people living with diabetes are choosing to build DIYAPS to help with the management of their condition. However, more research is needed to understand if and how people living with diabetes benefit from using these systems. This study has three main aims:</p> 
 <ol>
-    <li>to examine the clinical and</li>
-    <li>quality of life outcomes of DIYAPS users and non-users</li>
+    <li>to examine the clinical and quality of life outcomes of DIYAPS users</li>
     <li>to identify potential technical improvements that could be made to artificial pancreas technology of all kinds, and</li>
-    <li>to explore the difficulties and challenges that people face in building DIYAPS, as well as why some choose not to use DIYAPS</li>
+    <li>to investigate how more people can benefit from the innovations being developed by the DIY community.</li>
 </ol>
 <h1>Why is OPEN doing this research?</h1>
 <p>By carrying out this research study, OPEN will be able to build evidence about the effectiveness of DIYAPS and potential further improvements in the technology that could be introduced in the future.</p>
 <h1>Why am I being invited to take part?</h1>
-<p>You are being invited to take part because your partner has diabetes and is a member of the DIYAPS online community.</p>
+<p>You are being invited to take part because you are the partner of a DIYAPS user.</p>
 <h1>What will happen if I decide to take part in this research study?</h1>
-<p>If you kindly agree to take part, you will be asked to <b>complete some questionnaires</b> about your quality of life and well-being. Altogether, it should not take you more than 10-15 minutes. These questionnaires will focus on:</p>
+<p>If you kindly agree to take part, you will be asked to <b>complete some questionnaires</b> about your quality of life and well-being. Altogether, it should not take you more than 10-15 minutes. These questionnaires will focus on:</p> 
 <ul>
-    <li>Your general well-being</li>
+    <li>Your general well-being </li>
     <li>Your general experience of living with a person with diabetes</li>
     <li>Your sleep quality</li>
+    <li>Your general experiences of building and maintaining a DIYAPS</li>
 </ul>
 <h1>How will the data be used?</h1> 
-<p>The pseudonymised responses to the survey will be analysed by our team of researchers. Once the OPEN project is completed your anonymised data will be available to researchers upon request. To protect your and your partner’s privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers.Remember that your responses will be confidential. That means you will not be able to see your partner’s responses and vice-versa. Responding to the participation link sent by your partner is optional.</p>
+<p>The pseudonymised responses to the survey will be analysed by our team of researchers. Once the OPEN project is completed your anonymised data will be available to researchers upon request. To protect your and your partner’s privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers. Remember that your responses will be confidential. That means you will not be able to see your partner’s responses and vice-versa. Responding to the participation link sent by your partner is optional. </p>
 <p>The organisations in the OPEN consortium involved in accessing your data will include:</p>
 <ul>
     <li>University College Dublin, Ireland</li>
@@ -97,15 +97,15 @@ const val INFO_SHEET_ADULT_NON_USERS_PARTNERS = """
         <span>Website: <a href="https://forms.dataprotection.ie/contact" target="_blank">https://forms.dataprotection.ie/contact</a></span>
     </div>
 </div>
-<p></b>Thank you very much for your time and willingness to help us to research this subject!</b></p>
-<p></b>The OPEN team</b></p>
+<p><b>Thank you very much for your time and willingness to help us to research this subject!</b></p>
+<p><b>The OPEN team</b></p>
 <h1>PARTICIPANT CONSENT FORM</h1>
 <p>I have read this consent form. I understand that I can refuse to participate in this project. I have taken time to think carefully about my decision to participate. I freely consent to share my data with this research project.</p>
 <p>By clicking "agree" below, you are e-signing this form and agree to the following:</p>
 <ul>
-<li>I understand the uncertainty and risk of research as stated in this consent form.</li>
-<li>I understand that data I choose to share may be used for any purpose, including research purposes.</li>
-<li>I understand that once I authorize data sharing, data privacy laws might not apply or no longer protect my information.</li>
-<li>I understand that I can withdraw data from the study at any time, but copies of that data that have already been made by other people may remain.</li>
+    <li>I understand the uncertainty and risk of research as stated in this consent form.</li>
+    <li>I understand that data I choose to share may be used for any purpose, including research purposes.</li>
+    <li>I understand that once I authorize data sharing, data privacy laws might not apply or no longer protect my information.</li>
+    <li>I understand that I can withdraw data from the study at any time, but copies of that data that have already been made by other people may remain.</li>
 </ul>
 """

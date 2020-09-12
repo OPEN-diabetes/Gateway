@@ -474,7 +474,7 @@ a.button {
     margin: 10px;
 }
 
-#consent-content, .introduction {
+#consent-content, .introduction, #gdpr, #legal-notice {
     width: 100%;
     max-width: 600px;
     text-align: justify;
@@ -490,10 +490,15 @@ a.button {
     max-width: 1000px !important;
 }
 
-#consent-content h1, .introduction h1 {
+#consent-content h1, .introduction h1, #gdpr h1, #legal-notice h1 {
     color: #EB5B28;
     margin: 20px 0;
     font-size: 30px;
+}
+
+#gdpr h2, #legal-notice h2 {
+    margin: 20px 0;
+    font-size: 25px;
 }
 
 #open-logo {

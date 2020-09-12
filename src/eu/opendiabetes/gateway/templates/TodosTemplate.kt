@@ -1,6 +1,6 @@
 package eu.opendiabetes.gateway.templates
 
-import eu.opendiabetes.gateway.Language
+import eu.opendiabetes.gateway.language.Language
 import eu.opendiabetes.gateway.utils.OpenHumansAPI
 import eu.opendiabetes.gateway.utils.language
 import io.ktor.application.ApplicationCall

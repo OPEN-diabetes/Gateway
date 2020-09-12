@@ -1,11 +1,8 @@
 package eu.opendiabetes.gateway.templates
 
-import eu.opendiabetes.gateway.LANGUAGES
 import eu.opendiabetes.gateway.utils.language
 import io.ktor.application.ApplicationCall
 import io.ktor.html.respondHtml
-import io.ktor.http.Parameters
-import io.ktor.http.formUrlEncode
 import kotlinx.html.*
 
 suspend fun ApplicationCall.respondBaseTemplate(
@@ -69,12 +66,12 @@ suspend fun ApplicationCall.respondBaseTemplate(
             ul("link-list") {
                 id = "footer-menu"
                 li {
-                    a("#") {
+                    a("/gdpr") {
                         text(language.gdpr)
                     }
                 }
                 li {
-                    a("#") {
+                    a("/legal-notice") {
                         text(language.legalNotice)
                     }
                 }

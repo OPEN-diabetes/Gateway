@@ -1,7 +1,5 @@
 package eu.opendiabetes.gateway.templates
 
-import eu.opendiabetes.gateway.info_sheets.english.INFO_SHEET_ADULT_USERS
-import eu.opendiabetes.gateway.info_sheets.english.INFO_SHEET_ADULT_USERS_PARTNERS
 import eu.opendiabetes.gateway.utils.language
 import io.ktor.application.ApplicationCall
 import kotlinx.html.*

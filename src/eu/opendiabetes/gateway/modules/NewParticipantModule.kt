@@ -2,10 +2,10 @@ package eu.opendiabetes.gateway.modules
 
 import eu.opendiabetes.gateway.GatewaySession
 import eu.opendiabetes.gateway.database.EnrollmentType
-import eu.opendiabetes.gateway.info_sheets.english.INFO_SHEET_ADULT_NON_USERS
-import eu.opendiabetes.gateway.info_sheets.english.INFO_SHEET_ADULT_USERS
-import eu.opendiabetes.gateway.info_sheets.english.INFO_SHEET_PARENT_NON_USERS
-import eu.opendiabetes.gateway.info_sheets.english.INFO_SHEET_PARENT_USERS
+import eu.opendiabetes.gateway.language.info_sheets.english.INFO_SHEET_ADULT_NON_USERS
+import eu.opendiabetes.gateway.language.info_sheets.english.INFO_SHEET_ADULT_USERS
+import eu.opendiabetes.gateway.language.info_sheets.english.INFO_SHEET_PARENT_NON_USERS
+import eu.opendiabetes.gateway.language.info_sheets.english.INFO_SHEET_PARENT_USERS
 import eu.opendiabetes.gateway.templates.*
 import eu.opendiabetes.gateway.utils.createParticipantId
 import eu.opendiabetes.gateway.utils.createSession

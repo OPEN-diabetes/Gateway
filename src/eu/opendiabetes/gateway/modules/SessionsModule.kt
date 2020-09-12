@@ -1,8 +1,8 @@
 package eu.opendiabetes.gateway.modules
 
-import eu.opendiabetes.gateway.DEFAULT_LANGUAGE
+import eu.opendiabetes.gateway.language.DEFAULT_LANGUAGE
 import eu.opendiabetes.gateway.GatewaySession
-import eu.opendiabetes.gateway.LANGUAGES
+import eu.opendiabetes.gateway.language.LANGUAGES
 import eu.opendiabetes.gateway.utils.*
 import io.ktor.application.Application
 import io.ktor.application.ApplicationCallPipeline
