@@ -17,6 +17,17 @@ suspend fun ApplicationCall.respondBaseTemplate(
         link("/static/favicon.svg", "icon", "image/svg+xml")
         styleLink("/static/style.css")
         title(title)
+        script {
+            unsafe {
+                raw("""
+                    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                    if (document.cookie.indexOf("mobileAlertShown") == -1 && isMobile) {
+                        document.cookie = "mobileAlertShown=true; max-age=864000";
+                        alert("${language.useDesktop}");
+                    }
+                """.trimIndent())
+            }
+        }
     }
     body {
         header {

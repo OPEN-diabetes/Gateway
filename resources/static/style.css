@@ -484,6 +484,8 @@ a.button {
 
 #team {
     max-width: 600px;
+    width: 100%;
+    height: auto;
 }
 
 #consent-content {
