@@ -41,7 +41,7 @@ suspend fun ApplicationCall.respondOpenHumansTemplate() = respondBaseTemplate(la
                         p {
                             text(language.androidAPSUploaderDescription)
                         }
-                        a("https://github.com/openaps/AndroidAPSdocs/blob/dev/docs/EN/Where-To-Go-For-Help/OpenHumans.rst", "_blank", "button") {
+                        a("https://androidaps.readthedocs.io/en/latest/EN/Configuration/OpenHumans.html#setup", "_blank", "button") {
                             text(language.instructions)
                         }
                     }
