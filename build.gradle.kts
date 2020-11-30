@@ -23,6 +23,7 @@ application {
 
 repositories {
     mavenLocal()
+    mavenCentral()
     jcenter()
     maven { url = uri("https://kotlin.bintray.com/ktor") }
     maven { url = uri("https://kotlin.bintray.com/exposed") }
@@ -50,6 +51,8 @@ dependencies {
     implementation("org.jetbrains.exposed:exposed-jdbc:$exposed_version")
 
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime:$serialization_version")
+
+    //implementation("org.mariadb.jdbc:mariadb-java-client:2.7.1")
 }
 
 tasks.withType<KotlinCompile>().all {
