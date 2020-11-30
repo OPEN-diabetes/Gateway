@@ -29,6 +29,10 @@ suspend fun Database.getParticipant(id: Long) = newSuspendedTransaction(Dispatch
     Participants.Dao.findById(id)?.immutable
 }
 
+suspend fun Database.getAllParticipantsWithOAuth() = newSuspendedTransaction(Dispatchers.IO, this) {
+    Participants.Dao.find { Participants.accessToken.isNotNull() }.map { it.immutable }
+}
+
 suspend fun Database.createSession(participantId: Long) = newSuspendedTransaction(Dispatchers.IO, this) {
     Sessions.Dao.new {
         this.participantId = DaoEntityID(participantId, Participants)

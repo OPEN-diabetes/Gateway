@@ -22,7 +22,7 @@ suspend fun ApplicationCall.respondTODOsTemplate(
         }
         ul {
             id = "todos"
-            li {
+            /*li {
                 text(language.fillOutSurvey)
                 p {
                     unsafe {
@@ -30,6 +30,12 @@ suspend fun ApplicationCall.respondTODOsTemplate(
                     }
                 }
                 a("/survey", "_blank", "button") { text(language.goToSurvey) }
+            }*/
+            li {
+                text(language.surveyClosed)
+                p {
+                    text(language.thanksToParticipants)
+                }
             }
             li {
                 text(language.linkToOpenHumans)

@@ -46,7 +46,7 @@ fun Application.todosModule() {
                 } else {
                     null
                 }
-                val participationLinks = surveyLinks.await().map {
+                /*val participationLinks = surveyLinks.await().map {
                     when (it.enrollmentType) {
                         EnrollmentType.PARENT_USING_DIYAPS -> ParticipationLinkTODO.Parent(
                             call.constructParticipationURL(
@@ -70,7 +70,7 @@ fun Application.todosModule() {
                         )
                         else -> throw IllegalArgumentException("Invalid enrollmentType")
                     }
-                }
+                }*/
                 val sharedSources = try {
                     memberInfo?.await()?.sourcesOfData
                 } catch (e: ClientRequestException) {
@@ -81,7 +81,7 @@ fun Application.todosModule() {
                 }
                 call.respondTODOsTemplate(
                     formatParticipantId(participant.id, participant.secret),
-                    participationLinks,
+                    emptyList(),
                     sharedSources
                 )
             } else {
