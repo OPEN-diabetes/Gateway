@@ -87,3 +87,12 @@ suspend fun ApplicationCall.respondAskPartnerForLinkTemplate() = respondErrorTem
     cardText = language.askPartnerForParticipationLink,
     backUrl = "/new_participant"
 )
+
+suspend fun ApplicationCall.respondAskPatientForLinkTemplate() = respondErrorTemplate(
+    title = language.newParticipant,
+    subtitle = null,
+    cardTitle = language.youAreAHealthcareProfessional,
+    cardText = language.askPatientForParticipationLink,
+    backUrl = "/new_participant"
+)
+

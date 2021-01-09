@@ -52,7 +52,7 @@ dependencies {
 
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime:$serialization_version")
 
-    //implementation("org.mariadb.jdbc:mariadb-java-client:2.7.1")
+    implementation("org.mariadb.jdbc:mariadb-java-client:2.7.1")
 }
 
 tasks.withType<KotlinCompile>().all {

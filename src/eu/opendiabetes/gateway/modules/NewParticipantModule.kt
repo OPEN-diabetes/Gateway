@@ -95,11 +95,8 @@ fun Application.newParticipantModule() {
                     }
                 }
             }
-            get("/teenager") {
-                call.respondAskParentForLinkTemplate()
-            }
-            get("/partner") {
-                call.respondAskPartnerForLinkTemplate()
+            get("/hcp") {
+                call.respondAskPatientForLinkTemplate()
             }
         }
     }

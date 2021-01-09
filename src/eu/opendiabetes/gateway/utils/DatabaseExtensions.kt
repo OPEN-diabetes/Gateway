@@ -1,11 +1,9 @@
 package eu.opendiabetes.gateway.utils
 
-import eu.opendiabetes.gateway.database.EnrollmentType
-import eu.opendiabetes.gateway.database.Participants
-import eu.opendiabetes.gateway.database.ParticipationLinks
-import eu.opendiabetes.gateway.database.Sessions
+import eu.opendiabetes.gateway.database.*
 import kotlinx.coroutines.Dispatchers
 import org.jetbrains.exposed.dao.DaoEntityID
+import org.jetbrains.exposed.dao.id.EntityID
 import org.jetbrains.exposed.sql.Database
 import org.jetbrains.exposed.sql.and
 import org.jetbrains.exposed.sql.deleteWhere
@@ -50,6 +48,12 @@ suspend fun Database.setSurveyRecordIdForParticipant(id: Long, recordId: String)
     }
 }
 
+suspend fun Database.setFollowupSurveyRecordIdForParticipant(id: Long, recordId: String) = newSuspendedTransaction(Dispatchers.IO, this) {
+    Participants.update({ Participants.id eq id }) {
+        it[Participants.followupSurveyRecordId] = recordId
+    }
+}
+
 suspend fun Database.getParticipationLink(id: Long) = newSuspendedTransaction(Dispatchers.IO, this) {
     ParticipationLinks.Dao.findById(id)?.immutable
 }
@@ -69,6 +73,31 @@ suspend fun Database.setSurveyRecordIdForParticipationLink(id: Long, surveyLink:
     }
 }
 
+suspend fun Database.createHcpLinkForParticipantIfNeeded(id: Long) = newSuspendedTransaction(Dispatchers.IO, this) {
+    var hcpLink = HcpLinks.Dao.find {
+        HcpLinks.participant eq id
+    }.firstOrNull()
+    if (hcpLink == null) {
+        hcpLink = HcpLinks.Dao.new {
+            this.participantId = EntityID(id, Participants)
+            this.secret = generateSecureRandomString(PARTICIPATION_LINK_SECRET_CHARS, PARTICIPATION_LINK_SECRET_LENGTH)
+        }
+    }
+    hcpLink.immutable
+}
+
+suspend fun Database.getHcpLinkForParticipant(id: Long) = newSuspendedTransaction(Dispatchers.IO, this) {
+    HcpLinks.Dao.find {
+        HcpLinks.participant eq id
+    }.firstOrNull()?.immutable
+}
+
+suspend fun Database.setSurveyRecordIdForHcpLink(id: Long, surveyRecordId: String) = newSuspendedTransaction(Dispatchers.IO, this) {
+    HcpLinks.update({ HcpLinks.id eq id }) {
+        it[eu.opendiabetes.gateway.database.HcpLinks.surveyRecordId] = surveyRecordId
+    }
+}
+
 suspend fun Database.getSurveyLinksForParticipant(id: Long) = newSuspendedTransaction(Dispatchers.IO, this) {
     ParticipationLinks.Dao.find {
         ParticipationLinks.participant eq id
@@ -83,37 +112,13 @@ suspend fun Database.createParticipantId(enrollmentType: EnrollmentType) = newSu
     val participant = Participants.Dao.new {
         this.secret = generateSecureRandomString(PARTICIPANT_ID_SECRET_CHARS, PARTICIPANT_ID_SECRET_LENGTH)
         this.enrollmentType = enrollmentType
-    }
-    when (enrollmentType) {
-        EnrollmentType.ADULT_USING_DIYAPS -> {
-            ParticipationLinks.Dao.new {
-                this.participantId = participant.id
-                this.enrollmentType = EnrollmentType.PARTNER_USING_DIYAPS
-                this.secret = generateSecureRandomString(PARTICIPATION_LINK_SECRET_CHARS, PARTICIPATION_LINK_SECRET_LENGTH)
-            }
-        }
-        EnrollmentType.ADULT_NOT_USING_DIYAPS -> {
-            ParticipationLinks.Dao.new {
-                this.participantId = participant.id
-                this.enrollmentType = EnrollmentType.PARTNER_NOT_USING_DIYAPS
-                this.secret = generateSecureRandomString(PARTICIPANT_ID_SECRET_CHARS, PARTICIPATION_LINK_SECRET_LENGTH)
-            }
-        }
-        EnrollmentType.PARENT_USING_DIYAPS -> {
-            ParticipationLinks.Dao.new {
-                this.participantId = participant.id
-                this.enrollmentType = EnrollmentType.TEENAGER_USING_DIYAPS
-                this.secret = generateSecureRandomString(PARTICIPATION_LINK_SECRET_CHARS, PARTICIPATION_LINK_SECRET_LENGTH)
-            }
-        }
-        EnrollmentType.TEENAGER_USING_DIYAPS -> {
-            ParticipationLinks.Dao.new {
-                this.participantId = participant.id
-                this.enrollmentType = EnrollmentType.PARENT_USING_DIYAPS
-                this.secret = generateSecureRandomString(PARTICIPATION_LINK_SECRET_CHARS, PARTICIPATION_LINK_SECRET_LENGTH)
-            }
-        }
-        else -> Unit
+        this.informationSheetShown = true
     }
     participant.immutable
+}
+
+suspend fun Database.setInformationSheetShown(participantId: Long) = newSuspendedTransaction(Dispatchers.IO, this) {
+    Participants.update({ Participants.id eq participantId }) {
+        it[informationSheetShown] = true
+    }
 }

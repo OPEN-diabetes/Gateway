@@ -15,6 +15,7 @@ sealed class Language {
     abstract val unknownId: String
     abstract val newParticipant: String
     abstract val pleaseSelectWhichApplies: String
+    abstract val iAmAHealthcareProfessional: String
     abstract val iAmAnAdult: String
     abstract val iAmAParent: String
     abstract val iAmATeenager: String
@@ -30,6 +31,7 @@ sealed class Language {
     abstract val childNotUsingDIYAPS: String
     abstract val notUsingDIYAPS: String
     abstract val yourPartnerHasDiabetes: String
+    abstract val youAreAHealthcareProfessional: String
     abstract val childHasAlreadyParticipated: String
     abstract val youAreATeenagerWithDiabetesAndWantToParticipate: String
     abstract val didYourParentAlreadyFillOutTheSurvey: String
@@ -109,6 +111,9 @@ sealed class Language {
     abstract val useDesktop: String
     abstract val surveyClosed: String
     abstract val thanksToParticipants: String
+    abstract val askYourHealthcareProfessional: String
+    abstract val fillOutForm: String
+    abstract val shareViaEmail: String
 
     abstract fun participantId(participantId: String): String
     abstract fun missingDataSources(removeLink: String, tryAgain: String): String
@@ -130,6 +135,7 @@ object English : Language() {
     override val unknownId = "This Participant ID does not exist."
     override val newParticipant = "New Participant"
     override val pleaseSelectWhichApplies = "Please select which of the following applies to you:"
+    override val iAmAHealthcareProfessional = "I am a <b>healthcare professional</b>."
     override val iAmAnAdult = "I am an <b>adult (18+)</b> with diabetes."
     override val iAmAParent = "I am a <b>parent</b> or <b>caregiver</b> of a child with diabetes."
     override val iAmATeenager = "I am a <b>teenager (13 - 17)</b> with diabetes."
@@ -146,6 +152,7 @@ object English : Language() {
     override val childNotUsingDIYAPS = "Your child is not using a DIYAPS."
     override val notUsingDIYAPS = "You are not using a DIYAPS."
     override val yourPartnerHasDiabetes = "Your partner has diabetes and you want to participate in our study?"
+    override val youAreAHealthcareProfessional = "You are a healthcare professional and you want to participate in our study?"
     override val childHasAlreadyParticipated = ""
     override val youAreATeenagerWithDiabetesAndWantToParticipate =
         "You are a teenager with diabetes and want to participate?"
@@ -175,7 +182,7 @@ object English : Language() {
     override val sendPartner = "Please send the <b>following participation link</b> to your partner, e.g. via e-mail: It should take them approximately 10-15 minutes and responses will be confidential. That means you will not be able to see your partner´s responses and vice-versa."
     override val fillOutSurvey = "Participate in the OPEN survey"
     override val answerAFewQuestions =
-        "We kindly invite you to <b>answer a few questions</b> if you like. This will take no longer than 20 to 30 minutes. You can take a break if needed and join again later with you participant ID."
+        "We kindly invite you to <b>answer a few questions</b> if you like. This will take no longer than 20 to 30 minutes. You can take a break if needed and join again later with your Participant ID."
     override val goToSurvey = "Go to survey"
     override val signOut = "Sign out"
     override val linkToOpenHumans = "Participate in future follow-up studies and/or donate your device data via Open Humans"
@@ -252,6 +259,9 @@ object English : Language() {
     override val useDesktop = "We recommend to use a Desktop PC to participate in the OPEN survey."
     override val surveyClosed = "The survey has been closed."
     override val thanksToParticipants = "Many thanks to all participants!"
+    override val askYourHealthcareProfessional = "Ask your healthcare professional to also fill out this survey"
+    override val fillOutForm = """Fill out <a target="_blank" href="/static/consent_form.pdf">this form</a> and give it to your healthcare professional along with the following link:"""
+    override val shareViaEmail = "Share via e-mail"
 
     override fun participantId(participantId: String) = "Participant ID: <b>$participantId</b>"
 

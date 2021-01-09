@@ -1,18 +1,13 @@
 package eu.opendiabetes.gateway.modules
 
 import eu.opendiabetes.gateway.database.EnrollmentType
-import eu.opendiabetes.gateway.database.ParticipationLink
-import eu.opendiabetes.gateway.templates.ParticipationLinkTODO
 import eu.opendiabetes.gateway.templates.respondTODOsTemplate
 import eu.opendiabetes.gateway.utils.*
-import io.ktor.application.Application
-import io.ktor.application.ApplicationCall
-import io.ktor.application.call
-import io.ktor.client.features.ClientRequestException
-import io.ktor.http.HttpStatusCode
-import io.ktor.response.respondRedirect
-import io.ktor.routing.get
-import io.ktor.routing.routing
+import io.ktor.application.*
+import io.ktor.client.features.*
+import io.ktor.http.*
+import io.ktor.response.*
+import io.ktor.routing.*
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.async
@@ -22,8 +17,11 @@ fun Application.todosModule() {
         get("/todos") {
             val participant = call.participant
             if (participant != null) {
-                val surveyLinks = async {
-                    this@todosModule.database.getSurveyLinksForParticipant(participant.id)
+                val hcpLink = when (participant.enrollmentType) {
+                    EnrollmentType.ADULT_USING_DIYAPS, EnrollmentType.ADULT_NOT_USING_DIYAPS -> async {
+                        this@todosModule.database.createHcpLinkForParticipantIfNeeded(participant.id)
+                    }
+                    else -> null
                 }
                 val memberInfo = if (participant.projectMemberId != null) {
                     async(SupervisorJob(coroutineContext[Job])) {
@@ -81,16 +79,13 @@ fun Application.todosModule() {
                 }
                 call.respondTODOsTemplate(
                     formatParticipantId(participant.id, participant.secret),
-                    emptyList(),
-                    sharedSources
+                    sharedSources,
+                    participant.surveyRecordId == null,
+                    hcpLink?.await()?.let { link -> call.constructURL("/hcp/${participant.id}/${link.secret}") }
                 )
             } else {
                 call.respondRedirect("/")
             }
         }
     }
-}
-
-private fun ApplicationCall.constructParticipationURL(participationLink: ParticipationLink): String {
-    return constructURL("/p/${participationLink.id}/${participationLink.secret}")
 }

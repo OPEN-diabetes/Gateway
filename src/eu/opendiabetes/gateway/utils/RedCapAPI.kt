@@ -14,13 +14,13 @@ class RedCapAPI(
     private val httpClient = HttpClient(Apache)
     private val json = Json(JsonConfiguration.Stable)
 
-    suspend fun createRecord(participantId: Long, participationLinkId: Long?, enrollmentType: EnrollmentType): String {
+    suspend fun createRecord(participantId: Long, participationLinkId: Long?, enrollmentType: Int): String {
         val data = json.stringify(JsonElementSerializer,
             jsonArray {
                 +json {
                     "record_id" to 1
                     "participant_id" to participantId
-                    "enrollment_type" to enrollmentType.ordinal
+                    "enrollment_type" to enrollmentType
                     "gateway_complete" to 2
                     if (participationLinkId != null) {
                         "participation_link_id" to participationLinkId
