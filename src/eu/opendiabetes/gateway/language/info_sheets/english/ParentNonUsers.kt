@@ -21,22 +21,19 @@ const val INFO_SHEET_PARENT_NON_USERS = """
 <p>You have been invited to take part because you are the parent/carer of a child with diabetes and a member of the DIYAPS online community.</p>
 <h1>What will happen if we decide to take part in this research study?</h1>
 <p>If you kindly agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe</b> by noting it down, emailing it to yourself or taking a picture of it as you may need it later.</p></p> 
-<p>You will then be asked to <b>complete a series of questionnaires</b> designed to access the quality of life and well-being of you and your child. Altogether, it should not take you more than 20-30 minutes. These questionnaires will focus on:</p>
+<p>You will then be asked to <b>complete a series of questionnaires</b> designed to access the health of your child. Altogether, it should not take you more than 10-15 minutes. These questionnaires will focus on:</p>
 <ul>
     <li>Demographic information (about yourself and your child)</li>
     <li>Information about your child’s health and diabetes</li>
-    <li>Your and your child’s general experiences of living with diabetes</li>
-    <li>Your general sense of well-being caring for someone with diabetes</li>
-    <li>Your sleep quality and mood</li>
     <li>Your experiences of being a member of an online DIYAPS community</li>
     <li>The challenges you may have experienced or anticipate in building a DIYAPS</li>
 </ul>
 <p>To further assist our research, we would kindly invite you to <b>become a member of</b> a data repository site called ‘<b>Open Humans</b>’. Open Humans allows people to anonymously donate their health related data (including device data i.e. from their glucose monitoring, or Nightscout, etc.) for research purposes. Once you sign up to Open Humans, we invite you to <b>join our project</b> on the Open Humans platform called the ‘Open Project’. This will allow us to <b>anonymously contact you to request your participation in future OPEN studies</b>. The process should take you no longer than 2-3 minutes.</p>
-<p>Choosing to sign up to Open Humans and joining the OPEN project on Open Humans is <b>optional</b> and you decide if you would like to participate in any further follow on studies. Bear in mind that your participation in the OPEN project and future studies will greatly assist us to enhance the existing scientific evidence on DIYAPS.</p>
+<p>Choosing to sign up to Open Humans and joining the OPEN project on Open Humans is <b>optional</b> and you decide if you would like to participate in any further follow-up studies. Bear in mind that your participation in the OPEN project and future studies will greatly assist us to enhance the existing scientific evidence on DIYAPS.</p>
 <p>If you are happy to sign up to the Open Humans platform, instructions on how to connect your existing Open Humans account — <b>or</b> create a new one and connect this — are provided on the <a href="https://open-diabetes.eu/en/open-survey/" target="_blank">OPEN website</a>.</p>  
 <h1>How will the data be used?</h1> 
-<p>The pseudonymised responses to the survey will be analysed by our team of researchers. Once the OPEN project is completed your and your child’s anonymised data will be available to researchers upon request. To protect your and your child’s privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers.</p>
-<p>The organisations in the OPEN consortium involved in accessing your data will include:</p>
+<p>The pseudonymized responses to the survey will be analyzed by our team of researchers. Once the OPEN project is completed your and your child’s anonymized data will be available to researchers upon request. To protect your and your child’s privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers.</p>
+<p>The organizations in the OPEN consortium involved in accessing your data will include:</p>
 <ul>
     <li>University College Dublin, Ireland</li>
     <li>Charité - Universitätsmedizin Berlin, Germany</li>
@@ -47,7 +44,7 @@ const val INFO_SHEET_PARENT_NON_USERS = """
 </ul>
 <h1>How will you protect my privacy?</h1>
 <p>The design of this study is in line with all EU (GDPR), Irish (Data Protection Act, 2018) and UCD (UCD ethics Committee) ethical and data protection regulations. Every precaution will be taken to respect your privacy, in line with the General Data Protection Regulations (GDPR).</p> 
-<p>As stated above, any information that you share that may potentially inadvertently make you identifiable will be removed - this process is called pseudonymisation.</p>  
+<p>As stated above, any information that you share that may potentially inadvertently make you identifiable will be removed - this process is called pseudonymization.</p>  
 <p>Please note that only adults (aged 18+) who are able to provide consent are allowed to participate.</p> 
 <h1>What are the benefits of taking part in this research study?</h1>
 <p>There are no direct, material benefits expected from taking part in this study. However, you will be helping to improve the overall scientific knowledge about DIYAPS systems and its use. As a consequence, your participation and experience may help the diabetes community.</p> 
@@ -61,9 +58,9 @@ const val INFO_SHEET_PARENT_NON_USERS = """
 <h1>Can I change my mind at any stage and withdraw from the study?</h1>
 <p>Yes! If you decide to participate and subsequently change your mind, you may withdraw from the study at any time. You may also choose to remove your data from future analyses of the OPEN project. To do so, please contact our research team through the details provided below. You can also have the option to leave the OPEN project on Open Humans at any time and remove any data that you have uploaded to the platform. Please note that in both instances we can only delete your data if you provide your Participant ID from the survey.</p>
 <h1>How will I find out what happens with this project?</h1>
-<p>The OPEN team would like you to engage with this project as much as possible. That is why we have developed a website for the OPEN project. On <a href="https://open-diabetes.eu">this website</a>, we provide regular updates on the findings of our project and you may also sign up to our newsletter to receive regular email updates. All the results of our research will be published in a way which will be accessible and free of charge to the public.</p>
+<p>The OPEN team would like you to engage with this project as much as possible. That is why we have developed a website for the OPEN project. On <a href="https://open-diabetes.eu">this website</a>, we provide regular updates on the findings of our project, and you may also sign up to our newsletter to receive regular email updates. All the results of our research will be published in a way which will be accessible and free of charge to the public.</p>
 <h1>Contact Details</h1>
-<p>If any participant or participant’s caregiver would like to contact a member of the research team <i>(you can see us <a href="https://open-diabetes.eu/about_us/consortium">here</a> on our website)</i> for any research-related reason, they can do so via the contact information below. If any questions are not answered in a satisfactory manner, then contact can be made with a Data Protection Officer at UCD, the details of which are also provided below. For general data protection enquiries, please contact the UCD Data Protection office. Finally, if none of the UCD contacts have given a satisfactory response, details on the Data Protection Commission are provided below.</p>
+<p>If any participant or participant’s caregiver would like to contact a member of the research team <i>(you can see us <a href="https://open-diabetes.eu/about_us/consortium">here</a> on our website)</i> for any research-related reason, they can do so via the contact information below. If any questions are not answered in a satisfactory manner, then contact can be made with a Data Protection Officer at UCD, the details of which are also provided below. For general data protection inquiries, please contact the UCD Data Protection office. Finally, if none of the UCD contacts have given a satisfactory response, details on the Data Protection Commission are provided below.</p>
 <div id="contact-details">
     <div class="contact-detail">
         <span><b>Dr Shane O’Donnell</b></span>
