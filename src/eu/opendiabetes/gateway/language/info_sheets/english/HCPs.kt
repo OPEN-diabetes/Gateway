@@ -2,40 +2,32 @@ package eu.opendiabetes.gateway.language.info_sheets.english
 
 const val INFO_SHEET_HCPS = """
 <h1>Introduction</h1>
-<p>The OPEN team invites you and your child to take part in a global study that examines the impact of Do-It-Yourself Artificial Pancreas Systems (DIYAPS) on the health and well-being of users. The following information explains what to expect if you choose on your child's behalf to take part in the research. <b>Please read it carefully. If you do not understand some of the information and/or would like to discuss anything related to the project, feel free to contact a member of our research team.</b></p>
+<p>The OPEN team invites you to take part in a global study that examines the impact of Do-It-Yourself Artificial Pancreas Systems (DIYAPS) or Open-source Automated Insulin Delivery Systems on the health and well-being of users. The following information explains what to expect if you and your patient(s) choose to take part in the research. <b>Please read it carefully. If you do not understand some of the information and/or would like to discuss anything related to the project, feel free to contact a member of our research team.</b></p>
 <h1>Name of Study</h1> 
-<p>OPEN (Outcomes of Patients’ Evidence with Novel, Do-it-Yourself Artificial Pancreas Technology)</p>
+<p>OPEN (Outcomes of Patients’ Evidence with Novel, Do-it-Yourself Artificial Pancreas Technology) - Clinical Data from two Perspectives: Assessment of HCP-Reported and Patients' Self-Reported Clinical Outcomes</p>
 <h1>Name of Principal Investigator</h1>
 <p>Dr Shane O’Donnell</p>
 <h1>What is this research about?</h1>
 <p>A growing number of people living with diabetes are choosing to build DIYAPS to help with the management of their condition. However, more research is needed to understand if and how people living with diabetes benefit from using these systems. This study has three main aims:</p> 
 <ol>
     <li>to examine the clinical and quality of life outcomes of DIYAPS users</li>
-    <li>to identify potential technical improvements that could be made to artificial pancreas technology of all kinds, and</li>
-    <li>to investigate how more people can benefit from the innovations being developed by the DIY community.</li>
+    <li>to identify potential technical improvements that could be made to automated insulin delivery technology of all kinds, and</li>
+    <li>to investigate how more people with diabetes can benefit from the innovations being developed by the DIY community.</li>
+    <li><b>This particular study adds a fourth aim</b> which is: to <b>assess the level of agreement between the people with diabetes' self-reported medical outcomes and their actual outcomes from medical charts reported by their health care providers</b>.</li>
 </ol>
 <h1>Why is OPEN doing this research?</h1>
-<p>By carrying out this research study, OPEN will be able to build evidence about the effectiveness of DIYAPS and potential further improvements in the technology that could be introduced in the future.</p>
+<p>By carrying out this research study, OPEN will be able to build reliable evidence about the effectiveness of DIYAPS and potential further improvements in the technology that could be introduced in the future. This part, focusing on the validity of self-reported outcomes, requires your contribution as HCPs.</p>
+<p>We would like to check how accurate the self-reported clinical outcomes are, as one's memory may sometimes fail, and this is why some researchers are sceptical when we ask about the self-reported data. We are also interested in how accurate our self-reported data are - and we hope that we can prove their accuracy.</p>
+<p>In  our  main  survey  data  collection  targeted  at  people  with  diabetes  (see  more  details <a href="https://survey.open-diabetes.eu"here</a>), we ask the participants to report their clinical outcomes, such as recent hemoglobin A1C levels, height, weight, comorbidities, etc. All clinical outcome data reported by the par>cipants are self-reported and therefore we want to add an additional follow-up study that involves you, the diabetes specialist health care professional (HCP)!</p>
 <h1>Why am I being invited to take part?</h1>
-<p>You have been invited to take part because you are the parent/carer of a DIYAPS user.</p>
+<p>You are being invited to take part by one of your patients, a person with diabetes, and because you are this person's health care professional <b>(HCP) / member of their diabetes team</b>. We would like you to help us assess the agreement between your patients' self-reported diabetes related outcomes, and actual medical outcomes registered in their medical charts/data bases. We would very much appreciate if you could check these data for us and provide responses on behalf of your patient. If you have been asked to take part in this study by your patient, it already means that your patient is happy to request this help from you.</p>
 <h1>What will happen if I decide to take part in this research study?</h1>
-<p>If you kindly agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe</b> by noting it down, emailing it to yourself or taking a picture of it as you may need it later.</p></p> 
-<p>You will then be asked to <b>complete a series of questionnaires</b> designed to access the quality of life and well-being of you and your child. Altogether, it should not take you more than 20-30 minutes. These questionnaires will focus on:</p>
-<ul>
-    <li>Demographic information (about yourself and your child)</li>
-    <li>Information about your child’s health and diabetes</li>
-    <li>Your and your child’s general experiences of living with diabetes</li>
-    <li>Your general sense of well-being caring for someone with diabetes</li>
-    <li>Your sleep quality and mood</li>
-    <li>Your and your child's general experiences of building and maintaining a DIYAPS</li>
-</ul>
-<p>To further assist our research, we would kindly invite you and your child to <b>become members of</b> a data repository site called ‘Open Humans’. <b>Open Humans</b> allows people to <b>anonymously donate</b> their health related data (including <b>device data</b>, e.g. from their glucose monitoring, or Nightscout, etc.) for research purposes. Once you sign up to Open Humans, we invite you to <b>join our project</b> on the Open Humans platform called the ‘Open Project’. This should take you no longer than 2-3 minutes.</p>
-<p>Choosing to sign up to Open Humans and joining the OPEN project on Open Humans is <b>optional</b> and you decide what data you would like to share with us (if at all), and whether you and your child would like to <b>participate in any further follow on studies</b>. Bear in mind that your participation in the OPEN project and future studies will greatly assist us to enhance the existing scientific evidence on DIYAPS.</p>
-<p>If you (and your child) are happy to sign up to the Open Humans platform, instructions on how to connect your existing Open Humans account — or create a new one and connect this — are provided on the <a href="https://open-diabetes.eu/en/open-survey/" target="_blank">OPEN website</a>.</p>  
-<p>Lastly, if your child is of adolescent age (13-17 years old), and they would like to complete a shorter version of the survey about their quality of life, you will also be able to provide them with a <b>participation link</b>. This would help enhance our understanding of the impact of DIYAPS on the quality of life of both you and your child.  Do not share this with anyone but your child, who should use this link to complete the questionnaire, so that your answers can be combined. It should not take them any longer than 10-15 minutes to complete and responses will be <b>confidential</b>. That means you will not be able to see your child’s responses and vice-versa. Sharing the participation link with your child is optional.</p>
+<p>You have just received a link and a signed consent form from one of your patients with diabetes. If you agree to take part in our research and respond to your patients' request and decide, after reading this information sheet, to give your consent, you will be asked to complete a short online survey. The survey will include questions about your patients and their diabetes-related health outcomes, i.e. the HbA1c levels, occurrence of severe hypos or diabetic ketoacidosis, diabetes-related complications, comorbidities, and prescription medicine, based on the information from the patients' files. To be able to assess this information, we are asking you to check your patients' chart / electronic clinical database.</p>
+<p>Your patient was asked to provide their declaration of consent and authorization for you to report their clinical outcome data through a signed consent form before even sharing the link to the survey with you. By giving their consent, the patients officially release their HCP (YOU!) from the obligation to maintain confidentiality regarding the above parameters. By the fact that a patient is actively reaching out to their HCP (you!) and handing over their personalized link and the signed consent form, it is ensured that the decision to take part in this study and request the HCP-reported data will bei actively made by your patient. After receiving the form, we kindly ask you to store it in the patients' file. In this way we ensure that you are legally and ethically protected to provide such information. Remember, the study in this form has been accepted by the UCD Ethics Committee!</p>
+<p>Once we have your anonymous response - remember that none of the answers you provided to the OPEN survey will be revealed to your patient - we will combine the information provided by you based on the medical chart with a patient's self-reported  response. All together it should not take you more than 10-15 minutes.</p>
+<p>Now, as you finally know what we are asking for, please decide if you are willing to help us, your patient and the wider diabetes community. If so, please read this information sheet further, and then, provide the consent to take part in this study. Once you consent, you will be able to access a separate part of the OPEN survey which is only visible to you and provide your patients' health-related information into a blank survey form. None of your answers will be visible to your patient.</p>
 <h1>How will the data be used?</h1> 
-<p>The pseudonymised responses to the survey will be analysed by our team of researchers. <b>If you choose to upload your child’s device data to the Open Humans project, we will combine them with your responses to the survey described above to create a more complete picture of the impact of DIYAPS on the lives of people with diabetes</b>. It will also help us to (anonymously) stay “in touch” and inform you about any follow-up studies in the future.</p>
-<p>Once the OPEN project is completed your anonymised data will be available to researchers upon request. To protect your privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers.</p>
+<p>The pseudonymized responses to the survey will be compared with your patients' responses and analyzed by a team of researchers. The final results will be disseminated in scientific presentations or articles. Once the OPEN project is completed, the anonymized data will be available to researchers upon request. To protect your privacy, any information that might lead to your or your patients' identity will be removed from the data set before being accessed by any researchers.</p>
 <p>The organisations in the OPEN consortium involved in accessing your data will include:</p>
 <ul>
     <li>University College Dublin, Ireland</li>
@@ -45,25 +37,21 @@ const val INFO_SHEET_HCPS = """
     <li>Copenhagen University, Denmark</li>
     <li>The Australian Centre for Behavioural Research in Diabetes (ACBRD), Australia</li>
 </ul>
-<h1>How will you protect our privacy?</h1>
+<h1>How will you protect my privacy?</h1>
 <p>The design of this study is in line with all EU (GDPR), Irish (Data Protection Act, 2018), and UCD (UCD ethics Committee) ethical and data protection regulations. All personal information will be made unidentifiable before being transmitted and stored in the OPEN Humans server. Every precaution will be taken to respect your privacy, in line with the General Data Protection Regulations (GDPR).</p> 
-<p>As stated above, any information that you share that may potentially inadvertently make you identifiable will be removed - this process is called pseudonymisation.</p>  
-<p>Please note that only adults (aged 18+) who are able to provide consent are allowed to participate. Your child (<b>if</b> 13-17 years of age) will be asked to sign in the assent form before completing their version of the survey.</p> 
+<p>As stated above, any information that you share that may potentially inadvertently make you identifiable will be removed - this process is called pseudonymization.</p>  
+<p>Please note that only adults (aged 18+) who are able to provide consent are allowed to participate.</p> 
 <h1>What are the benefits of taking part in this research study?</h1>
-<p>There are no direct, material benefits expected from taking part in this study. However, you will be helping to improve the overall scientific knowledge about DIYAPS and its use. As a consequence, your participation and experience may help the diabetes community.</p> 
+<p>There are no direct, material benefits expected from taking part in this study. However, you will be helping to improve the overall scientific knowledge about DIYAPS and its use and help to assess the validity of self-reported outcomes in people with diabetes. As a consequence, your participation and experience may help other researchers, health care professionals, and the diabetes community.</p> 
 <h1>What are the risks of taking part in this research study?</h1>
-<p>There are no anticipated risks expected from taking part in this study. The only discomfort you may have is related to the time you have to dedicate to complete the survey. The questionnaires that have been selected for use have been tried and tested among a large population of parents/carers of a child with diabetes and have been designed to minimize the risk of causing upset and distress. The questionnaires selected for your child are age-appropriate and tested among a large population of teenagers with diabetes. However, if you or your child do experience this or any other aspect of the study as distressing, you are free to stop participating at any time, without personal consequence, we recommend contacting your GP/primary care physician or local diabetes organizations who may be able to provide you with psychological and practical support. In addition, you may also find the following webpages helpful:</p>
-<ul>
-    <li><a href="https://acbrd.org.au/diabetes-and-emotional-health-factsheets/" target="_blank">Diabetes and emotional health factsheets</a></li>
-    <li><a href="https://www.jdrf.org/t1d-resources/living-with-t1d/mental-health/" target="_blank">Mental Health</a></li>
-</ul>
-<p>If you choose to provide detailed personal information in a free text field, there is a small chance that you may identify yourself within the questionnaire to OPEN researchers. However, this information will be removed before the data set is shared with the rest of the OPEN research team.</p>
-<h1>Can I or my child change our minds at any stage and withdraw from the study?</h1>
-<p>Yes! If you and your child decide to participate and subsequently change your mind, you may withdraw from the study at any time. You may also choose to remove your data from future analyses of the OPEN project. To do so, please contact our research team through the details provided below. You can also have the option to leave the OPEN project on Open Humans at any time and remove any data that you have uploaded to the platform. Please note that in both instances we can only delete your data if you provide your Participant ID from the survey.</p>
+<p>There are no anticipated risks expected from taking part in this study. The only discomfort you may have is related to the time you have to dedicate to review your patients' data and complete the survey. We are aware how busy health care professionals are, therefore your input is much appreciated. If you feel, however, that taking part in this study is distressing, time consuming, you are free to stop participating at any time, without any consequence.</p>
+<p>It is possible that you might feel uncomfortable providing your patients' health related data, you may also be worried that it could affect your relationship in a negative way if your responses showed deviations or that you just do not want to participate in the study due to personal reasons. Please note that it is your free choice and completely voluntary to participate in the study. If you are not willing to participate, it will not affect the part of the survey completed by your patient. Your patient will not be aware that you decided to not take part, as they requested. They will also not be aware of the responses provided by you, so even if they differ, they will not know about it and cause a risk of them being upset. Neither you nor your patient will know if there were any discrepancies between their self-reported data and medical reports based on their medical charts, as we use the data anonymously for our research. It is only your free will and your time that can make this study happen and we would be very grateful if you decide to do so.</p>
+<h1>Can I change my mind at any stage and withdraw from the study?</h1>
+<p>Yes! If you decide to participate and subsequently change your mind, you may withdraw from the study at any time. The data, however, cannot be removed without your patients' permission.</p>
 <h1>How will I find out what happens with this project?</h1>
 <p>The OPEN team would like you to engage with this project as much as possible. That is why we have developed a website for the OPEN project. On <a href="https://open-diabetes.eu">this website</a>, we provide regular updates on the findings of our project and you may also sign up to our newsletter to receive regular email updates. All the results of our research will be published in a way which will be accessible and free of charge to the public.</p>
 <h1>Contact Details</h1>
-<p>If any participant or participant’s caregiver would like to contact a member of the research team <i>(you can see us <a href="https://open-diabetes.eu/about_us/consortium">here</a> on our website)</i> for any research-related reason, they can do so via the contact information below. If any query is not responded to in a satisfactory manner, then contact can be made with a Data Protection Officer at UCD, whose details are also provided below. For general data protection enquiries, please contact the UCD Data Protection office (general enquiries). Finally, if none of the UCD contacts have given a satisfactory response, details on the Data Protection Commission are provided below.</p>
+<p>If any participant would like to contact a member of the research team for any research-related reason, they can do so via the contact information below. If any questions are not answered in a satisfactory manner, then contact can be made with a Data Protection Officer at UCD, whose details are also provided below. For general data protection inquiries, please contact the UCD Data Protection office (general enquiries). Finally, if none of the UCD contacts have given a satisfactory response, details on the Data Protection Commission are provided below.</p>
 <div id="contact-details">
     <div class="contact-detail">
         <span><b>Dr Shane O’Donnell</b></span>
@@ -80,6 +68,10 @@ const val INFO_SHEET_HCPS = """
         <span><b>Dr. med. Katarina Braune</b></span>
         <span><b>Prof. Dr. med. Klemens Raile</b></span>
         <span>Clinical Leads</span>
+        <span></span>
+        <span><b>Christine Knoll</b><span>
+        <span>Doctoral Candidate</span>
+        <span></span>
         <span>Department of Paediatric Endocrinology and Diabetes</span>
         <span>Charité - Universitätsmedizin Berlin</span>
         <span>Augustenburger Platz 1</span>
@@ -87,6 +79,7 @@ const val INFO_SHEET_HCPS = """
         <span>Germany</span>
         <span>Telephone: <a href="tel:+4930450616454">+49 30 450 616454</a></span>
         <span>Email: <a href="mailto:katarina.braune@charite.de">katarina.braune@charite.de</a></span>
+        <span>       <a href="mailto:christine.knoll@charite.de">christine.knoll@charite.de</a></span>
     </div>
     <div class="contact-detail">
         <span><b>UCD Data Protection General Enquiries</b></span>
