@@ -19,24 +19,20 @@ const val INFO_SHEET_ADULT_USERS = """
 <h1>Why am I being invited to take part?</h1>
 <p>You are being invited to take part because you are a DIYAPS user.</p>
 <h1>What will happen if I decide to take part in this research study?</h1>
-<p>If you kindly agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe</b> by noting it down, emailing it to yourself or taking a picture of it as you may need it later.</p></p> 
-<p>You will then be asked to <b>complete some questionnaires</b> about your health and quality of life. Altogether, it should not take you more than 20-30 minutes. These questionnaires will focus on:</p>
+<p>If you agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe by noting it down, emailing it to yourself or taking a picture of it as you may need it later.</b></p> 
+<p>You will then be asked to <b>complete some questionnaires</b>. Altogether, it should not take you more than 15 minutes. These questionnaires will focus on:</p>
 <ul>
     <li>Your demographic information</li>
     <li>Information about your health and diabetes</li>
-    <li>Your general experience of living with diabetes</li>
-    <li>Your sleep quality and mood</li>
-    <li>If and how COVID-19 has impacted your quality of life</li>
     <li>Your general experiences of building and maintaining a DIYAPS</li>
 </ul>
-<p>To further assist our research, we would kindly invite you to <b>become a member of</b> a data repository site called <b>‘Open Humans’</b>. Open Humans allows people to <b>anonymously donate</b> their health related data (including <b>device data</b>, e.g. from their glucose monitoring, or Nightscout, etc.) for research purposes. Once you sign up to Open Humans, we invite you to <b>join our project</b> on the Open Humans platform called the ‘Open Project’. This should take you no longer than 2-3 minutes.</p>
-<p>Choosing to sign up to Open Humans and joining the OPEN project on Open Humans is <b>optional</b> and you decide what data you would like to share with us (if at all), and whether you would like to <b>participate in any further follow on studies</b>. Bear in mind that your participation in the OPEN project and future studies will greatly assist us to enhance the existing scientific evidence on DIYAPS.</p>
+<p>To further assist our research, we invite you to <b>become a member of</b> a data repository site called <b>‘Open Humans’</b>. Open Humans allows people to <b>anonymously donate</b> their health related data (including <b>device data</b>, e.g. from their glucose monitoring, or Nightscout, etc.) for research purposes. Once you sign up to Open Humans, we invite you to also <b>join our project</b> on the Open Humans platform called ‘OPEN’ (by Shane O'Donnell). This should take you no longer than 2-3 minutes.</p>
+<p>Choosing to sign up to Open Humans and joining 'OPEN' on Open Humans is <b>optional</b> and you decide what data you would like to share with us (if at all), and whether you would like to <b>participate in any further follow-up studies</b>. Bear in mind that your participation in the OPEN project and future studies will greatly assist us to enhance the existing scientific evidence on DIYAPS.</p>
 <p>If you are happy to sign up to the Open Humans platform, instructions on how to connect your existing Open Humans account — or create a new one and connect this — are provided on the <a href="https://open-diabetes.eu/en/open-survey/" target="_blank">OPEN website</a>.</p>  
-<p>Lastly, if you have a <b>partner</b>, please ask them to complete a shorter version of the survey and provide them with a <b>participation link</b>. Do not share this with anyone but your partner, who should use this link to complete the questionnaire, so that your answers can be combined. It should not take them any longer than 10-15 minutes to complete and responses will be confidential. That means you will not be able to see your partner’s responses and vice-versa. Sharing the participation link with your partner is optional.</p>
 <h1>How will the data be used?</h1> 
-<p>The pseudonymised responses to the survey will be analysed by our team of researchers. <b>If you choose to upload your device data to the Open Humans project, we will combine them with your responses to the survey described above to create a more complete picture of the impact of DIYAPS on the lives of people with diabetes.</b> It will also help us to (anonymously) stay “in touch” and inform you about any follow-up studies in the future.</p>
-<p>Once the OPEN project is completed your anonymised data will be available to researchers upon request. To protect your privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers.</p>
-<p>The organisations in the OPEN consortium involved in accessing your data will include:</p>
+<p>The pseudonymized responses to the survey will be analyzed by our team of researchers. <b>If you choose to give OPEN (on Open Humans) access to the device data you have uploaded to the OH site, we will combine them with your responses to the survey described above to create a more complete picture of the impact of DIYAPS on the lives of people with diabetes.</b> It will also help us to (anonymously) stay “in touch” and inform you about any follow-up studies in the future.</p>
+<p>Once the OPEN project is completed your anonymized data will be available to researchers upon request. To protect your privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers.</p>
+<p>The organizations in the OPEN consortium involved in accessing your data will include:</p>
 <ul>
     <li>University College Dublin, Ireland</li>
     <li>Charité - Universitätsmedizin Berlin, Germany</li>
@@ -47,12 +43,12 @@ const val INFO_SHEET_ADULT_USERS = """
 </ul>
 <h1>How will you protect my privacy?</h1>
 <p>The design of this study is in line with all EU (GDPR), Irish (Data Protection Act, 2018) and UCD (UCD ethics Committee) ethical and data protection regulations. Every precaution will be taken to respect your privacy, in line with the General Data Protection Regulations (GDPR).</p> 
-<p>As stated above, any information that you share that may potentially inadvertently make you identifiable will be removed - this process is called pseudonymisation.</p>  
+<p>As stated above, any information that you share that may potentially inadvertently make you identifiable will be removed - this process is called pseudonymization.</p>  
 <p>Please note that only adults (aged 18+) who are able to provide consent are allowed to participate.</p> 
 <h1>What are the benefits of taking part in this research study?</h1>
 <p>There are no direct, material benefits expected from taking part in this study. However, you will be helping to improve the overall scientific knowledge about DIYAPS and its use. As a consequence, your participation and experience may help the diabetes community.</p> 
 <h1>What are the risks of taking part in this research study?</h1>
-<p>There are no anticipated risks expected from taking part in this study. The only discomfort you may have is related to the time you have to dedicate to complete the survey. The questionnaires that have been selected for use have been tried and tested among a large population of people living with diabetes and have been designed to minimize the risk of causing upset and distress. However, if you do experience this or any other aspect of the study as distressing, you are free to stop participating at any time, without personal consequence. In such circumstances, we recommend contacting your diabetes team, GP/primary care physician or local diabetes organizations who may be able to provide you with psychological and practical support. However, if they are not in a position to provide support, you may find information on the following webpages helpful:</p>
+<p>There are no anticipated risks expected from taking part in this study. However, if you do experience any other aspect of the study as distressing, you are free to stop participating at any time, without personal consequence. In such circumstances, we recommend contacting your diabetes team, GP/primary care physician or local diabetes organizations who may be able to provide you with psychological and practical support. However, if they are not in a position to provide support, you may find information on the following webpages helpful:</p>
 <ul>
     <li><a href="https://acbrd.org.au/diabetes-and-emotional-health-factsheets/" target="_blank">Diabetes and emotional health factsheets</a></li>
     <li><a href="https://www.jdrf.org/t1d-resources/living-with-t1d/mental-health/" target="_blank">Mental Health</a></li>
