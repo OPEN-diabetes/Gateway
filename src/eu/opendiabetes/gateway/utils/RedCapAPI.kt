@@ -14,17 +14,14 @@ class RedCapAPI(
     private val httpClient = HttpClient(Apache)
     private val json = Json(JsonConfiguration.Stable)
 
-    suspend fun createRecord(participantId: Long, participationLinkId: Long?, enrollmentType: EnrollmentType): String {
+    suspend fun createRecord(participantId: Long, enrollmentType: Int): String {
         val data = json.stringify(JsonElementSerializer,
             jsonArray {
                 +json {
                     "record_id" to 1
                     "participant_id" to participantId
-                    "enrollment_type" to enrollmentType.ordinal
+                    "enrollment_type" to enrollmentType
                     "gateway_complete" to 2
-                    if (participationLinkId != null) {
-                        "participation_link_id" to participationLinkId
-                    }
                 }
             })
         val params = Parameters.build {
@@ -47,10 +44,25 @@ class RedCapAPI(
             append("token", token)
             append("content", "surveyQueueLink")
             append("format", "json")
-            append("record", recordId.toString())
+            append("record", recordId)
             append("returnFormat", "json")
         }
         return httpClient.submitForm(apiUrl, params)
+    }
+
+    suspend fun hasCompletedSurvey(recordId: String): Boolean {
+        val params = Parameters.build {
+            append("token", token)
+            append("content", "record")
+            append("format", "json")
+            append("type", "eav")
+            append("records", recordId)
+            append("fields", "thank_you_a_complete,thank_you_anot_complete,thank_you_parent_complete,thank_you_parentnot_complete,healthcare_professionals_complete")
+            append("returnFormat", "json")
+        }
+        val response = httpClient.submitForm<String>(apiUrl, params)
+        val records = json.parse(JsonArraySerializer, response)
+        return records.any { it.jsonObject.getPrimitive("value").content == "2" }
     }
 
     override fun close() {

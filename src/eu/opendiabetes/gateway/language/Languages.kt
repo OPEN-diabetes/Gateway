@@ -109,6 +109,13 @@ sealed class Language {
     abstract val useDesktop: String
     abstract val surveyClosed: String
     abstract val thanksToParticipants: String
+    abstract val youHaveFilledOutTheSurvey: String
+    abstract val thanksForFillingOutSurvey: String
+    abstract val inviteYourHcp: String
+    abstract val clickForMoreInformation: String
+    abstract val learnMore: String
+    abstract val fillOutForm: String
+    abstract val shareViaEmail: String
 
     abstract fun participantId(participantId: String): String
     abstract fun missingDataSources(removeLink: String, tryAgain: String): String
@@ -175,7 +182,7 @@ object English : Language() {
     override val sendPartner = "Please send the <b>following participation link</b> to your partner, e.g. via e-mail: It should take them approximately 10-15 minutes and responses will be confidential. That means you will not be able to see your partner´s responses and vice-versa."
     override val fillOutSurvey = "Participate in the OPEN survey"
     override val answerAFewQuestions =
-        "We kindly invite you to <b>answer a few questions</b> if you like. This will take no longer than 20 to 30 minutes. You can take a break if needed and join again later with you participant ID."
+        "We kindly invite you to <b>answer a few questions</b> if you like. This will take no longer than 20 to 30 minutes. You can take a break if needed and join again later with you Participant ID."
     override val goToSurvey = "Go to survey"
     override val signOut = "Sign out"
     override val linkToOpenHumans = "Participate in future follow-up studies and/or donate your device data via Open Humans"
@@ -252,6 +259,13 @@ object English : Language() {
     override val useDesktop = "We recommend to use a Desktop PC to participate in the OPEN survey."
     override val surveyClosed = "The survey has been closed."
     override val thanksToParticipants = "Many thanks to all participants!"
+    override val youHaveFilledOutTheSurvey = "You have filled out the survey"
+    override val thanksForFillingOutSurvey = "Many thanks for having taken the time to help us with our research."
+    override val inviteYourHcp = "Invite your healthcare professional to this survey"
+    override val clickForMoreInformation = "Click the button for more information."
+    override val learnMore = "Learn more"
+    override val fillOutForm = """Fill out <a target="_blank" href="/static/consent_form.pdf">this form</a> and give it to your healthcare professional along with the following link:"""
+    override val shareViaEmail = "Share via e-mail"
 
     override fun participantId(participantId: String) = "Participant ID: <b>$participantId</b>"
 

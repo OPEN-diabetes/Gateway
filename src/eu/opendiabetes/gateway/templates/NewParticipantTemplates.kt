@@ -7,8 +7,6 @@ suspend fun ApplicationCall.respondNewParticipantTemplate() =
     respondBranchingTemplate(language.newParticipant, null, language.pleaseSelectWhichApplies, "/") {
         branchingOption("/static/adult.svg", language.iAmAnAdult, "/new_participant/adult")
         branchingOption("/static/parent.svg", language.iAmAParent, "/new_participant/parent")
-        branchingOption("/static/teenager.svg", language.iAmATeenager, "/new_participant/teenager")
-        branchingOption("/static/partner.svg", language.iAmAPartner, "/new_participant/partner")
     }
 
 

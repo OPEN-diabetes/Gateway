@@ -18,7 +18,7 @@ suspend fun ApplicationCall.respondLandingPageTemplate() =
             id = "branching-text"
             text(language.doYouAlreadyHaveAParticipantId)
         }
-        //branchingOption("/static/register.svg", language.iDoNotHaveAParticipantId, "/new_participant")
+        branchingOption("/static/register.svg", language.iDoNotHaveAParticipantId, "/new_participant")
         branchingOption("/static/login.svg", language.iAlreadyHaveAParticipantId, "/login")
         div("introduction") {
             unsafe {

@@ -1,11 +1,9 @@
 package eu.opendiabetes.gateway.utils
 
-import eu.opendiabetes.gateway.database.EnrollmentType
-import eu.opendiabetes.gateway.database.Participants
-import eu.opendiabetes.gateway.database.ParticipationLinks
-import eu.opendiabetes.gateway.database.Sessions
+import eu.opendiabetes.gateway.database.*
 import kotlinx.coroutines.Dispatchers
 import org.jetbrains.exposed.dao.DaoEntityID
+import org.jetbrains.exposed.dao.id.EntityID
 import org.jetbrains.exposed.sql.Database
 import org.jetbrains.exposed.sql.and
 import org.jetbrains.exposed.sql.deleteWhere
@@ -50,8 +48,18 @@ suspend fun Database.setSurveyRecordIdForParticipant(id: Long, recordId: String)
     }
 }
 
+suspend fun Database.setFollowupSurveyRecordIdForParticipant(id: Long, recordId: String) = newSuspendedTransaction(Dispatchers.IO, this) {
+    Participants.update({ Participants.id eq id }) {
+        it[Participants.followupSurveyRecordId] = recordId
+    }
+}
+
 suspend fun Database.getParticipationLink(id: Long) = newSuspendedTransaction(Dispatchers.IO, this) {
     ParticipationLinks.Dao.findById(id)?.immutable
+}
+
+suspend fun Database.getHcpLink(id: Long) = newSuspendedTransaction(Dispatchers.IO, this) {
+    HcpLinks.Dao.findById(id)?.immutable
 }
 
 suspend fun Database.setOpenHumansTokensForParticipant(id: Long, accessToken: String, refreshToken: String, expiresAt: Long, projectMemberId: String? = null) = newSuspendedTransaction(Dispatchers.IO, this) {
@@ -69,6 +77,12 @@ suspend fun Database.setSurveyRecordIdForParticipationLink(id: Long, surveyLink:
     }
 }
 
+suspend fun Database.setSurveyRecordIdForHcpLink(id: Long, surveyLink: String) = newSuspendedTransaction(Dispatchers.IO, this) {
+    HcpLinks.update({ HcpLinks.id eq id }) {
+        it[HcpLinks.surveyRecordId] = surveyLink
+    }
+}
+
 suspend fun Database.getSurveyLinksForParticipant(id: Long) = newSuspendedTransaction(Dispatchers.IO, this) {
     ParticipationLinks.Dao.find {
         ParticipationLinks.participant eq id
@@ -77,6 +91,17 @@ suspend fun Database.getSurveyLinksForParticipant(id: Long) = newSuspendedTransa
 
 suspend fun Database.getParticipantByProjectMemberId(projectMemberId: String) = newSuspendedTransaction(Dispatchers.IO, this) {
     Participants.Dao.find { Participants.projectMemberId eq projectMemberId }.firstOrNull()?.immutable
+}
+
+suspend fun Database.createHcpLink(participantId: Long) = newSuspendedTransaction(Dispatchers.IO, this) {
+    HcpLinks.Dao.new {
+        this.participantId = EntityID(participantId, Participants)
+        this.secret = generateSecureRandomString(PARTICIPATION_LINK_SECRET_CHARS, PARTICIPATION_LINK_SECRET_LENGTH)
+    }
+}
+
+suspend fun Database.getHcpLinkForParticipant(participantId: Long) = newSuspendedTransaction(Dispatchers.IO, this) {
+    HcpLinks.Dao.find { HcpLinks.participant eq participantId }.firstOrNull()?.immutable
 }
 
 suspend fun Database.createParticipantId(enrollmentType: EnrollmentType) = newSuspendedTransaction(Dispatchers.IO, this) {

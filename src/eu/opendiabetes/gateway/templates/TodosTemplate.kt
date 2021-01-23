@@ -9,8 +9,11 @@ import kotlinx.html.*
 
 suspend fun ApplicationCall.respondTODOsTemplate(
     participantId: String,
-    participationLinks: List<ParticipationLinkTODO>,
-    dataSources: Set<String>?
+    dataSources: Set<String>?,
+    showFollowupSurvey: Boolean,
+    hasFilledOutFollowupSurvey: Boolean,
+    showHCPSurvey: Boolean,
+    hcpUrl: String?
 ) =
     respondBaseTemplate(
         language.yourTODOs,
@@ -22,19 +25,29 @@ suspend fun ApplicationCall.respondTODOsTemplate(
         }
         ul {
             id = "todos"
-            /*li {
-                text(language.fillOutSurvey)
-                p {
-                    unsafe {
-                        raw(language.answerAFewQuestions)
-                    }
-                }
-                a("/survey", "_blank", "button") { text(language.goToSurvey) }
-            }*/
             li {
-                text(language.surveyClosed)
-                p {
-                    text(language.thanksToParticipants)
+                if (showFollowupSurvey) {
+                    if (hasFilledOutFollowupSurvey) {
+                        text(language.youHaveFilledOutTheSurvey)
+                        p {
+                            unsafe {
+                                raw(language.thanksForFillingOutSurvey)
+                            }
+                        }
+                    } else{
+                        text(language.fillOutSurvey)
+                        p {
+                            unsafe {
+                                raw(language.answerAFewQuestions)
+                            }
+                        }
+                        a("/survey", "_blank", "button") { text(language.goToSurvey) }
+                    }
+                } else {
+                    text(language.surveyClosed)
+                    p {
+                        text(language.thanksToParticipants)
+                    }
                 }
             }
             li {
@@ -65,17 +78,32 @@ suspend fun ApplicationCall.respondTODOsTemplate(
                 }
                 a("/openhumans", target = "_blank", classes =  "button") { text(if (dataSources == null) language.setup else language.setupAgain) }
             }
-            participationLinks.forEach {
+            if (showHCPSurvey) {
                 li {
-                    when (it) {
-                        is ParticipationLinkTODO.Parent -> {
-                            participationLink(language, language.askParent, language.sendParent, it.link)
+                    text(language.inviteYourHcp)
+                    if (hcpUrl == null) {
+                        p {
+                            unsafe {
+                                raw(language.clickForMoreInformation)
+                            }
                         }
-                        is ParticipationLinkTODO.Child -> {
-                            participationLink(language, language.askChild, language.sendChild, it.link)
+                        a("/hcp-study", classes = "button") { text("Learn more") }
+                    } else {
+                        p {
+                            unsafe {
+                                raw(language.fillOutForm)
+                            }
                         }
-                        is ParticipationLinkTODO.Partner -> {
-                            participationLink(language, language.askPartner, language.sendPartner, it.link)
+                        input(type = InputType.url, classes = "participation-link") {
+                            readonly = true
+                            value = hcpUrl
+                        }
+                        val mailtoLink = "mailto:?" + listOf(
+                            "subject" to language.invitationToSurvey,
+                            "body" to language.invitationText(hcpUrl)
+                        ).formUrlEncode().replace("+", "%20")
+                        a(mailtoLink, "_blank", "email-link") {
+                            text(language.shareViaEmail)
                         }
                     }
                 }

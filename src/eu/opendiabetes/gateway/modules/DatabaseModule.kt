@@ -2,6 +2,7 @@ package eu.opendiabetes.gateway.modules
 
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
+import eu.opendiabetes.gateway.database.HcpLinks
 import eu.opendiabetes.gateway.database.Participants
 import eu.opendiabetes.gateway.database.ParticipationLinks
 import eu.opendiabetes.gateway.database.Sessions
@@ -17,6 +18,6 @@ fun Application.databaseModule() {
     val dataSource = HikariDataSource(config)
     database = Database.connect(dataSource)
     transaction(database) {
-        SchemaUtils.create(Participants, Sessions, ParticipationLinks)
+        SchemaUtils.create(Participants, Sessions, ParticipationLinks, HcpLinks)
     }
 }

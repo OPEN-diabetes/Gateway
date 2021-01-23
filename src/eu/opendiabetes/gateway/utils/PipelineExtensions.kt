@@ -14,3 +14,9 @@ var Pipeline<*, *>.openHumansApi
     set(value) {
         attributes.put(GatewayAttributes.openHumansAPI, value)
     }
+
+var Pipeline<*, *>.followupRedCapAPI
+    get() = attributes[GatewayAttributes.followupRedCapAPI]
+    set(value) {
+        attributes.put(GatewayAttributes.followupRedCapAPI, value)
+    }
