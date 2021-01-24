@@ -261,7 +261,7 @@ object English : Language() {
     override val thanksToParticipants = "Many thanks to all participants!"
     override val youHaveFilledOutTheSurvey = "You have filled out the survey"
     override val thanksForFillingOutSurvey = "Many thanks for having taken the time to help us with our research."
-    override val inviteYourHcp = "Invite your healthcare professional to this survey"
+    override val inviteYourHcp = "Invite your health care provider to this survey"
     override val clickForMoreInformation = "Click the button for more information."
     override val learnMore = "Learn more"
     override val fillOutForm = """Fill out <a target="_blank" href="/static/consent_form.pdf">this form</a> and give it to your healthcare professional along with the following link:"""
