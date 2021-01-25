@@ -264,7 +264,7 @@ object English : Language() {
     override val inviteYourHcp = "Invite your health care provider to this survey"
     override val clickForMoreInformation = "Click the button for more information."
     override val learnMore = "Learn more"
-    override val fillOutForm = """Fill out <a target="_blank" href="/static/consent_form.pdf">this form</a> and give it to your healthcare professional along with the following link:"""
+    override val fillOutForm = """Fill out <a target="_blank" href="/static/consent_form.pdf">this form</a> and give it to your health care provider along with the following link:"""
     override val shareViaEmail = "Share via e-mail"
 
     override fun participantId(participantId: String) = "Participant ID: <b>$participantId</b>"
