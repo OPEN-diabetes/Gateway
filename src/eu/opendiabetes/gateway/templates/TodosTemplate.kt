@@ -84,7 +84,7 @@ suspend fun ApplicationCall.respondTODOsTemplate(
                     if (hcpUrl == null) {
                         p {
                             unsafe {
-                                raw(language.clickForMoreInformation)
+                                raw(language.hcpInfoText)
                             }
                         }
                         a("/hcp-study", classes = "button") { text("Learn more") }

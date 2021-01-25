@@ -112,7 +112,7 @@ sealed class Language {
     abstract val youHaveFilledOutTheSurvey: String
     abstract val thanksForFillingOutSurvey: String
     abstract val inviteYourHcp: String
-    abstract val clickForMoreInformation: String
+    abstract val hcpInfoText: String
     abstract val learnMore: String
     abstract val fillOutForm: String
     abstract val shareViaEmail: String
@@ -262,7 +262,7 @@ object English : Language() {
     override val youHaveFilledOutTheSurvey = "You have filled out the survey"
     override val thanksForFillingOutSurvey = "Many thanks for having taken the time to help us with our research."
     override val inviteYourHcp = "Invite your health care provider to this survey"
-    override val clickForMoreInformation = "Click the button for more information."
+    override val hcpInfoText = "We kindly ask you to participate in an OPEN follow-up study that focuses on the quality of the self-reported medical outcome data. For this, you would need to get your health care provider involved - your anonymized data will NOT be shared with your health care professional and vice versa.<br><i>Click the button for more information.</i>"
     override val learnMore = "Learn more"
     override val fillOutForm = """Fill out <a target="_blank" href="/static/consent_form.pdf">this form</a> and give it to your health care provider along with the following link:"""
     override val shareViaEmail = "Share via e-mail"
