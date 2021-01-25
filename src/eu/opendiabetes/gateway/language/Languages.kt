@@ -182,7 +182,7 @@ object English : Language() {
     override val sendPartner = "Please send the <b>following participation link</b> to your partner, e.g. via e-mail: It should take them approximately 10-15 minutes and responses will be confidential. That means you will not be able to see your partner´s responses and vice-versa."
     override val fillOutSurvey = "Participate in the OPEN survey"
     override val answerAFewQuestions =
-        "We kindly invite you to <b>answer a few questions</b> if you like. This will take no longer than 20 to 30 minutes. You can take a break if needed and join again later with you Participant ID."
+        "We kindly invite you to <b>answer a few questions</b> if you like. This will take no longer than 10 to 15 minutes. You can take a break if needed and join again later with you Participant ID."
     override val goToSurvey = "Go to survey"
     override val signOut = "Sign out"
     override val linkToOpenHumans = "Participate in future follow-up studies and/or donate your device data via Open Humans"
@@ -239,11 +239,11 @@ object English : Language() {
     override val iAlreadyHaveAParticipantId = "I already have a Participant ID."
     override val iDoNotHaveAParticipantId = "I do not have a Participant ID."
     override val introduction1 = """
-        <p>We are the OPEN project, a European Union-funded international research consortium aiming to study and explore the unique patient-innovation of “Do-It-Yourself Artificial Pancreas Systems”, or DIYAPS. We are asking <b>everyone</b> from the global diabetes online community to help us build evidence on how this technology affects the lives of people with diabetes.</p>
-        <h1>The survey has been closed</h1>
-        <p>Our survey has been closed. We would like to express our gratitude to everyone who has helped us by filling out the questionnaires.</p>
-        <h1>You can STILL donate your device data, too!</h1>
-        <p>You still have the option to anonymously <b>donate your device data</b> (e.g. from Nightscout) in case you have previously registered for a Participant ID. This would <b>GREATLY HELP</b> our aim of exploring improvements to the (DIY)APS experience for all, now and in the future.</p>
+        <p>We are the OPEN project, a European Union-funded international research consortium aiming to study and explore the unique patient-innovation of “Do-It-Yourself Artificial Pancreas Systems”, or DIYAPS. We are asking <b>people with diabetes</b> who are or whose child is using an open-source closed loop system or who are interested in this technology to help us build evidence on how this technology affects the lives of people with diabetes.</p>
+        <h1>The survey is open again</h1>
+        <p>We have reopened the survey <b>for new participants</b>, significantly reducing the number of questionnaires. We now want to focus on your thoughts about or experiences with DIYAPS.</p>
+        <h1>You can donate your device data, too!</h1>
+        <p>Whether you have participated in our survey last year or do it now - you still have the option to <b>anonymously donate your device data</b> (e.g. from Nightscout) in case you have previously registered for a Participant ID. This would <b>GREATLY HELP</b> our aim of exploring improvements to the (DIY)APS experience for all, now and in the future.</p>
         <p><b>Further information will be provided on the next pages and <a href="https://open-diabetes.eu">here</a> on our website.</b></p>
     """.trimIndent()
     override val introduction2 = """
@@ -261,10 +261,10 @@ object English : Language() {
     override val thanksToParticipants = "Many thanks to all participants!"
     override val youHaveFilledOutTheSurvey = "You have filled out the survey"
     override val thanksForFillingOutSurvey = "Many thanks for having taken the time to help us with our research."
-    override val inviteYourHcp = "Invite your healthcare professional to this survey"
+    override val inviteYourHcp = "Invite your health care provider to this survey"
     override val clickForMoreInformation = "Click the button for more information."
     override val learnMore = "Learn more"
-    override val fillOutForm = """Fill out <a target="_blank" href="/static/consent_form.pdf">this form</a> and give it to your healthcare professional along with the following link:"""
+    override val fillOutForm = """Fill out <a target="_blank" href="/static/consent_form.pdf">this form</a> and give it to your health care provider along with the following link:"""
     override val shareViaEmail = "Share via e-mail"
 
     override fun participantId(participantId: String) = "Participant ID: <b>$participantId</b>"
