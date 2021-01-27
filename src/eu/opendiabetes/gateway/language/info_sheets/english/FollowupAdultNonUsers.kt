@@ -2,7 +2,7 @@ package eu.opendiabetes.gateway.language.info_sheets.english
 
 const val INFO_SHEET_FOLLOWUP_ADULT_NON_USERS = """
 <h1>Introduction</h1>
-<p>The OPEN team invites you to take part in a global study that examines in what way the innovations being developed by the Do-It-Yourself Artificial Pancreas Systems (DIYAPS) community might benefit all people living with diabetes. The following information explains what to expect if you choose to take part in the research. <b>Please read it carefully. If you do not understand some of the information and/or would like to discuss anything related to the project, feel free to contact a member of our research team (see below).</b></p>
+<p>The OPEN team invites you to take part in a global study that examines in what way the innovations being developed by the Do-It-Yourself Artificial Pancreas Systems (DIYAPS) community might benefit all people living with diabetes. The following information explains what to expect if you choose to take part in the research. <b>Please read it carefully. If you do not understand some of the information and/or would like to discuss anything related to the project, feel free to contact a member of our research team</b> (see below).</p>
 <h1>Name of Study</h1> 
 <p>OPEN (Outcomes of Patients’ Evidence with Novel, Do-it-Yourself Artificial Pancreas Technology)</p>
 <h1>Name of Principal Investigator</h1>
