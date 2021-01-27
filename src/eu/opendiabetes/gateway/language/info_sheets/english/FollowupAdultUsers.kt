@@ -2,7 +2,7 @@ package eu.opendiabetes.gateway.language.info_sheets.english
 
 const val INFO_SHEET_FOLLOWUP_ADULT_USERS = """
 <h1>Introduction</h1>
-<p>The OPEN team invites you to take part in a global study that examines the impact of Do-It-Yourself Artificial Pancreas Systems (DIYAPS) on the health and well-being of users. The following information explains what to expect if you choose to take part in the research. <b>Please read it carefully. If you do not understand some of the information and/or would like to discuss anything related to the project, feel free to contact a member of our research team.</b></p>
+<p>The OPEN team invites you to take part in a global study that examines the impact of Do-It-Yourself Artificial Pancreas Systems (DIYAPS) on the health and well-being of users. The following information explains what to expect if you choose to take part in the research. <b>Please read it carefully. If you do not understand some of the information and/or would like to discuss anything related to the project, feel free to contact a member of our research team</b> (see below).</p>
 <h1>Name of Study</h1> 
 <p>OPEN (Outcomes of Patients’ Evidence with Novel, Do-it-Yourself Artificial Pancreas Technology)</p>
 <h1>Name of Principal Investigator</h1>
@@ -77,7 +77,7 @@ const val INFO_SHEET_FOLLOWUP_ADULT_USERS = """
         <span><b>Prof. Dr. med. Klemens Raile</b></span>
         <span>Clinical Leads</span>
         <span>Department of Paediatric Endocrinology and Diabetes</span>
-        <span>Charité - Universitätsmedizin Berlin</span>
+        <span>Charité – Universitätsmedizin Berlin</span>
         <span>Augustenburger Platz 1</span>
         <span>13353 Berlin</span>
         <span>Germany</span>
