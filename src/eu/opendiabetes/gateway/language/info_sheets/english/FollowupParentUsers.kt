@@ -2,7 +2,7 @@ package eu.opendiabetes.gateway.language.info_sheets.english
 
 const val INFO_SHEET_FOLLOWUP_PARENT_USERS = """
 <h1>Introduction</h1>
-<p>The OPEN team invites you to take part in a global study that examines the impact of Do-It-Yourself Artificial Pancreas Systems (DIYAPS) on the health and well-being of users. The following information explains what to expect if you choose to take part in the research. <b>Please read it carefully. If you do not understand some of the information and/or would like to discuss anything related to the project, feel free to contact a member of our research team.</b></p>
+<p>The OPEN team invites you to take part in a global study that examines the impact of Do-It-Yourself Artificial Pancreas Systems (DIYAPS) on the health and well-being of users. The following information explains what to expect if you choose to take part in the research. <b>Please read it carefully. If you do not understand some of the information and/or would like to discuss anything related to the project, feel free to contact a member of our research team</b> (see below).</p>
 <h1>Name of Study</h1> 
 <p>OPEN (Outcomes of Patients’ Evidence with Novel, Do-it-Yourself Artificial Pancreas Technology)</p>
 <h1>Name of Principal Investigator</h1>
@@ -19,14 +19,14 @@ const val INFO_SHEET_FOLLOWUP_PARENT_USERS = """
 <h1>Why am I being invited to take part?</h1>
 <p>You are being invited to take part because you are a parent or caretaker of a DIYAPS user.</p>
 <h1>What will happen if I decide to take part in this research study?</h1>
-<p>If you agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe by noting it down, emailing it to yourself or taking a picture of it as you may need it later.</b></p></p> 
+<p>If you agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe by noting it down, emailing it to yourself or taking a picture of it, as you may need it later.</b></p></p> 
 <p>You will then be asked to <b>complete some questionnaires</b>. Altogether, it should not take you more than 15 minutes. These questionnaires will focus on:</p>
 <ul>
     <li>Your and your child’s demographic information</li>
     <li>Information about your child’s health and diabetes</li>
     <li>Your and your child's general experiences of building and maintaining a DIYAPS</li>
 </ul>
-<p>To further assist our research, we invite you to <b>become members of</b> a data repository site called ‘Open Humans’. <b>Open Humans</b> allows people to <b>anonymously donate</b> their health related data (including <b>device data</b>, e.g. from their glucose monitoring, or Nightscout, etc.) for research purposes. Once you sign up to Open Humans, we invite you to <b>join our project</b> on the Open Humans platform called ‘OPEN’ (by Shane O'Donnell). This should take you no longer than 2-3 minutes.</p>
+<p>To further assist our research, we invite you to <b>become members of</b> a data repository site called ‘Open Humans’. <b>Open Humans</b> allows people to <b>anonymously donate</b> their health related data (including <b>device data</b>, e.g. from their glucose monitor, or Nightscout, etc.) for research purposes. Once you sign up to Open Humans, we invite you to <b>join our project</b> on the Open Humans platform called ‘OPEN’ (by Shane O'Donnell). This should take you no longer than 2-3 minutes.</p>
 <p>Choosing to sign up to Open Humans and joining 'OPEN' on Open Humans is <b>optional</b> and you decide what data you would like to share with us (if at all), and whether you and your child would like to <b>participate in any further follow-up studies</b>. Bear in mind that your participation in the OPEN project and future studies will greatly assist us to enhance the existing scientific evidence on DIYAPS.</p>
 <p>If you are happy to sign up to the Open Humans platform, <b>instructions</b> on how to connect your existing Open Humans account — or create a new one and connect this — are provided on the <a href="https://open-diabetes.eu/en/open-survey/" target="_blank">OPEN website</a>.</p>  
 <p>Lastly, if your child is of adolescent age (13-17 years old), and they would like to complete a shorter version of the survey about their quality of life, you will also be able to provide them with a <b>participation link</b>. This would help enhance our understanding of the impact of DIYAPS on the quality of life of both you and your child.  Do not share this with anyone but your child, who should use this link to complete the questionnaire, so that your answers can be combined. It should not take them any longer than 10-15 minutes to complete and responses will be <b>confidential</b>. That means you will not be able to see your child’s responses and vice-versa. Sharing the participation link with your child is optional.</p>
@@ -49,7 +49,7 @@ const val INFO_SHEET_FOLLOWUP_PARENT_USERS = """
 <h1>What are the benefits of taking part in this research study?</h1>
 <p>There are no direct, material benefits expected from taking part in this study. However, you will be helping to improve the overall scientific knowledge about DIYAPS and its use. As a consequence, your participation and experience may help the diabetes community.</p> 
 <h1>What are the risks of taking part in this research study?</h1>
-<p>There are no anticipated risks expected from taking part in this study. However, if you do experience any aspect of the study as distressing, you are free to stop participating at any time, without personal consequence, we recommend contacting your GP/primary care physician or local diabetes organizations who may be able to provide you with psychological and practical support. However, if they are not in a position to provide support, you may find information on the following webpages helpful:</p>
+<p>There are no anticipated risks expected from taking part in this study. However, if you do experience any aspect of the study as distressing, you are free to stop participating at any time, without personal consequence, and we recommend contacting your GP/primary care physician or local diabetes organizations who may be able to provide you with psychological and practical support. However, if they are not in a position to provide support, you may find information on the following webpages helpful:</p>
 <ul>
     <li><a href="https://acbrd.org.au/diabetes-and-emotional-health-factsheets/" target="_blank">Diabetes and emotional health factsheets</a></li>
     <li><a href="https://www.jdrf.org/t1d-resources/living-with-t1d/mental-health/" target="_blank">Mental Health</a></li>
@@ -78,7 +78,7 @@ const val INFO_SHEET_FOLLOWUP_PARENT_USERS = """
         <span><b>Prof. Dr. med. Klemens Raile</b></span>
         <span>Clinical Leads</span>
         <span>Department of Paediatric Endocrinology and Diabetes</span>
-        <span>Charité - Universitätsmedizin Berlin</span>
+        <span>Charité – Universitätsmedizin Berlin</span>
         <span>Augustenburger Platz 1</span>
         <span>13353 Berlin</span>
         <span>Germany</span>
