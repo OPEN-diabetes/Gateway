@@ -10,7 +10,7 @@ const val INFO_SHEET_FOLLOWUP_PARENT_USERS = """
 <h1>What is this research about?</h1>
 <p>A growing number of people living with diabetes are choosing to build DIYAPS to help with the management of their condition. However, more research is needed to understand if and how people living with diabetes benefit from using these systems. This study has three main aims:</p> 
 <ol>
-    <li>to examine the clinical and quality of life outcomes of DIYAPS users</li>
+    <li>to examine the clinical and quality of life outcomes of DIYAPS users,</li>
     <li>to identify potential technical improvements that could be made to artificial pancreas technology of all kinds, and</li>
     <li>to investigate how more people can benefit from the innovations being developed by the DIY community.</li>
 </ol>
