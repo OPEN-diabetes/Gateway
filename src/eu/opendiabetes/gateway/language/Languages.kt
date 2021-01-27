@@ -239,7 +239,7 @@ object English : Language() {
     override val iAlreadyHaveAParticipantId = "I already have a Participant ID."
     override val iDoNotHaveAParticipantId = "I do not have a Participant ID."
     override val introduction1 = """
-        <p>We are the OPEN project, a European Union-funded international research consortium aiming to study and explore the unique patient-innovation of “Do-It-Yourself Artificial Pancreas Systems”, or DIYAPS. We are asking <b>people with diabetes</b> who are or whose child is using an open-source closed loop system or who are interested in this technology to help us build evidence on how this technology affects the lives of people with diabetes.</p>
+        <p>We are the OPEN project, a European Union-funded international research consortium aiming to study and explore the unique patient innovation of “Do-It-Yourself Artificial Pancreas Systems”, or DIYAPS. We are asking <b>people with diabetes</b> who are or whose child is using an open-source closed loop system or who are interested in this technology to help us build evidence on how this technology affects the lives of people with diabetes.</p>
         <h1>The survey is open again</h1>
         <p>We have reopened the survey <b>for new participants</b>, significantly reducing the number of questionnaires. We now want to focus on your thoughts about or experiences with DIYAPS.</p>
         <h1>You can donate your device data, too!</h1>
