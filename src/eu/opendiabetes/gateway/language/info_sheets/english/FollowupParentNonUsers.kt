@@ -2,7 +2,7 @@ package eu.opendiabetes.gateway.language.info_sheets.english
 
 const val INFO_SHEET_FOLLOWUP_PARENT_NON_USERS = """
 <h1>Introduction</h1>
-<p>The OPEN team invites you to take part in a global study that examines in what way the innovations being developed by the Do-It-Yourself Artificial Pancreas Systems (DIYAPS) community might benefit all people living with diabetes. The following information explains what to expect if you choose to take part in the research. <b>Please read it carefully. If you do not understand some of the information and/or would like to discuss anything related to the project, feel free to contact a member of our research team.</b></p>
+<p>The OPEN team invites you to take part in a global study that examines in what way the innovations being developed by the Do-It-Yourself Artificial Pancreas Systems (DIYAPS) community might benefit all people living with diabetes. The following information explains what to expect if you choose to take part in the research. <b>Please read it carefully. If you do not understand some of the information and/or would like to discuss anything related to the project, feel free to contact a member of our research team</b> (see below).</p>
 <h1>Name of Study</h1> 
 <p>OPEN (Outcomes of Patients’ Evidence with Novel, Do-it-Yourself Artificial Pancreas Technology)</p>
 <h1>Name of Principal Investigator</h1>
@@ -17,7 +17,7 @@ const val INFO_SHEET_FOLLOWUP_PARENT_NON_USERS = """
 <p>If you agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe by noting it down, emailing it to yourself or taking a picture of it as you may need it later</b>.</p></p> 
 <p>You will then be asked to <b>complete some questionnaires</b>. Altogether, it should not take you more than 10-15 minutes. These questionnaires will focus on:</p>
 <ul>
-    <li>Your demographic information</li>
+    <li>Your and your child's demographic information</li>
     <li>Your experiences of being a member of an online DIYAPS community</li>
     <li>The challenges you may have experienced or anticipate in building a DIYAPS</li>
 </ul>
@@ -29,7 +29,7 @@ const val INFO_SHEET_FOLLOWUP_PARENT_NON_USERS = """
 <p>The organizations in the OPEN consortium involved in accessing your data will include:</p>
 <ul>
     <li>University College Dublin, Ireland</li>
-    <li>Charité - Universitätsmedizin Berlin, Germany</li>
+    <li>Charité – Universitätsmedizin Berlin, Germany</li>
     <li>Dedoc Labs GmbH, Germany</li>
     <li>Steno Diabetes Center Copenhagen, Denmark</li>
     <li>Copenhagen University, Denmark</li>
@@ -42,7 +42,7 @@ const val INFO_SHEET_FOLLOWUP_PARENT_NON_USERS = """
 <h1>What are the benefits of taking part in this research study?</h1>
 <p>There are no direct, material benefits expected from taking part in this study. However, you will be helping to improve the overall scientific knowledge about DIYAPS systems and its use. As a consequence, your participation and experience may help the diabetes community.</p> 
 <h1>What are the risks of taking part in this research study?</h1>
-<p>There are no anticipated risks expected from taking part in this study. However, if you do experience any aspect of the study as distressing, you are free to stop participating at any time, without personal consequence, we recommend contacting your GP/primary care physician or local diabetes organizations who may be able to provide you with psychological and practical support. However, if they are not in a position to provide support, you may find information on the following webpages helpful:</p>
+<p>There are no anticipated risks expected from taking part in this study. However, if you do experience any aspect of the study as distressing, you are free to stop participating at any time, without personal consequence, and we recommend contacting your GP/primary care physician or local diabetes organizations who may be able to provide you with psychological and practical support. However, if they are not in a position to provide support, you may find information on the following webpages helpful:</p>
 <ul>
     <li><a href="https://acbrd.org.au/diabetes-and-emotional-health-factsheets/" target="_blank">Diabetes and emotional health factsheets</a></li>
     <li><a href="https://www.jdrf.org/t1d-resources/living-with-t1d/mental-health/" target="_blank">Mental Health</a></li>
@@ -71,7 +71,7 @@ const val INFO_SHEET_FOLLOWUP_PARENT_NON_USERS = """
         <span><b>Prof. Dr. med. Klemens Raile</b></span>
         <span>Clinical Leads</span>
         <span>Department of Paediatric Endocrinology and Diabetes</span>
-        <span>Charité - Universitätsmedizin Berlin</span>
+        <span>Charité – Universitätsmedizin Berlin</span>
         <span>Augustenburger Platz 1</span>
         <span>13353 Berlin</span>
         <span>Germany</span>
