@@ -243,7 +243,7 @@ object English : Language() {
         <h1>The survey is open again</h1>
         <p>We have reopened the survey <b>for new participants</b>, significantly reducing the number of questionnaires. We now want to focus on your thoughts about or experiences with DIYAPS.</p>
         <h1>You can donate your device data, too!</h1>
-        <p>Whether you have participated in our survey last year or do it now - you still have the option to <b>anonymously donate your device data</b> (e.g. from Nightscout) in case you have previously registered for a Participant ID. This would <b>GREATLY HELP</b> our aim of exploring improvements to the (DIY)APS experience for all, now and in the future.</p>
+        <p>Regardless of if you have participated in our survey last year, or if this is your first time, you still have the option to <b>anonymously donate your device data</b> (e.g. from Nightscout) if you have previously registered for a Participant ID. This would <b>GREATLY HELP</b> our aim of exploring improvements to the (DIY)APS experience for all, now and in the future.</p>
         <p><b>Further information will be provided on the next pages and <a href="https://open-diabetes.eu">here</a> on our website.</b></p>
     """.trimIndent()
     override val introduction2 = """
