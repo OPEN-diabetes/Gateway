@@ -188,7 +188,7 @@ object English : Language() {
     override val linkToOpenHumans = "Participate in future follow-up studies and/or donate your device data via Open Humans"
     override val linkToOpenHumans2 = "Link to Open Humans"
     override val linkToOpenHumansTextSetup =
-        "Please <b>join Open Humans</b>, a non-profit data repository site, and <b>provide the link</b> to your account. This is our only chance to contact you about follow-up studies conducted by OPEN. You also have the option to <b>donate your diabetes device data</b> to help our research efforts.<br><i>Click below for a step-by-step guide on how to do this.</i>"
+        "Please <b>join Open Humans</b>, a non-profit data repository site and <b>provide the link</b> to your account. This is our only chance to contact you about follow-up studies conducted by OPEN. You also have the option to <b>donate your diabetes device data</b> to help our research efforts.<br><i>Click below for a step-by-step guide on how to do this.</i>"
     override val linkToOpenHumansTextNoData =
         "Your Open Humans account has been connected, however, no data sources have been detected."
     override val linkToOpenHumansTextDataSources =
