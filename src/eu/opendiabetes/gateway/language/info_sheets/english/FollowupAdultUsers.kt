@@ -15,7 +15,7 @@ const val INFO_SHEET_FOLLOWUP_ADULT_USERS = """
     <li>to investigate how more people can benefit from the innovations being developed by the DIY community.</li>
 </ol>
 <h1>Why is OPEN doing this research?</h1>
-<p>By carrying out this research study, OPEN will be able to build evidence about the effectiveness of DIYAPS and potential further improvements in the technology that could be introduced in the future.</p>
+<p>Through our research, we are building evidence concerning the effectiveness of DIYAPS as well as investigating potential technological improvements. Our aim is to spread awareness and improve the quality of DIYAPS.</p>
 <h1>Why am I being invited to take part?</h1>
 <p>You are being invited to take part because you are a DIYAPS user.</p>
 <h1>What will happen if I decide to take part in this research study?</h1>
@@ -41,7 +41,7 @@ const val INFO_SHEET_FOLLOWUP_ADULT_USERS = """
     <li>Copenhagen University, Denmark</li>
     <li>The Australian Centre for Behavioural Research in Diabetes (ACBRD), Australia</li>
 </ul>
-<h1>How will you protect my privacy?</h1>
+<h1>How is your privacy protected?</h1>
 <p>The design of this study is in line with all EU (GDPR), Irish (Data Protection Act, 2018) and UCD (UCD ethics Committee) ethical and data protection regulations. Every precaution will be taken to respect your privacy, in line with the General Data Protection Regulations (GDPR).</p> 
 <p>As stated above, any information that you share that may potentially inadvertently make you identifiable will be removed - this process is called pseudonymization.</p>  
 <p>Please note that only adults (aged 18+) who are able to provide consent are allowed to participate.</p> 
