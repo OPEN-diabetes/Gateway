@@ -33,7 +33,7 @@ const val INFO_SHEET_FOLLOWUP_ADULT_NON_USERS = """
     <li>Copenhagen University, Denmark</li>
     <li>The Australian Centre for Behavioural Research in Diabetes (ACBRD), Australia</li></b>
 </ul>
-<h1>How will you protect my privacy?</h1>
+<h1>How is your privacy protected?</h1>
 <p>The design of this study is in line with all EU (GDPR), Irish (Data Protection Act, 2018) and UCD (UCD ethics Committee) ethical and data protection regulations. Every precaution will be taken to respect your privacy, in line with the General Data Protection Regulations (GDPR).</p> 
 <p>As stated above, any information that you share that may potentially inadvertently make you identifiable will be removed - this process is called pseudonymization.</p>  
 <p>Please note that only adults (aged 18+) who are able to provide consent are allowed to participate.</p> 
