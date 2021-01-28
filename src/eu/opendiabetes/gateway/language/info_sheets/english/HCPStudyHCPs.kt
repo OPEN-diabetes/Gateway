@@ -2,7 +2,7 @@ package eu.opendiabetes.gateway.language.info_sheets.english
 
 const val INFO_SHEET_HCP_STUDY_HCPS = """
 <h1>Introduction</h1>
-<p>The OPEN team invites you to take part in a global study that examines the impact of Do–It–Yourself Artificial Pancreas Systems (DIYAPS) or Open–source Automated Insulin Delivery Systems on the health and well–being of users. The following information explains what to expect if you and your patient(s) choose to take part in the research. <b>Please read it carefully. If you do not understand some of the information and/or would like to discuss anything related to the project, feel free to contact a member of our research team.</b></p>
+<p>The OPEN team invites you to take part in a global study that examines the impact of Do–It–Yourself Artificial Pancreas Systems (DIYAPS) or Open–source Automated Insulin Delivery Systems on the health and well–being of users. The following information explains what to expect if you and your patient(s) choose to take part in the research. <b>Please read it carefully. If you do not understand some of the information and / or would like to discuss anything related to the project, feel free to contact a member of our research team.</b></p>
 <h1>Name of Study</h1> 
 <p>OPEN (Outcomes of Patients’ Evidence with Novel, Do–it–Yourself Artificial Pancreas Technology) — Clinical Data from two Perspectives: Assessment of HCP–Reported and Patients' Self–Reported Clinical Outcomes</p>
 <h1>Name of Principal Investigator</h1>
