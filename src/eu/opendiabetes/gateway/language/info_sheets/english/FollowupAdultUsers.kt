@@ -35,7 +35,7 @@ const val INFO_SHEET_FOLLOWUP_ADULT_USERS = """
 <p>The organizations in the OPEN consortium involved in accessing your data will include:</p>
 <ul>
     <li>University College Dublin, Ireland</li>
-    <li>Charité - Universitätsmedizin Berlin, Germany</li>
+    <li>Charité – Universitätsmedizin Berlin, Germany</li>
     <li>Dedoc Labs GmbH, Germany</li>
     <li>Steno Diabetes Center Copenhagen, Denmark</li>
     <li>Copenhagen University, Denmark</li>
@@ -105,7 +105,7 @@ const val INFO_SHEET_FOLLOWUP_ADULT_USERS = """
 <p><b>The OPEN team</b></p>
 <h1>PARTICIPANT CONSENT FORM</h1>
 <p>I have read this consent form. I understand that I can refuse to participate in this project. I have taken time to think carefully about my decision to participate. I freely consent to share my data with this research project.</p>
-<p>By clicking "agree" below, you are e-signing this form and agree to the following:</p>
+<p>By clicking "agree" below, you are e–signing this form and agree to the following:</p>
 <ul>
 <li>I understand the uncertainty and risk of research as stated in this consent form.</li>
 <li>I understand that data I choose to share may be used for any purpose, including research purposes.</li>
