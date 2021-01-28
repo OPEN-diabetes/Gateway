@@ -2,7 +2,7 @@ package eu.opendiabetes.gateway.language.info_sheets.english
 
 const val INFO_SHEET_FOLLOWUP_ADULT_NON_USERS = """
 <h1>Introduction</h1>
-<p>The OPEN team invites you to take part in a global study that examines in what way the innovations being developed by the Do-It-Yourself Artificial Pancreas Systems (DIYAPS) community might benefit all people living with diabetes. The following information explains what to expect if you choose to take part in the research. <b>Please read it carefully. If you do not understand some of the information and/or would like to discuss anything related to the project, feel free to contact a member of our research team.</b></p>
+<p>The OPEN team invites you to take part in a global study that examines in what way the innovations being developed by the Do-It-Yourself Artificial Pancreas Systems (DIYAPS) community might benefit all people living with diabetes. The following information explains what to expect if you choose to take part in the research. <b>Please read it carefully. If you do not understand some of the information and/or would like to discuss anything related to the project, feel free to contact a member of our research team</b> (see below).</p>
 <h1>Name of Study</h1> 
 <p>OPEN (Outcomes of Patients’ Evidence with Novel, Do-it-Yourself Artificial Pancreas Technology)</p>
 <h1>Name of Principal Investigator</h1>
@@ -14,7 +14,7 @@ const val INFO_SHEET_FOLLOWUP_ADULT_NON_USERS = """
 <h1>Why am I being invited to take part?</h1>
 <p>You are being invited to take part because you have diabetes and you are a member of the DIYAPS community.</p>
 <h1>What will happen if I decide to take part in this research study?</h1>
-<p>If you agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe by noting it down, emailing it to yourself or taking a picture of it as you may need it later</b>.</p></p> 
+<p>If you agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe by noting it down, emailing it to yourself or taking a picture of it, as you may need it later</b>.</p></p> 
 <p>You will then be asked to <b>complete some questionnaires</b>. Altogether, it should not take you more than 10-15 minutes. These questionnaires will focus on:</p>
 <ul>
     <li>Your demographic information</li>
@@ -27,13 +27,13 @@ const val INFO_SHEET_FOLLOWUP_ADULT_NON_USERS = """
 <p>The organizations in the OPEN consortium involved in accessing your data will include:</p>
 <ul>
     <li>University College Dublin, Ireland</li>
-    <li>Charité - Universitätsmedizin Berlin, Germany</li>
+    <li>Charité – Universitätsmedizin Berlin, Germany</li>
     <li>Dedoc Labs GmbH, Germany</li>
     <li>Steno Diabetes Center Copenhagen, Denmark</li>
     <li>Copenhagen University, Denmark</li>
     <li>The Australian Centre for Behavioural Research in Diabetes (ACBRD), Australia</li></b>
 </ul>
-<h1>How will you protect my privacy?</h1>
+<h1>How is your privacy protected?</h1>
 <p>The design of this study is in line with all EU (GDPR), Irish (Data Protection Act, 2018) and UCD (UCD ethics Committee) ethical and data protection regulations. Every precaution will be taken to respect your privacy, in line with the General Data Protection Regulations (GDPR).</p> 
 <p>As stated above, any information that you share that may potentially inadvertently make you identifiable will be removed - this process is called pseudonymization.</p>  
 <p>Please note that only adults (aged 18+) who are able to provide consent are allowed to participate.</p> 
