@@ -61,6 +61,9 @@ fun Application.todosModule() {
                         null
                     }
                 }
+                call.response.headers.append(HttpHeaders.CacheControl, "no-cache, no-store, must-revalidate")
+                call.response.headers.append(HttpHeaders.Pragma, "no-cache")
+                call.response.headers.append(HttpHeaders.Expires, "0")
                 call.respondTODOsTemplate(
                     participantId = formatParticipantId(participant.id, participant.secret),
                     dataSources = sharedSources.await(),
