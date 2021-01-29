@@ -2,7 +2,7 @@ package eu.opendiabetes.gateway.language.info_sheets.english
 
 const val INFO_SHEET_HCP_STUDY_HCPS = """
 <h1>Introduction</h1>
-<p>The OPEN team invites you to take part in a global study that examines the impact of Do–It–Yourself Artificial Pancreas Systems (DIYAPS) or Open–source Automated Insulin Delivery Systems on the health and well–being of users. The following information explains what to expect if you and your patient(s) choose to take part in the research. <b>Please read it carefully. If you do not understand some of the information and / or would like to discuss anything related to the project, feel free to contact a member of our research team.</b></p>
+<p>The OPEN team invites you to take part in a global study that examines the impact of Do–It–Yourself Artificial Pancreas Systems (DIYAPS) or Open–Source Automated Insulin Delivery Systems on the health and well–being of users. The following information explains what to expect if you and your patient(s) choose to take part in the research. <b>Please read it carefully. If you do not understand some of the information and / or would like to discuss anything related to the project, feel free to contact a member of our research team.</b></p>
 <h1>Name of Study</h1> 
 <p>OPEN (Outcomes of Patients’ Evidence with Novel, Do–it–Yourself Artificial Pancreas Technology) — Clinical Data from two Perspectives: Assessment of HCP–Reported and Patients' Self–Reported Clinical Outcomes</p>
 <h1>Name of Principal Investigator</h1>
@@ -11,7 +11,7 @@ const val INFO_SHEET_HCP_STUDY_HCPS = """
 <p>A growing number of people living with diabetes are choosing to build DIYAPS to help with the management of their condition. However, more research is needed to understand if and how people living with diabetes benefit from using these systems. This study has three main aims:</p> 
 <ol>
     <li>to examine the clinical and quality of life outcomes of DIYAPS users</li>
-    <li>to identify potential technical improvements that could be made to automated insulin delivery technology of all kinds, and</li>
+    <li>to identify potential technical improvements that could be made to automated insulin delivery technology of all kinds</li>
     <li>to investigate how more people with diabetes can benefit from the innovations being developed by the DIY community.</li>
 </ol>
 <p><b>This particular study adds a fourth aim:</b></p>
