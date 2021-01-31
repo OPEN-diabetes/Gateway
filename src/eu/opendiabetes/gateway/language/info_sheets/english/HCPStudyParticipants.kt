@@ -24,7 +24,7 @@ const val INFO_SHEET_HCP_STUDY_PARTICIPANTS = """
 <p>The organizations in the OPEN consortium involved in accessing your data will include:</p>
 <ul>
 <li>University College Dublin, Ireland</li>
-<li>Charité - Universitätsmedizin Berlin, Germany</li>
+<li>Charité – Universitätsmedizin Berlin, Germany</li>
 <li>Dedoc Labs GmbH, Germany</li>
 <li>Steno Diabetes Center Copenhagen, Denmark</li>
 <li>Copenhagen University, Denmark</li>
