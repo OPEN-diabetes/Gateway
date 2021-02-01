@@ -163,7 +163,7 @@ object English : Language() {
     override val myParentHasAlreadyFilledOutTheSurvey = "My parent has already filled out the survey."
     override val myChildHasAlreadyFilledOutTheSurvey = ""
     override val notWithinAudience =
-        "Thank you very much for your interest in this study! We are very sorry that we don´t need your help at the moment, but we may come back to you later."
+        "Thank you very much for your interest in this study! We are very sorry that we don't need your help at the moment, but we may come back to you later."
     override val askChildForParticipationLink = ""
     override val askParentForParticipationLink =
         "We’re sorry, but due to legal reasons, you need permission from your parent(s)/caregiver(s) to participate in this survey. Therefore, please ask them for a participation link that they can get after signing up on their own."
@@ -171,7 +171,7 @@ object English : Language() {
     override val askPatientForParticipationLink = "Please ask your patient to send you a participation link."
     override val yourParticipantIdIs = "Your Participant ID is:"
     override val pleaseNoteItDownToAvoidLosingIt =
-        "The purpose of this ID is to guarantee anonymity in the survey. Should you need to take a break, you can continue where you have left off by noting the ID down, taking a picture of it or emailing it to yourself to keep it safe."
+        "The purpose of this ID is to guarantee anonymity in the survey. Should you need to take a break, you can continue where you have left off by noting the ID down, taking a picture of it or e–mailing it to yourself to keep it safe."
     override val proceed = "Proceed"
     override val yourTODOs = "How you can help"
     override val askParent = ""
@@ -241,7 +241,7 @@ object English : Language() {
     override val introduction1 = """
         <p>We are the OPEN project, a European Union–funded international research consortium aiming to study and explore the unique patient innovation of “Do–It–Yourself Artificial Pancreas Systems”, or DIYAPS. We are asking <b>people with diabetes</b> who are or whose child is using an open–source closed–loop system or who are interested in this technology to help us build evidence on how this technology affects the lives of people with diabetes.</p>
         <h1>The survey is open again</h1>
-        <p>We have reopened the survey <b>for new participants</b>, significantly reducing the number of questionnaires. We now want to focus on your thoughts about or experiences with DIYAPS.</p>
+        <p>We have reopened the survey <b>for new participants</b>, significantly reducing the number of questionnaires. We now want to focus more on your thoughts about or experiences with DIYAPS.</p>
         <h1>You can donate your device data, too!</h1>
         <p>Regardless of if you have participated in our survey last year, or if this is your first time, you still have the option to <b>anonymously donate your device data</b> (e.g. from Nightscout) if you have previously registered for a Participant ID. This would <b>GREATLY HELP</b> our aim of exploring improvements to the (DIY)APS experience for all, now and in the future.</p>
         <p><b>Further information will be provided on the next pages and <a href="https://open-diabetes.eu">here</a> on our website.</b></p>
@@ -251,17 +251,17 @@ object English : Language() {
         <p><b>The OPEN team</b></p>
     """.trimIndent()
     override val ohLoginNotice = "(This only works if you have linked your Participant ID with Open Humans before.)"
-    override val loginText = "To proceed please type in your Participant ID:"
+    override val loginText = "To proceed, please type in your Participant ID:"
     override val login = "Login"
     override val invitationToSurvey = "Invitation to OPEN Survey"
     override val fundingNotice = "This project has received funding from the European Commission's Horizon 2020 Research and Innovation Programme under the Marie Sklodowska–Curie Action Research and Innovation Staff Exchange (RISE) grant agreement number 823902."
     override val weKindlyAskYou = "We kindly ask you to do all of this in the suggested order:"
     override val useDesktop = "We recommend to use a Desktop PC to participate in the OPEN survey."
-    override val surveyClosed = "The survey has been closed."
-    override val thanksToParticipants = "Many thanks to all participants!"
+    override val surveyClosed = "You have already participated in the survey."
+    override val thanksToParticipants = "We thank all participants very much!"
     override val youHaveFilledOutTheSurvey = "You have filled out the survey"
     override val thanksForFillingOutSurvey = "Many thanks for having taken the time to help us with our research."
-    override val inviteYourHcp = "Invite your health care provider to this survey"
+    override val inviteYourHcp = "Invite your healthcare provider to this survey"
     override val hcpInfoText = "We kindly ask you to participate in an OPEN follow–up study that focuses on the quality of the self–reported medical outcome data. For this, you would need to get your healthcare provider involved — your anonymized data will NOT be shared with your healthcare provider and vice versa.<br><i>Click the button for more information.</i>"
     override val learnMore = "Learn more"
     override val fillOutForm = """Fill out <a target="_blank" href="/static/consent_form.pdf">this form</a> and give it to your healthcare provider along with the following link:"""
@@ -286,7 +286,7 @@ object English : Language() {
 
         $link
 
-        The OPEN research team wants to find out how well people with diabetes are doing when they use or don´t use an open–source loop (DIYAPS), if and how they are struggling to build these systems, how the technology can be improved, and they want to investigate if there are ways to give more people access to this technology in general. You can get further information about OPEN and this study on their website: www.open-diabetes.eu
+        The OPEN research team wants to find out how well people with diabetes are doing when they use or don't use an open–source loop (DIYAPS), if and how they are struggling to build these systems, how the technology can be improved, and they want to investigate if there are ways to give more people access to this technology in general. You can get further information about OPEN and this study on their website: www.open-diabetes.eu
 
         Best regards
     """.trimIndent()
