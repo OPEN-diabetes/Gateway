@@ -21,7 +21,7 @@ const val INFO_SHEET_HCP_STUDY_HCPS = """
 <h1>Why is OPEN doing this research?</h1>
 <p>By carrying out this research study, OPEN will be able to build reliable evidence about the effectiveness of DIYAPS and potential further improvements in the technology that could be introduced in the future. This part — focusing on the validity of self–reported outcomes — requires your contribution as HCPs.</p>
 <p>Our goal here is to check the accuracy of self–reported clinical outcomes against actual medical records. We would like to be as objective as possible in our research; your help will ensure the accuracy of our self–reported data.</p>
-<p>In  our  main  survey  data  collection  targeted  at  people  with  diabetes  (see  more  details <a href="https://survey.open-diabetes.eu">here</a>), we ask the participants to report their clinical outcomes, such as recent hemoglobin A1C levels, height, weight, comorbidities, etc. All clinical outcome data reported by the participants are self–reported, and therefore we want to add an additional follow-up study that involves you, the diabetes specialist healthcare professional (HCP)!</p>
+<p>In  our  main  survey  data  collection  targeted  at  people  with  diabetes  (see  more  details <a href="https://survey.open-diabetes.eu">here</a>), we ask the participants to report their clinical outcomes, such as recent hemoglobin A1C levels, height, weight, comorbidities, etc. All clinical outcome data reported by the participants are self–reported, and therefore we want to add an additional follow–up study that involves you, the diabetes specialist healthcare professional (HCP)!</p>
 <h1>Why am I being invited to take part?</h1>
 <p>You are being invited to take part by one of your patients — a person with diabetes, and because you are this person's healthcare provider <b>(HCP) / member of their diabetes team</b>. We would like you to help us assess the agreement between your patient's self–reported diabetes–related outcomes, and actual medical outcomes registered in their medical charts / databases. We would very much appreciate if you could check these data for us and provide responses on behalf of your patient. If you have been asked to take part in this study by your patient, it already means that your patient is happy to request this help from you.</p>
 <h1>What will happen if I decide to take part in this research study?</h1>
@@ -34,7 +34,7 @@ const val INFO_SHEET_HCP_STUDY_HCPS = """
 <p>The organizations in the OPEN consortium involved in accessing your data will include:</p>
 <ul>
     <li>University College Dublin, Ireland</li>
-    <li>Charité - Universitätsmedizin Berlin, Germany</li>
+    <li>Charité – Universitätsmedizin Berlin, Germany</li>
     <li>Dedoc Labs GmbH, Germany</li>
     <li>Steno Diabetes Center Copenhagen, Denmark</li>
     <li>Copenhagen University, Denmark</li>
