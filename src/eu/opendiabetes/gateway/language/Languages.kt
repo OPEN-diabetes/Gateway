@@ -257,7 +257,7 @@ object English : Language() {
     override val fundingNotice = "This project has received funding from the European Commission's Horizon 2020 Research and Innovation Programme under the Marie Sklodowska–Curie Action Research and Innovation Staff Exchange (RISE) grant agreement number 823902."
     override val weKindlyAskYou = "We kindly ask you to do all of this in the suggested order:"
     override val useDesktop = "We recommend to use a Desktop PC to participate in the OPEN survey."
-    override val surveyClosed = "You have already participated in the survey."
+    override val surveyClosed = "You have already participated in the survey"
     override val thanksToParticipants = "We thank all participants very much!"
     override val youHaveFilledOutTheSurvey = "You have filled out the survey"
     override val thanksForFillingOutSurvey = "Many thanks for having taken the time to help us with our research."
