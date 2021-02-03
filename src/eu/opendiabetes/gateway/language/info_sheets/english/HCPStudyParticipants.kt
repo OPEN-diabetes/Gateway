@@ -28,7 +28,7 @@ const val INFO_SHEET_HCP_STUDY_PARTICIPANTS = """
 <li>Dedoc Labs GmbH, Germany</li>
 <li>Steno Diabetes Center Copenhagen, Denmark</li>
 <li>Copenhagen University, Denmark</li>
-<li>The Australian Centre for Behavioural Research in Diabetes (ACBRD), Australia.</li>
+<li>The Australian Centre for Behavioural Research in Diabetes (ACBRD), Australia</li>
 </ul>
 <h1>How will you protect my privacy?</h1>
 <p>The design of this study is in line with all EU (GDPR), Irish (Data Protection Act, 2018) and UCD (UCD Ethics Committee) ethical and data protection regulations. Every precaution will be taken to respect your privacy, in line with the General Data Protection Regulations (GDPR).</p>
