@@ -17,9 +17,9 @@ const val INFO_SHEET_FOLLOWUP_PARENT_NON_USERS = """
 <p>If you agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe by noting it down, e-mailing it to yourself or taking a picture of it as you may need it later</b>.</p></p> 
 <p>You will then be asked to <b>complete some questionnaires</b>. Altogether, it should not take you more than 10–15 minutes. These questionnaires will focus on:</p>
 <ul>
-    <li>your and your child's demographic information</li>
-    <li>your experiences of being a member of an online DIYAPS community</li>
-    <li>the challenges you may have experienced or anticipate in building a DIYAPS.</li>
+    <li>Your and your child's demographic information.</li>
+    <li>Your experiences of being a member of an online DIYAPS community.</li>
+    <li>The challenges you may have experienced or anticipate in building a DIYAPS.</li>
 </ul>
 <p>At the end of the survey, we will ask you if you would like to further assist our research by completing an additional questionnaire regarding your child’s most recent diabetes-related medical history. We will also ask if you would like to sign up for follow-up studies run by OPEN in the future. For this, you can <b>become a member of the OPEN project</b> on a data repository site called ‘<b>Open Humans</b>’. This will allow us to <b>anonymously communicate with you</b> to ask about your participation in future studies as data protection laws do not allow us to obtain or use personal email accounts for communication. <b>Instructions</b> on how to connect your existing Open Humans account — or create a new one and connect this — <b>are provided on the</b> <a href="https://open-diabetes.eu/en/open-survey/survey-tutorials/" target="_blank">OPEN website</a>. Please note that these additional steps are completely optional.</p>
 <p>Choosing to sign up to Open Humans and joining the OPEN project on Open Humans is <b>optional</b> and you decide if you would like to participate in any further follow-up studies. Bear in mind that your participation in the OPEN project and future studies will greatly assist us to enhance the existing scientific evidence on DIYAPS.</p>
@@ -33,7 +33,7 @@ const val INFO_SHEET_FOLLOWUP_PARENT_NON_USERS = """
     <li>Dedoc Labs GmbH, Germany</li>
     <li>Steno Diabetes Center Copenhagen, Denmark</li>
     <li>Copenhagen University, Denmark</li>
-    <li>The Australian Centre for Behavioural Research in Diabetes (ACBRD), Australia.</li>
+    <li>The Australian Centre for Behavioural Research in Diabetes (ACBRD), Australia</li>
 </ul>
 <h1>How is your privacy protected?</h1>
 <p>The design of this study is in line with all EU (GDPR), Irish (Data Protection Act, 2018) and UCD (UCD ethics Committee) ethical and data protection regulations. Every precaution will be taken to respect your privacy, in line with the General Data Protection Regulations (GDPR).</p> 
