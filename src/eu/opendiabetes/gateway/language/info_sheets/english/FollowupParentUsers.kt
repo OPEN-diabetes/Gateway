@@ -22,9 +22,9 @@ const val INFO_SHEET_FOLLOWUP_PARENT_USERS = """
 <p>If you agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe by noting it down, e-mailing it to yourself or taking a picture of it, as you may need it later.</b></p></p> 
 <p>You will then be asked to <b>complete some questionnaires</b>. Altogether, it should not take you more than 15 minutes. These questionnaires will focus on:</p>
 <ul>
-    <li>Your and your child’s demographic information.</li>
-    <li>Information about your child’s health and diabetes.</li>
-    <li>Your and your child's general experiences of building and maintaining a DIYAPS.</li>
+    <li>your and your child’s demographic information</li>
+    <li>information about your child’s health and diabetes</li>
+    <li>your and your child's general experiences of building and maintaining a DIYAPS</li>
 </ul>
 <p>To further assist our research, we invite you to <b>become members of</b> a data repository site called ‘Open Humans’. <b>Open Humans</b> allows people to <b>anonymously donate</b> their health related data (including <b>device data</b>, e.g. from their glucose monitor, or Nightscout, etc.) for research purposes. Once you sign up to Open Humans, we invite you to <b>join our project</b> on the Open Humans platform called ‘OPEN’ (by Shane O'Donnell). This should take you no longer than 2–3 minutes.</p>
 <p>Choosing to sign up to Open Humans and joining 'OPEN' on Open Humans is <b>optional</b>. You decide what data you would like to share with us (if at all), and whether you and your child would like to <b>participate in any further follow-up studies</b>. Bear in mind that your participation in the OPEN project and future studies will greatly assist us to enhance the existing scientific evidence on DIYAPS.</p>
