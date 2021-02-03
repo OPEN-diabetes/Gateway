@@ -14,14 +14,14 @@ const val INFO_SHEET_FOLLOWUP_ADULT_NON_USERS = """
 <h1>Why am I being invited to take part?</h1>
 <p>You are being invited to take part because you have diabetes and you are a member of the DIYAPS community.</p>
 <h1>What will happen if I decide to take part in this research study?</h1>
-<p>If you agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe by noting it down, e–mailing it to yourself or taking a picture of it, as you may need it later</b>.</p></p> 
+<p>If you agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe by noting it down, e-mailing it to yourself or taking a picture of it, as you may need it later</b>.</p></p> 
 <p>You will then be asked to <b>complete some questionnaires</b>. Altogether, it should not take you more than 10–15 minutes. These questionnaires will focus on:</p>
 <ul>
     <li>your demographic information</li>
     <li>your experiences of being a member of an online DIYAPS community</li>
     <li>the challenges you may have experienced or anticipate in building a DIYAPS system.</li>
 </ul>
-<p>At the end of the survey,  we will ask you if you would like to further assist our research by completing an additional questionnaire regarding your most recent diabetes related medical history. We will also ask if you would like to sign up for follow–up studies run by OPEN in the future. For this, you can <b>become a member of</b> the OPEN project on a data repository site called ‘<b>Open Humans</b>’. This will allow us to <b>anonymously communicate with you</b> to ask about your participation in future OPEN studies as data protection laws do not allow us to obtain or use personal email accounts for communication. <b>Instructions</b> on how to connect your existing Open Humans account — or create a new one and connect this — <b>are provided on the</b> <a href="https://open-diabetes.eu/en/open-survey/" target="_blank">OPEN website</a>. Please note that these additional steps are completely optional.</p>
+<p>At the end of the survey,  we will ask you if you would like to further assist our research by completing an additional questionnaire regarding your most recent diabetes related medical history. We will also ask if you would like to sign up for follow-up studies run by OPEN in the future. For this, you can <b>become a member of</b> the OPEN project on a data repository site called ‘<b>Open Humans</b>’. This will allow us to <b>anonymously communicate with you</b> to ask about your participation in future OPEN studies as data protection laws do not allow us to obtain or use personal email accounts for communication. <b>Instructions</b> on how to connect your existing Open Humans account — or create a new one and connect this — <b>are provided on the</b> <a href="https://open-diabetes.eu/en/open-survey/" target="_blank">OPEN website</a>. Please note that these additional steps are completely optional.</p>
 <h1>How will the data be used?</h1> 
 <p>The pseudonymized responses to the survey will be analyzed by our team of researchers. Once the OPEN project is completed your anonymized data will be available to researchers upon request. To protect your privacy, any information that might lead to your identity will be removed from your data set before being accessed by any researchers.</p>
 <p>The organizations in the OPEN consortium involved in accessing your data will include:</p>
@@ -51,7 +51,7 @@ const val INFO_SHEET_FOLLOWUP_ADULT_NON_USERS = """
 <h1>How will I find out what happens with this project?</h1>
 <p>The OPEN team would like you to engage with this project as much as possible. That is why we have developed a website for the OPEN project. On <a href="https://open-diabetes.eu">this website</a>, we provide regular updates on the findings of our project, and you may also sign up to our newsletter to receive regular email updates. All the results of our research will be published in a way which will be accessible and free of charge to the public.</p>
 <h1>Contact Details</h1>
-<p>If any participant would like to contact a member of the research team for any research–related reason, they can do so via the contact information below. If any questions are not answered in a satisfactory manner, then contact can be made with a Data Protection Officer at UCD, the details of which are also provided below. For general data protection inquiries, please contact the UCD Data Protection office. Finally, if none of the UCD contacts have given a satisfactory response, details on the Data Protection Commission are provided below.</p>
+<p>If any participant would like to contact a member of the research team for any research-related reason, they can do so via the contact information below. If any questions are not answered in a satisfactory manner, then contact can be made with a Data Protection Officer at UCD, the details of which are also provided below. For general data protection inquiries, please contact the UCD Data Protection office. Finally, if none of the UCD contacts have given a satisfactory response, details on the Data Protection Commission are provided below.</p>
 <div id="contact-details">
     <div class="contact-detail">
         <span><b>Dr Shane O’Donnell</b></span>
@@ -97,7 +97,7 @@ const val INFO_SHEET_FOLLOWUP_ADULT_NON_USERS = """
 <p><b>The OPEN team</b></p>
 <h1>PARTICIPANT CONSENT FORM</h1>
 <p>I have read this consent form. I understand that I can refuse to participate in this project. I have taken time to think carefully about my decision to participate. I freely consent to share my data with this research project.</p>
-<p>By clicking "agree" below, you are e–signing this form and agree to the following:</p>
+<p>By clicking "agree" below, you are e-signing this form and agree to the following:</p>
 <ul>
 <li>I understand the uncertainty and risk of research as stated in this consent form.</li>
 <li>I understand that data I choose to share may be used for any purpose, including research purposes.</li>
