@@ -14,7 +14,7 @@ const val INFO_SHEET_FOLLOWUP_PARENT_NON_USERS = """
 <h1>Why am I being invited to take part?</h1>
 <p>You have been invited to take part because you are the parent or caretaker of a child that has diabetes and you are a member of the DIYAPS community.</p>
 <h1>What will happen if we decide to take part in this research study?</h1>
-<p>If you agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe by noting it down, emailing it to yourself or taking a picture of it as you may need it later</b>.</p></p> 
+<p>If you agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe by noting it down, e–mailing it to yourself or taking a picture of it as you may need it later</b>.</p></p> 
 <p>You will then be asked to <b>complete some questionnaires</b>. Altogether, it should not take you more than 10–15 minutes. These questionnaires will focus on:</p>
 <ul>
     <li>your and your child's demographic information</li>
