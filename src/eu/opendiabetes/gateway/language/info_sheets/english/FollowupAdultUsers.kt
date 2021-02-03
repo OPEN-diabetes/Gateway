@@ -12,7 +12,7 @@ const val INFO_SHEET_FOLLOWUP_ADULT_USERS = """
 <ol>
     <li>to examine the clinical and quality of life outcomes of DIYAPS users</li>
     <li>to identify potential technical improvements that could be made to artificial pancreas technology of all kinds</li>
-    <li>to investigate how more people can benefit from the innovations being developed by the DIY community.</li>
+    <li>to investigate how more people can benefit from the innovations being developed by the DIY community</li>
 </ol>
 <h1>Why is OPEN doing this research?</h1>
 <p>Through our research, we are building evidence concerning the effectiveness of DIYAPS as well as investigating potential technological improvements. Our aim is to spread awareness and improve the quality of DIYAPS.</p>
@@ -22,9 +22,9 @@ const val INFO_SHEET_FOLLOWUP_ADULT_USERS = """
 <p>If you agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe by noting it down, e-mailing it to yourself or taking a picture of it as you may need it later.</b></p> 
 <p>You will then be asked to <b>complete some questionnaires</b>. Altogether, it should not take you more than 15 minutes. These questionnaires will focus on:</p>
 <ul>
-    <li>your demographic information</li>
-    <li>information about your health and diabetes</li>
-    <li>your general experiences of building and maintaining a DIYAPS.</li>
+    <li>Your demographic information.</li>
+    <li>Information about your health and diabetes.</li>
+    <li>Your general experiences of building and maintaining a DIYAPS.</li>
 </ul>
 <p>To further assist our research, we invite you to <b>become a member of</b> a data repository site called <b>‘Open Humans’</b>. Open Humans allows people to <b>anonymously donate</b> their health related data (including <b>device data</b>, e.g. from their glucose monitoring, or Nightscout, etc.) for research purposes. Once you sign up to Open Humans, we invite you to also <b>join our project</b> on the Open Humans platform called ‘OPEN’ (by Shane O'Donnell). This should take you no longer than 2–3 minutes.</p>
 <p>Choosing to sign up to Open Humans and joining ‘OPEN’ on Open Humans is <b>optional</b>. You decide what data you would like to share with us (if at all), and whether you would like to <b>participate in any further follow-up studies</b>. Bear in mind that your participation in the OPEN project and future studies will greatly assist us to enhance the existing scientific evidence on DIYAPS.</p>
