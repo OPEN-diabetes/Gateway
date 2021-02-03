@@ -19,7 +19,7 @@ const val INFO_SHEET_HCP_STUDY_HCPS = """
     <li>to assess the level of agreement between the people with diabetes' self-reported medical outcomes and their outcomes from medical charts reported by their healthcare professional.</li>
 </ol>
 <h1>Why is OPEN doing this research?</h1>
-<p>By carrying out this research study, OPEN will be able to build reliable evidence about the effectiveness of DIYAPS and potential further improvements in the technology that could be introduced in the future. This part — focusing on the validity of self–reported outcomes — requires your contribution as HCPs.</p>
+<p>By carrying out this research study, OPEN will be able to build reliable evidence about the effectiveness of DIYAPS and potential further improvements in the technology that could be introduced in the future. This part — focusing on the validity of self-reported outcomes — requires your contribution as HCPs.</p>
 <p>Our goal here is to check the accuracy of self-reported clinical outcomes against outcomes from medical records. We would like to be as objective as possible in our research; your help will ensure the accuracy of our self-reported data.</p>
 <p>In  our  main  survey  data  collection  targeted  at  people  with  diabetes  (see  more  details <a href="https://survey.open-diabetes.eu">here</a>), we ask the participants to report their clinical outcomes, such as recent hemoglobin A1C levels, height, weight, comorbidities, etc. All clinical outcome data reported by the participants are self-reported, and therefore we want to add a follow-up study that involves you, the diabetes specialist healthcare professional (HCP)!</p>
 <h1>Why am I being invited to take part?</h1>
