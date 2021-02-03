@@ -12,7 +12,7 @@ const val INFO_SHEET_HCP_STUDY_HCPS = """
 <ol>
     <li>to examine the clinical and quality of life outcomes of DIYAPS users</li>
     <li>to identify potential technical improvements that could be made to automated insulin delivery technology of all kinds</li>
-    <li>to investigate how more people with diabetes can benefit from the innovations being developed by the DIY community.</li>
+    <li>to investigate how more people with diabetes can benefit from the innovations being developed by the DIY community</li>
 </ol>
 <p><b>This particular study adds a fourth aim:</b></p>
 <ol>
@@ -38,7 +38,7 @@ const val INFO_SHEET_HCP_STUDY_HCPS = """
     <li>Dedoc Labs GmbH, Germany</li>
     <li>Steno Diabetes Center Copenhagen, Denmark</li>
     <li>Copenhagen University, Denmark</li>
-    <li>The Australian Centre for Behavioural Research in Diabetes (ACBRD), Australia.</li>
+    <li>The Australian Centre for Behavioural Research in Diabetes (ACBRD), Australia</li>
 </ul>
 <h1>How will you protect my privacy?</h1>
 <p>The design of this study is in line with all EU (GDPR), Irish (Data Protection Act, 2018), and UCD (UCD ethics Committee) ethical and data protection regulations. All personal information will be made unidentifiable before being transmitted and stored in the Open Humans server. Every precaution will be taken to respect your privacy, in line with the General Data Protection Regulations (GDPR).</p> 
