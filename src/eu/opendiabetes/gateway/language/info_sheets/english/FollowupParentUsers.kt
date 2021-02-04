@@ -22,7 +22,7 @@ const val INFO_SHEET_FOLLOWUP_PARENT_USERS = """
 <p>If you agree to take part, you will be first given a unique <b>participant ID</b> which will guarantee your anonymity in the survey. The ID allows you to take a break and come back where you have left off at a later stage or login on another device and continue from there. Therefore, <b>please keep it safe by noting it down, e-mailing it to yourself or taking a picture of it, as you may need it later.</b></p></p> 
 <p>You will then be asked to <b>complete some questionnaires</b>. Altogether, it should not take you more than 15 minutes. These questionnaires will focus on:</p>
 <ul>
-    <li>your and your child’s demographic information</li>
+    <li>you and your child’s demographic information</li>
     <li>information about your child’s health and diabetes</li>
     <li>your and your child's general experiences of building and maintaining a DIYAPS</li>
 </ul>
@@ -58,7 +58,7 @@ const val INFO_SHEET_FOLLOWUP_PARENT_USERS = """
 <h1>Can I change my mind at any stage and withdraw from the study?</h1>
 <p>Yes! If you decide to participate and subsequently change your mind, you may withdraw from the study at any time. You may also choose to remove your data from future analyses of the OPEN project. To do so, please contact our research team through the details provided below. You can also have the option to leave the OPEN project on Open Humans at any time and remove any data that you have uploaded to the platform. Please note that in both instances we can only delete your data if you provide your Participant ID from the survey.</p>
 <h1>How will I find out what happens with this project?</h1>
-<p>The OPEN team would like you to engage with this project as much as possible. That is why we have developed a website for the OPEN project. On <a href="https://open-diabetes.eu">this website</a>, we provide regular updates on the findings of our project, and you may also sign up to our newsletter to receive regular email updates. All the results of our research will be published in a way which will be accessible and free of charge to the public.</p>
+<p>The OPEN team would like you to engage with this project as much as possible. That is why we have developed a website for the OPEN project. On <a href="https://open-diabetes.eu">this website</a>, we provide regular updates on the findings of our project, and you may also sign up to our newsletter to receive regular e-mail updates. All the results of our research will be published in a way which will be accessible and free of charge to the public.</p>
 <h1>Contact Details</h1>
 <p>If any participant or participant’s caregiver would like to contact a member of the research team for any research-related reason, they can do so via the contact information below. If any query is not responded to in a satisfactory manner, then contact can be made with a Data Protection Officer at UCD, the details of which are also provided below. For general data protection inquiries, please contact the UCD Data Protection office. Finally, if none of the UCD contacts have given a satisfactory response, details on the Data Protection Commission are provided below.</p>
 <div id="contact-details">
