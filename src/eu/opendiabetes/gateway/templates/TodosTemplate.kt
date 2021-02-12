@@ -50,6 +50,12 @@ suspend fun ApplicationCall.respondTODOsTemplate(
                 }
             }
             if (showHCPSurvey) {
+                if (hcpUrl == null) {
+                    li {
+                        id ="new-sign"
+                        img(src = "/static/new.svg")
+                    }
+                }
                 li {
                     text(language.inviteYourHcp)
                     if (hcpUrl == null) {

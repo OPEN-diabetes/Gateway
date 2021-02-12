@@ -553,3 +553,13 @@ a.button {
     font-size: 15px;
     text-overflow: ellipsis;
 }
+
+#new-sign {
+    list-style: none;
+}
+
+#new-sign img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}

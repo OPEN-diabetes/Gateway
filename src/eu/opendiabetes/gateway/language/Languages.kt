@@ -280,15 +280,18 @@ object English : Language() {
 
 
     override fun invitationText(link: String) = """
-        Hi,
+        Dear [name of healthcare professional],
 
-        I have participated in the OPEN survey and I would like you to take part in this, too. It will only take a few minutes but help the OPEN team in doing their research on the effectiveness of Do-It-Yourself Artificial Pancreas Systems (DIYAPS). Please follow this link to get to survey:
+        I hope my e-mail finds you well.
 
+        I am writing to you as I recently took part in the OPEN study (www.open-diabetes.eu). This research is about novel diabetes technology, DIY artificial pancreas systems and the clinical outcome data of people with diabetes. I was asked to provide my health- and diabetes-related outcomes (i.e. hemoglobin A1C, severe ketoacidosis etc). And now, the researchers from the OPEN consortium ask me to take part in a follow-up study to assess the accuracy of these self-reported data and help to provide evidence on self-reported outcomes.  I would like to ask you to check my diabetes chart/data and complete the survey by providing information about my diabetes on my behalf under this link:
+        
         $link
-
-        The OPEN research team wants to find out how well people with diabetes are doing when they use or don't use an open-source loop (DIYAPS), if and how they are struggling to build these systems, how the technology can be improved, and they want to investigate if there are ways to give more people access to this technology in general. You can get further information about OPEN and this study on their website: www.open-diabetes.eu
-
-        Best regards
+        
+        You will find a detailed information leaflet, and you will be asked to fill in a short online questionnaire and provide my clinical health data based on the information in my medical chart. Please find my consent form attached to this e-mail. I would be more than grateful if you could provide responses to the questionnaire and help me and the entire diabetes community. 
+        
+        Yours sincerely,
+        [your name]
     """.trimIndent()
 }
 
