@@ -264,7 +264,7 @@ object English : Language() {
     override val inviteYourHcp = "Invite your healthcare provider to this survey"
     override val hcpInfoText = "We kindly ask you to participate in an OPEN follow-up study that focuses on the quality of the self-reported medical outcome data. For this, you would need to get your healthcare provider involved — your anonymized data will NOT be shared with your healthcare provider and vice versa.<br><i>Click the button for more information.</i>"
     override val learnMore = "Learn more"
-    override val fillOutForm = """Fill out <a target="_blank" href="/static/consent_form.pdf">this form</a> and give it to your healthcare provider along with the following link:"""
+    override val fillOutForm = """You need to <b>exempt your HCP from confidentiality</b> for this survey to allow them to provide your information. To do so, fill out <a target="_blank" href="/static/consent_form.pdf">this form</a> and send it to your HCP along with the following link:"""
     override val shareViaEmail = "Share via e-mail"
 
     override fun participantId(participantId: String) = "Participant ID: <b>$participantId</b>"
